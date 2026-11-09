@@ -1,0 +1,24 @@
+\begin{tabular}{lrrrr}
+\toprule
+Method (simulated episodes) & Net 0 & Net 1 & Net 2 & Pooled vs.\ faulty \\
+\midrule
+Healthy network (TTS) & 45.0 & 44.8 & 44.6 & \\
+Faulty network (TTS) & 48.3 & 242.2 & 47.3 & \\
+\midrule
+\multicolumn{5}{l}{\emph{Share of the fault's cost recovered (\%); pooled change in test TTS vs.\ the faulty network}} \\
+\quad Opus, one shot (0) & 97$^{*}$ & 100$^{*}$ & 62$^{*}$ & $-$59.8 [$-$91.0, $-$28.5] \\
+\quad Opus, 5 calls ($\le$45) & 94$^{*}$ & 100$^{*}$ & 86$^{*}$ & $-$60.0 [$-$91.2, $-$28.7] \\
+\quad Opus, 10 calls ($\le$90) & 94$^{*}$ & 100$^{*}$ & 78$^{*}$ & $-$59.9 [$-$91.2, $-$28.6] \\
+\quad Mean imputation (0) & 59$^{*}$ & 76$^{*}$ & 59$^{*}$ & $-$45.7 [$-$74.6, $-$16.9] \\
+\quad (1+1)-ES, seed 0 (90) & 14 & 99$^{*}$ & 22$^{*}$ & $-$58.0 [$-$88.7, $-$27.3] \\
+\quad (1+1)-ES, seed 1 (90) & 27$^{*}$ & 99$^{*}$ & 35$^{*}$ & $-$58.5 [$-$89.3, $-$27.6] \\
+\quad PPO fine-tuning, 300k (399) & 87$^{*}$ & 100$^{*}$ & 66$^{*}$ & $-$59.7 [$-$91.0, $-$28.4] \\
+\quad PPO fine-tuning, 1M (1{,}329) & 98$^{*}$ & 100$^{*}$ & 78$^{*}$ & $-$59.9 [$-$91.3, $-$28.6] \\
+\midrule
+\multicolumn{5}{l}{\emph{Opus, 10 calls, against each baseline: change in test TTS (\%)}} \\
+\quad vs.\ mean imputation & $-$2.4$^{*}$ & $-$50.6 & $-$1.1$^{*}$ & $-$26.1 [$-$54.5, +2.3] \\
+\quad vs.\ (1+1)-ES, seed 0 & $-$5.4$^{*}$ & $-$4.8$^{*}$ & $-$3.2$^{*}$ & $-$4.5 [$-$6.2, $-$2.9] \\
+\quad vs.\ (1+1)-ES, seed 1 & $-$4.6$^{*}$ & $-$3.2$^{*}$ & $-$2.5$^{*}$ & $-$3.5 [$-$4.6, $-$2.3] \\
+\quad vs.\ PPO fine-tuning, 1M & +0.3 & +0.1 & 0.0 & +0.1 [$-$0.2, +0.5] \\
+\bottomrule
+\end{tabular}

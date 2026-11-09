@@ -1,0 +1,17 @@
+You are taking part in a research experiment on adapting trained neural-network controllers.
+
+Your task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/constrain/net0_b0
+
+Start by reading TASK.md in that folder, then follow it exactly. In particular:
+- Read only files inside the pack.
+- Write only to its work/ subfolder.
+- Do not run any simulator. You get one shot.
+- Do not fit any model and do not run automated searches.
+- Use the network through its logits only.
+- Use the Python interpreter that TASK.md names.
+
+When you finish, make sure work/supervisor.py, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:
+- what your supervisor does;
+- when it overrides the network;
+- the checks you ran;
+- your predictions.

@@ -1,0 +1,38 @@
+\begin{tabular}{llrrrl}
+\toprule
+Problem & Run & Steps & Final val.\ TTS & Change, last 20\,\% & Converged \\
+\midrule
+L2 & ft net0 s600 & 1M & 47.1 & 0.0\,\% & yes \\
+L2 & ft net1 s601 & 1M & 46.9 & 0.0\,\% & yes \\
+L2 & ft net2 s602 & 1M & 46.9 & $-$0.3\,\% & yes \\
+L2 & init r1 s400 & 3M & 46.4 & +2.5\,\% & yes \\
+L2 & init r1 s401 & 3M & 47.1 & 0.0\,\% & yes \\
+L2 & init r2 s400 & 3M & 49.9 & +1.2\,\% & yes \\
+L2 & init r2 s401 & 3M & 47.2 & $-$0.2\,\% & yes \\
+L2 & init r3 s400 & 3M & 47.0 & 0.0\,\% & yes \\
+L2 & init r3 s401 & 3M & 47.0 & 0.0\,\% & yes \\
+L2 & ppo s100 & 3M & 47.2 & +0.1\,\% & yes \\
+L2 & ppo s101 & 3M & 47.2 & $-$0.2\,\% & yes \\
+L2 & ppo s102 & 3M & 47.7 & +0.5\,\% & yes \\
+L2 & ppo s103 & 3M & 46.9 & +0.2\,\% & yes \\
+L2 & ppo s104 & 3M & 47.3 & +0.4\,\% & yes \\
+L2W & ppo s200 & 3M & 60.8 & $-$0.4\,\% & yes \\
+L2W & ppo s201 & 3M & 61.3 & $-$0.3\,\% & yes \\
+L2W & ppo s202 & 3M & 63.2 & +1.0\,\% & yes \\
+L2W & ppo s203 & 3M & 61.9 & $-$5.0\,\% & no \\
+L2W & ppo s203 r1 & 4.8M & 61.7 & $-$1.6\,\% & yes \\
+L2W & ppo s204 & 3M & 61.6 & +0.9\,\% & yes \\
+L2W & transfer net0 s500 & 3M & 61.5 & +1.0\,\% & yes \\
+L2W & transfer net0 s501 & 3M & 60.8 & +0.3\,\% & yes \\
+L2W & transfer net1 s500 & 3M & 62.2 & $-$1.1\,\% & yes \\
+L2W & transfer net1 s501 & 3M & 62.4 & +0.3\,\% & yes \\
+L2W & transfer net2 s500 & 3M & 60.6 & +0.7\,\% & yes \\
+L2W & transfer net2 s501 & 3M & 63.0 & +2.8\,\% & yes \\
+L2 rules & ft net0 s700 & 1M & 49.8 & +0.8\,\% & yes \\
+L2 rules & ft net1 s701 & 1M & 49.4 & +0.3\,\% & yes \\
+L2 rules & ft net2 s702 & 1M & 49.3 & $-$0.1\,\% & yes \\
+L2 rules & ppo s300 & 3M & 49.7 & +0.2\,\% & yes \\
+L2 rules & ppo s301 & 3M & 49.4 & $-$0.1\,\% & yes \\
+L2 rules & ppo s302 & 3M & 49.7 & 0.0\,\% & yes \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,23 @@
+\begin{tabular}{llrrrr}
+\toprule
+Junction & Controller & Low & Nominal & High & Mean \\
+\midrule
+L2 & Fixed time (tuned) & 37.5 & 48.5 & 59.2 & 48.4 \\
+ & Actuated (tuned) & 34.4 & 45.7 & 59.0 & 46.4 \\
+ & PPO (5 seeds, mean) & 34.5 & 45.0 & 55.0 & 44.8 (44.6--45.0) \\
+ & PPO vs.\ actuated (\%) & \multicolumn{4}{r}{$-$3.3 [$-$5.2, $-$1.5]} \\
+ & PPO vs.\ fixed time (\%) & \multicolumn{4}{r}{$-$7.3 [$-$7.9, $-$6.7]} \\
+\midrule
+L2W & Fixed time (tuned) & 48.0 & 62.6 & 77.7 & 62.8 \\
+ & Actuated (tuned) & 44.3 & 61.8 & 85.9 & 64.0 \\
+ & PPO (5 seeds, mean) & 43.8 & 57.6 & 73.9 & 58.4 (58.2--58.7) \\
+ & PPO vs.\ actuated (\%) & \multicolumn{4}{r}{$-$8.7 [$-$12.0, $-$5.5]} \\
+ & PPO vs.\ fixed time (\%) & \multicolumn{4}{r}{$-$6.9 [$-$7.9, $-$5.9]} \\
+\midrule
+L2 + rules & Fixed time (tuned) & 38.0 & 49.7 & 61.8 & 49.8 \\
+ & Actuated (tuned) & 36.8 & 48.4 & 61.0 & 48.7 \\
+ & PPO (3 seeds, mean) & 36.2 & 47.2 & 57.5 & 47.0 (46.9--47.0) \\
+ & PPO vs.\ actuated (\%) & \multicolumn{4}{r}{$-$3.6 [$-$4.8, $-$2.5]} \\
+ & PPO vs.\ fixed time (\%) & \multicolumn{4}{r}{$-$5.8 [$-$6.9, $-$4.7]} \\
+\bottomrule
+\end{tabular}

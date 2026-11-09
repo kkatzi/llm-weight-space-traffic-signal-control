@@ -1,0 +1,16 @@
+edit size: {'changed': 301, 'total': 7428, 'fraction': 0.040522347872913304}
+indicator fires on 0.156 of states; by source [np.float64(0.214), np.float64(0.065), np.float64(0.178)]
+unit U on where rule fires: min h 0.986 ; off where rule doesn't: max h -0.987
+start(failed)   agree with 'ind|copy' target: indicator states 0.392  other states 0.839  all 0.755
+                honoured-decision shares by data source: src0:[0.16  0.13  0.573 0.137]  src1:[0.452 0.086 0.287 0.175]  src2:[0.126 0.232 0.434 0.208]
+copy only       agree with 'ind|copy' target: indicator states 0.587  other states 1.000  all 0.923
+                honoured-decision shares by data source: src0:[0.111 0.094 0.524 0.271]  src1:[0.325 0.075 0.277 0.323]  src2:[0.076 0.148 0.379 0.397]
+copy+indicator  agree with 'ind|copy' target: indicator states 0.941  other states 0.996  all 0.986
+                honoured-decision shares by data source: src0:[0.106 0.092 0.356 0.446]  src1:[0.315 0.076 0.271 0.338]  src2:[0.072 0.138 0.373 0.418]
+copy-net vs start-net on non-indicator honoured states: changed 0.161
+final vs copy-net on non-indicator honoured states: changed 0.004
+indicator states in phase 0: n=188 final choices [  0  22  51 115] target [  0  19  53 116] start [ 0 65 94 29]
+indicator states in phase 1: n=180 final choices [ 3  0 88 89] target [ 3  0 89 88] start [ 18   0 139  23]
+indicator states in phase 2: n=776 final choices [ 25  22   8 721] target [ 22  11   0 743] start [115  83 369 209]
+trainability start: {'median_max_prob': 0.9775150042210019, 'share_max_prob_above_0.99': 0.39860529986053, 'median_logit_gap': 3.9961494010143035, 'max_abs_logit': 9.658876088604226, 'sat_l1': 1.8523361227336124e-05, 'sat_l2': 0.06773884239888424, 'dead_l1': 0, 'dead_l2': 0}
+trainability final: {'median_max_prob': 0.9835185579787233, 'share_max_prob_above_0.99': 0.44783821478382146, 'median_logit_gap': 4.277112702812969, 'max_abs_logit': 9.65889804401349, 'sat_l1': 0.0049577231520223156, 'sat_l2': 0.12165271966527197, 'dead_l1': 0, 'dead_l2': 0}

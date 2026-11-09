@@ -1,0 +1,17 @@
+You are taking part in a research experiment on programming neural-network weights by hand.
+
+Your task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/transfer/net0
+
+Start by reading TASK.md in that folder, then follow it exactly. In particular:
+- Read only files inside the pack.
+- Write only to its work/ subfolder.
+- Do not run any simulator. You get one shot.
+- Do not fit weights to data with any optimiser.
+- Keep W2, b2, W3 and b3 exactly equal to the source network's.
+- Use the Python interpreter that TASK.md names.
+
+When you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:
+- how you mapped L2W's inputs onto the L2 network and why;
+- the checks you ran;
+- the trainability numbers;
+- your test predictions.

@@ -1,0 +1,255 @@
+{
+ "results": {
+  "A": [
+   {
+    "check": "all Python files compile",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "all 23 wsp modules import from the copy alone (no PYTHONPATH)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no code refers to a path on the machine the study ran on (except the recorded-path map in wsp/paths.py)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "every recorded policy file resolves to a shipped file (394 references)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "every agent evaluation log equals its out-of-folder copy (30 logs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "every launch prompt equals the prompt archived with its run (54 runs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "archived transcript audits: right model, exact prompt, no messages after launch, simulator calls within budget and matching the mirror log (54 runs)",
+    "ok": true,
+    "detail": ""
+   }
+  ],
+  "B": [
+   {
+    "check": "the SUMO networks of L2 and L2W rebuild identically (10 files; net.net.xml compared after netconvert's header comment, which records the build date and file paths)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "route files of all 222 study episodes (test, dev, val, recorded, cost; L2 and L2W) regenerate with the hashes of the files used in the study",
+    "ok": true,
+    "detail": ""
+   }
+  ],
+  "C": [
+   {
+    "check": "287 stored evaluations (8670 episodes) re-run from scratch with identical TTS, delay, unserved and served vehicles (tolerance 1e-9; 261 s)",
+    "ok": true,
+    "detail": ""
+   }
+  ],
+  "_counts": {
+   "episodes": 8670,
+   "evaluations": 287
+  },
+  "D": [
+   {
+    "check": "`python -m wsp.analysis` runs",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "`python -m wsp.analysis --cap 3600` runs",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "`python -m wsp.secondary` runs",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "`python -m wsp.figures` runs",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "results/paper_numbers.json regenerates identically",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "results/paper_numbers_cap3600.json regenerates identically",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "results/secondary.json regenerates identically",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "results/RESULTS.md regenerates identically",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "results/RESULTS_cap3600.md regenerates identically",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "results/SECONDARY.md regenerates identically",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "all 16 paper tables regenerate identically",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "all 10 figures regenerate (identical text content)",
+    "ok": true,
+    "detail": ""
+   }
+  ],
+  "E": [
+   {
+    "check": "L2/ppo_s100: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 130 training episodes' returns and lengths",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "L2/init_r1_s400: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 134 training episodes' returns and lengths",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "L2W/transfer_net0_s500: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 132 training episodes' returns and lengths",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "L2/ft_net0_s600: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 133 training episodes' returns and lengths",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "L2_rules/ppo_s300: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 132 training episodes' returns and lengths",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "L2_fault/ft_net0_s800: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 132 training episodes' returns and lengths",
+    "ok": true,
+    "detail": ""
+   }
+  ],
+  "F": [
+   {
+    "check": "tuning of fixed-time (270 plans) and actuated control (180 settings) on L2 reproduces results/tuned/L2.json",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "(1+1)-ES on L2 (Net 0, sigma0 0.3, seed 0): all 10 development evaluations, the accepted steps and the submitted network reproduce",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "(1+1)-ES on L2_fault (Net 0, sigma0 0.3, seed 0): all 10 development evaluations, the accepted steps and the submitted network reproduce",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "baseline `meanimp` regenerates its 3 outputs identically",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "baseline `pad` regenerates its 3 outputs identically",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "baseline `cart` regenerates its 9 outputs identically",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "DAgger distillation of Net 0 (3 depths x 6 iterations with simulator rollouts) regenerates the same selected rule files",
+    "ok": true,
+    "detail": ""
+   }
+  ],
+  "G": [
+   {
+    "check": "all 54 agent task folders rebuild identically from the generator (303 files; pack ids, the Python interpreter path and the evaluator's pipeline path excepted)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "all 54 agent deliverables re-score identically (edit size, cap, trainability, comparisons, fidelity, predictions)",
+    "ok": true,
+    "detail": ""
+   }
+  ]
+ },
+ "log": [
+  "[20:04:12] copying the repository to /tmp/wsp_audit_8foahkcz/repo",
+  "[20:04:13] === stage A",
+  "[20:04:13] A PASS  all Python files compile",
+  "[20:04:14] A PASS  all 23 wsp modules import from the copy alone (no PYTHONPATH)",
+  "[20:04:14] A PASS  no code refers to a path on the machine the study ran on (except the recorded-path map in wsp/paths.py)",
+  "[20:04:14] A PASS  every recorded policy file resolves to a shipped file (394 references)",
+  "[20:04:14] A PASS  every agent evaluation log equals its out-of-folder copy (30 logs)",
+  "[20:04:14] A PASS  every launch prompt equals the prompt archived with its run (54 runs)",
+  "[20:04:14] A PASS  archived transcript audits: right model, exact prompt, no messages after launch, simulator calls within budget and matching the mirror log (54 runs)",
+  "[20:04:14] === stage B",
+  "[20:04:14] B PASS  the SUMO networks of L2 and L2W rebuild identically (10 files; net.net.xml compared after netconvert's header comment, which records the build date and file paths)",
+  "[20:04:14] B PASS  route files of all 222 study episodes (test, dev, val, recorded, cost; L2 and L2W) regenerate with the hashes of the files used in the study",
+  "[20:04:14] === stage C",
+  "[20:08:35] C PASS  287 stored evaluations (8670 episodes) re-run from scratch with identical TTS, delay, unserved and served vehicles (tolerance 1e-9; 261 s)",
+  "[20:08:35] === stage D",
+  "[20:08:40] D PASS  `python -m wsp.analysis` runs",
+  "[20:08:45] D PASS  `python -m wsp.analysis --cap 3600` runs",
+  "[20:08:46] D PASS  `python -m wsp.secondary` runs",
+  "[20:08:49] D PASS  `python -m wsp.figures` runs",
+  "[20:08:49] D PASS  results/paper_numbers.json regenerates identically",
+  "[20:08:49] D PASS  results/paper_numbers_cap3600.json regenerates identically",
+  "[20:08:49] D PASS  results/secondary.json regenerates identically",
+  "[20:08:49] D PASS  results/RESULTS.md regenerates identically",
+  "[20:08:49] D PASS  results/RESULTS_cap3600.md regenerates identically",
+  "[20:08:49] D PASS  results/SECONDARY.md regenerates identically",
+  "[20:08:49] D PASS  all 16 paper tables regenerate identically",
+  "[20:08:49] D PASS  all 10 figures regenerate (identical text content)",
+  "[20:08:49] === stage E",
+  "[20:10:05] E PASS  L2/ppo_s100: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 130 training episodes' returns and lengths",
+  "[20:10:05] E PASS  L2/init_r1_s400: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 134 training episodes' returns and lengths",
+  "[20:10:08] E PASS  L2W/transfer_net0_s500: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 132 training episodes' returns and lengths",
+  "[20:10:08] E PASS  L2/ft_net0_s600: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 133 training episodes' returns and lengths",
+  "[20:10:08] E PASS  L2_rules/ppo_s300: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 132 training episodes' returns and lengths",
+  "[20:10:08] E PASS  L2_fault/ft_net0_s800: 100k-step retraining reproduces the shipped checkpoint parameter for parameter (12 tensors) and the first 132 training episodes' returns and lengths",
+  "[20:10:08] === stage F",
+  "[20:12:10] F PASS  tuning of fixed-time (270 plans) and actuated control (180 settings) on L2 reproduces results/tuned/L2.json",
+  "[20:12:20] F PASS  (1+1)-ES on L2 (Net 0, sigma0 0.3, seed 0): all 10 development evaluations, the accepted steps and the submitted network reproduce",
+  "[20:12:31] F PASS  (1+1)-ES on L2_fault (Net 0, sigma0 0.3, seed 0): all 10 development evaluations, the accepted steps and the submitted network reproduce",
+  "[20:12:35] F PASS  baseline `meanimp` regenerates its 3 outputs identically",
+  "[20:12:36] F PASS  baseline `pad` regenerates its 3 outputs identically",
+  "[20:12:38] F PASS  baseline `cart` regenerates its 9 outputs identically",
+  "[20:13:01] F PASS  DAgger distillation of Net 0 (3 depths x 6 iterations with simulator rollouts) regenerates the same selected rule files",
+  "[20:13:01] === stage G",
+  "[20:15:04] G PASS  all 54 agent task folders rebuild identically from the generator (303 files; pack ids, the Python interpreter path and the evaluator's pipeline path excepted)",
+  "[20:15:09] G PASS  all 54 agent deliverables re-score identically (edit size, cap, trainability, comparisons, fidelity, predictions)",
+  "[20:15:09] manifest of 3617 files written to audit/MANIFEST.sha256"
+ ]
+}

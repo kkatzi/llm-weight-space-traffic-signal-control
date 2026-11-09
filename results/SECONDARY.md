@@ -1,0 +1,293 @@
+# v3 secondary results
+
+## Truncation (best dev candidate after k calls, on test)
+
+- patch/net0_b5 (vs ppo_s100; 1/5 calls; submitted +0.2 %, best dev call 1, submitted = call [1]): k=1: c1 +0.2 %
+- patch/net1_b5 (vs ppo_s101; 4/5 calls; submitted -0.0 %, best dev call 2, submitted = call [2]): k=1: c1 -0.4 % | k=2: c2 -0.0 % | k=3: c2 -0.0 % | k=4: c2 -0.0 %
+- patch/net2_b5 (vs ppo_s102; 3/5 calls; submitted +0.1 %, best dev call 2, submitted = call [2]): k=1: c1 +0.3 % | k=2: c2 +0.1 % | k=3: c2 +0.1 %
+- patch/net0_b10 (vs ppo_s100; 3/10 calls; submitted -0.8 %, best dev call 2, submitted = call [2, 3]): k=1: c1 +0.0 % | k=2: c2 -0.8 % | k=3: c2 -0.8 %
+- patch/net1_b10 (vs ppo_s101; 5/10 calls; submitted -0.2 %, best dev call 4, submitted = call [5]): k=1: c1 +3.5 % | k=2: c2 +0.2 % | k=3: c3 -0.1 % | k=4: c4 +0.0 % | k=5: c4 +0.0 %
+- patch/net2_b10 (vs ppo_s102; 6/10 calls; submitted -0.1 %, best dev call 3, submitted = call [5]): k=1: c1 +0.4 % | k=2: c1 +0.4 % | k=3: c3 +17.5 % | k=4: c3 +17.5 % | k=5: c3 +17.5 % | k=6: c3 +17.5 %
+- patch_fault/net0_b5 (vs faulty_net0; 5/5 calls; submitted -6.3 %, best dev call 4, submitted = call [4]): k=1: c1 -6.2 % (91 %) | k=2: c2 -6.1 % (90 %) | k=3: c3 -6.6 % (98 %) | k=4: c4 -6.3 % (94 %) | k=5: c4 -6.3 % (94 %)
+- patch_fault/net1_b5 (vs faulty_net1; 3/5 calls; submitted -81.4 %, best dev call 2, submitted = call [2]): k=1: c1 -81.3 % (100 %) | k=2: c2 -81.4 % (100 %) | k=3: c2 -81.4 % (100 %)
+- patch_fault/net2_b5 (vs faulty_net2; 3/5 calls; submitted -4.9 %, best dev call 3, submitted = call [2]): k=1: c1 -3.5 % (62 %) | k=2: c2 -4.9 % (86 %) | k=3: c3 -4.2 % (74 %)
+- patch_fault/net0_b10 (vs faulty_net0; 7/10 calls; submitted -6.4 %, best dev call 7, submitted = call [4]): k=1: c1 -6.0 % (88 %) | k=2: c1 -6.0 % (88 %) | k=3: c3 -6.1 % (90 %) | k=4: c4 -6.4 % (94 %) | k=5: c4 -6.4 % (94 %) | k=6: c4 -6.4 % (94 %) | k=7: c7 -6.2 % (91 %)
+- patch_fault/net1_b10 (vs faulty_net1; 2/10 calls; submitted -81.4 %, best dev call 2, submitted = call [2]): k=1: c1 -81.3 % (100 %) | k=2: c2 -81.4 % (100 %)
+- patch_fault/net2_b10 (vs faulty_net2; 6/10 calls; submitted -4.5 %, best dev call 6, submitted = call [2]): k=1: c1 +0.0 % (0 %) | k=2: c2 -4.5 % (78 %) | k=3: c2 -4.5 % (78 %) | k=4: c2 -4.5 % (78 %) | k=5: c2 -4.5 % (78 %) | k=6: c6 -4.4 % (78 %)
+- constrain/net0_b10 (vs naive_net0; 5/10 calls; submitted -1.2 %, best dev call 3, submitted = call [5]): k=1: c1 n/a | k=2: c1 n/a | k=3: c3 -0.9 % | k=4: c3 -0.9 % | k=5: c3 -0.9 %
+- constrain/net1_b10 (vs naive_net1; 3/10 calls; submitted +0.2 %, best dev call 2, submitted = call [3]): k=1: c1 n/a | k=2: c2 n/a | k=3: c2 n/a
+- constrain/net2_b10 (vs naive_net2; 5/10 calls; submitted +0.0 %, best dev call 1, submitted = call [5]): k=1: c1 n/a | k=2: c1 n/a | k=3: c1 n/a | k=4: c1 n/a | k=5: c1 n/a
+
+## Edits (parameters changed per layer)
+
+- patch/net0_b0: 368 | W1 24 (4 rows), b1 4, W2 256 (64 rows), b2 64, W3 16 (4 rows), b3 4
+- patch/net0_b5: 252 | W1 160 (4 rows), b1 4, W2 4 (4 rows), b2 64, W3 16 (4 rows), b3 4
+- patch/net0_b10: 212 | W1 184 (4 rows), b1 4, W2 4 (4 rows), W3 16 (4 rows), b3 4
+- patch/net1_b0: 371 | W1 138 (3 rows), b1 3, W2 192 (3 rows), b2 22, W3 12 (4 rows), b3 4
+- patch/net1_b5: 112 | W1 24 (4 rows), b1 4, W2 4 (4 rows), b2 60, W3 16 (4 rows), b3 4
+- patch/net1_b10: 110 | W1 4 (2 rows), b1 2, W2 40 (30 rows), b2 64
+- patch/net2_b0: 298 | W1 92 (2 rows), b1 2, W2 128 (64 rows), b2 64, W3 8 (4 rows), b3 4
+- patch/net2_b5: 271 | W1 126 (5 rows), b1 5, W2 68 (64 rows), b2 64, W3 4 (4 rows), b3 4
+- patch/net2_b10: 352 | W1 352 (64 rows)
+- patch_fault/net0_b0: 345 | W1 144 (64 rows), b1 2, W2 190 (64 rows), b2 1, W3 4 (4 rows), b3 4
+- patch_fault/net0_b5: 320 | W1 256 (64 rows), b1 64
+- patch_fault/net0_b10: 299 | W1 170 (64 rows), b1 1, W2 64 (64 rows), b2 64
+- patch_fault/net1_b0: 304 | W1 188 (64 rows), b1 8, W2 8 (8 rows), b2 64, W3 32 (4 rows), b3 4
+- patch_fault/net1_b5: 292 | W1 216 (64 rows), b1 2, W2 2 (1 rows), b2 64, W3 4 (4 rows), b3 4
+- patch_fault/net1_b10: 320 | W1 320 (64 rows)
+- patch_fault/net2_b0: 128 | W1 128 (64 rows)
+- patch_fault/net2_b5: 364 | W1 172 (64 rows), b1 64, W2 64 (64 rows), b2 64
+- patch_fault/net2_b10: 292 | W1 212 (64 rows), b1 4, W2 4 (4 rows), b2 64, W3 4 (4 rows), b3 4
+- patch_models/net0_sonnet: 2 | b3 2
+- patch_models/net0_haiku: 256 | W3 256 (4 rows)
+- patch_models/net0_fable: 246 | W1 46 (1 rows), b1 1, W2 127 (64 rows), b2 64, W3 4 (4 rows), b3 4
+- patch_models/net1_sonnet: 1 | b3 1
+- patch_models/net1_haiku: 0 | 
+- patch_models/net1_fable: 2 | b3 2
+- patch_models/net2_sonnet: 2 | b3 2
+- patch_models/net2_haiku: 348 | W1 138 (3 rows), b1 3, W2 192 (3 rows), b2 3, W3 12 (4 rows)
+- patch_models/net2_fable: 371 | W1 138 (3 rows), b1 3, W2 192 (3 rows), b2 22, W3 12 (4 rows), b3 4
+
+## Agent cost (mean [min, max] per run)
+
+- init (n=3): 17 min [14, 19], 99k output tokens, $3.74, 33 tool calls, 0.0 simulator calls
+- patch/b0 (n=3): 17 min [12, 25], 92k output tokens, $3.87, 34 tool calls, 0.0 simulator calls
+- patch/b10 (n=3): 21 min [12, 31], 120k output tokens, $4.87, 38 tool calls, 4.7 simulator calls
+- patch/b5 (n=3): 20 min [14, 30], 115k output tokens, $4.75, 39 tool calls, 2.7 simulator calls
+- patch_models/fable (n=3): 12 min [10, 17], 46k output tokens, $4.50, 29 tool calls, 6.3 simulator calls
+- patch_models/haiku (n=3): 3 min [2, 4], 25k output tokens, $0.03, 17 tool calls, 2.7 simulator calls
+- patch_models/sonnet (n=3): 1 min [1, 1], 4k output tokens, $0.17, 8 tool calls, 3.7 simulator calls
+- transfer (n=3): 8 min [6, 13], 51k output tokens, $2.10, 23 tool calls, 0.0 simulator calls
+- explain (n=3): 25 min [20, 29], 146k output tokens, $7.08, 81 tool calls, 0.0 simulator calls
+- constrain/b0 (n=3): 12 min [11, 13], 69k output tokens, $2.60, 25 tool calls, 0.0 simulator calls
+- constrain/b10 (n=3): 18 min [15, 21], 101k output tokens, $3.83, 39 tool calls, 4.3 simulator calls
+- patch_fault/b0 (n=3): 14 min [6, 18], 73k output tokens, $2.99, 24 tool calls, 0.0 simulator calls
+- patch_fault/b0_r2 (n=3): 13 min [10, 17], 75k output tokens, $3.18, 32 tool calls, 0.0 simulator calls
+- patch_fault/b0_r3 (n=3): 12 min [8, 19], 69k output tokens, $2.98, 34 tool calls, 0.0 simulator calls
+- patch_fault/b10 (n=3): 15 min [12, 16], 76k output tokens, $3.19, 32 tool calls, 5.0 simulator calls
+- patch_fault/b10_r2 (n=3): 17 min [14, 20], 97k output tokens, $4.13, 45 tool calls, 5.3 simulator calls
+- patch_fault/b10_r3 (n=3): 16 min [15, 17], 86k output tokens, $3.74, 39 tool calls, 6.0 simulator calls
+- patch_fault/b5 (n=3): 16 min [13, 18], 86k output tokens, $3.55, 36 tool calls, 3.7 simulator calls
+- total: 54 runs, $183.89, 771 active min
+
+## Constrain supervisors on test
+
+- net0_b0: departs from best legal phase 0.1 % of steps with a choice; network's own choice illegal 67.6 %; supervisor illegal 67.6 %
+- net0_b10: departs from best legal phase 8.3 % of steps with a choice; network's own choice illegal 66.7 %; supervisor illegal 0.0 %
+- net1_b0: departs from best legal phase 3.2 % of steps with a choice; network's own choice illegal 64.2 %; supervisor illegal 0.0 %
+- net1_b10: departs from best legal phase 1.4 % of steps with a choice; network's own choice illegal 64.3 %; supervisor illegal 0.0 %
+- net2_b0: departs from best legal phase 0.4 % of steps with a choice; network's own choice illegal 60.9 %; supervisor illegal 0.0 %
+- net2_b10: departs from best legal phase 0.0 % of steps with a choice; network's own choice illegal 61.1 %; supervisor illegal 61.1 %
+
+## Unserved vehicles at the 30-min cap (test; nonzero only)
+
+- L2/cand_patch_net0_b10_d5153903bbba: 12 vehicles in 8/30 episodes (max 2)
+- L2/cand_patch_net1_b10_31bc7b434ebf: 5 vehicles in 3/30 episodes (max 2)
+- L2/cand_patch_net1_b10_f237b1b97332: 1 vehicles in 1/30 episodes (max 1)
+- L2/cand_patch_net1_b5_678384e3c86f: 3 vehicles in 2/30 episodes (max 2)
+- L2/cand_patch_net2_b10_19f48874561d: 375 vehicles in 4/30 episodes (max 369)
+- L2/cand_patch_net2_b10_74333e25acc0: 8 vehicles in 3/30 episodes (max 4)
+- L2/cand_patch_net2_b5_e931eac29cfd: 2 vehicles in 2/30 episodes (max 1)
+- L2/cart_net0_full: 23 vehicles in 14/30 episodes (max 6)
+- L2/cart_net0_mid: 107 vehicles in 25/30 episodes (max 10)
+- L2/cart_net0_small: 142 vehicles in 24/30 episodes (max 17)
+- L2/cart_net1_full: 34 vehicles in 15/30 episodes (max 5)
+- L2/cart_net1_mid: 43 vehicles in 20/30 episodes (max 4)
+- L2/cart_net1_small: 107 vehicles in 21/30 episodes (max 29)
+- L2/cart_net2_full: 41 vehicles in 12/30 episodes (max 14)
+- L2/cart_net2_mid: 82 vehicles in 21/30 episodes (max 9)
+- L2/cart_net2_small: 6990 vehicles in 24/30 episodes (max 1367)
+- L2/dagger_net0_full: 26 vehicles in 19/30 episodes (max 3)
+- L2/dagger_net0_mid: 31 vehicles in 15/30 episodes (max 8)
+- L2/dagger_net0_small: 142 vehicles in 24/30 episodes (max 17)
+- L2/dagger_net1_full: 6 vehicles in 5/30 episodes (max 2)
+- L2/dagger_net1_mid: 30 vehicles in 15/30 episodes (max 7)
+- L2/dagger_net1_small: 111 vehicles in 27/30 episodes (max 12)
+- L2/dagger_net2_full: 12 vehicles in 5/30 episodes (max 4)
+- L2/dagger_net2_mid: 13 vehicles in 5/30 episodes (max 4)
+- L2/dagger_net2_small: 76 vehicles in 15/30 episodes (max 22)
+- L2/es_net0_seed0: 5 vehicles in 4/30 episodes (max 2)
+- L2/es_net0_seed1: 7 vehicles in 5/30 episodes (max 2)
+- L2/es_net1_seed0: 7 vehicles in 3/30 episodes (max 4)
+- L2/es_net1_seed1: 4 vehicles in 2/30 episodes (max 3)
+- L2/es_net2_seed0: 2 vehicles in 2/30 episodes (max 1)
+- L2/es_net2_seed1: 1 vehicles in 1/30 episodes (max 1)
+- L2/explain_net0_full: 11 vehicles in 9/30 episodes (max 2)
+- L2/explain_net0_small: 21 vehicles in 13/30 episodes (max 4)
+- L2/explain_net1_full: 9 vehicles in 8/30 episodes (max 2)
+- L2/explain_net1_small: 16 vehicles in 10/30 episodes (max 3)
+- L2/ft_net0_s600_1000k: 11 vehicles in 11/30 episodes (max 1)
+- L2/ft_net0_s600_300k: 9 vehicles in 8/30 episodes (max 2)
+- L2/ft_net1_s601_1000k: 1 vehicles in 1/30 episodes (max 1)
+- L2/ft_net1_s601_300k: 9 vehicles in 9/30 episodes (max 1)
+- L2/ft_net2_s602_1000k: 7 vehicles in 6/30 episodes (max 2)
+- L2/ft_net2_s602_300k: 7 vehicles in 6/30 episodes (max 2)
+- L2/init_r1_s400: 20 vehicles in 11/30 episodes (max 4)
+- L2/init_r1_s401: 4 vehicles in 4/30 episodes (max 1)
+- L2/init_r2: 26 vehicles in 20/30 episodes (max 3)
+- L2/init_r2_s400: 25 vehicles in 12/30 episodes (max 4)
+- L2/init_r2_s401: 11 vehicles in 10/30 episodes (max 2)
+- L2/init_r3_s400: 32 vehicles in 14/30 episodes (max 5)
+- L2/init_r3_s401: 16 vehicles in 15/30 episodes (max 2)
+- L2/patch_net2_b0: 1 vehicles in 1/30 episodes (max 1)
+- L2/patch_net2_b10: 6 vehicles in 3/30 episodes (max 4)
+- L2/patchm_net0_haiku: 4 vehicles in 4/30 episodes (max 1)
+- L2/patchm_net0_sonnet: 10 vehicles in 8/30 episodes (max 2)
+- L2/patchm_net1_sonnet: 10 vehicles in 7/30 episodes (max 2)
+- L2/patchm_net2_sonnet: 4 vehicles in 4/30 episodes (max 1)
+- L2/ppo_s100: 12 vehicles in 8/30 episodes (max 2)
+- L2/ppo_s102: 1 vehicles in 1/30 episodes (max 1)
+- L2/ppo_s103: 6 vehicles in 6/30 episodes (max 1)
+- L2/wrapper_net0: 12 vehicles in 8/30 episodes (max 2)
+- L2/wrapper_net2: 1 vehicles in 1/30 episodes (max 1)
+- L2W/pad_net0: 71701 vehicles in 30/30 episodes (max 3183)
+- L2W/pad_net1: 42388 vehicles in 30/30 episodes (max 1704)
+- L2W/pad_net2: 25095 vehicles in 30/30 episodes (max 1007)
+- L2W/ppo_s200: 1 vehicles in 1/30 episodes (max 1)
+- L2W/ppo_s201: 35 vehicles in 18/30 episodes (max 5)
+- L2W/ppo_s202: 19 vehicles in 10/30 episodes (max 4)
+- L2W/ppo_s203: 9 vehicles in 6/30 episodes (max 3)
+- L2W/ppo_s203_r1: 7 vehicles in 5/30 episodes (max 3)
+- L2W/ppo_s204: 14 vehicles in 10/30 episodes (max 3)
+- L2W/transfer_net0_s501: 3 vehicles in 2/30 episodes (max 2)
+- L2W/transfer_net1: 1 vehicles in 1/30 episodes (max 1)
+- L2W/transfer_net1_s500: 7 vehicles in 6/30 episodes (max 2)
+- L2W/transfer_net1_s501: 3 vehicles in 3/30 episodes (max 1)
+- L2W/transfer_net2: 11 vehicles in 3/30 episodes (max 7)
+- L2W/transfer_net2_s500: 16 vehicles in 12/30 episodes (max 3)
+- L2W/transfer_net2_s501: 7 vehicles in 4/30 episodes (max 4)
+- L2_fault/actuated: 14 vehicles in 8/30 episodes (max 3)
+- L2_fault/cand_patch_fault_net0_b10_9c814c7d35a1: 13 vehicles in 9/30 episodes (max 3)
+- L2_fault/cand_patch_fault_net0_b5_21973ad30f2d: 11 vehicles in 8/30 episodes (max 2)
+- L2_fault/cand_patch_fault_net0_b5_24eee975aa46: 17 vehicles in 10/30 episodes (max 2)
+- L2_fault/cand_patch_fault_net1_b10_5cce06a0fb4e: 4 vehicles in 4/30 episodes (max 1)
+- L2_fault/cand_patch_fault_net1_b5_0997919b6654: 1 vehicles in 1/30 episodes (max 1)
+- L2_fault/cand_patch_fault_net1_b5_5cce06a0fb4e: 4 vehicles in 4/30 episodes (max 1)
+- L2_fault/cand_patch_fault_net2_b10_bdc417652811: 15 vehicles in 8/30 episodes (max 6)
+- L2_fault/cand_patch_fault_net2_b5_edb21760288c: 15 vehicles in 9/30 episodes (max 4)
+- L2_fault/es_fault_net0_seed0: 23 vehicles in 8/30 episodes (max 6)
+- L2_fault/es_fault_net0_seed1: 24 vehicles in 13/30 episodes (max 7)
+- L2_fault/es_fault_net1_seed0: 18 vehicles in 8/30 episodes (max 7)
+- L2_fault/es_fault_net1_seed1: 17 vehicles in 10/30 episodes (max 3)
+- L2_fault/es_fault_net2_seed0: 18 vehicles in 11/30 episodes (max 4)
+- L2_fault/es_fault_net2_seed1: 18 vehicles in 11/30 episodes (max 3)
+- L2_fault/faulty_net0: 24 vehicles in 12/30 episodes (max 4)
+- L2_fault/faulty_net1: 8044 vehicles in 15/30 episodes (max 1170)
+- L2_fault/faulty_net2: 15 vehicles in 8/30 episodes (max 6)
+- L2_fault/ft_net0_s800_1000k: 5 vehicles in 4/30 episodes (max 2)
+- L2_fault/ft_net0_s800_300k: 17 vehicles in 10/30 episodes (max 3)
+- L2_fault/ft_net1_s801_1000k: 8 vehicles in 5/30 episodes (max 3)
+- L2_fault/ft_net1_s801_300k: 13 vehicles in 7/30 episodes (max 3)
+- L2_fault/ft_net2_s802_1000k: 12 vehicles in 7/30 episodes (max 4)
+- L2_fault/ft_net2_s802_300k: 23 vehicles in 11/30 episodes (max 6)
+- L2_fault/meanimp_net0: 24 vehicles in 15/30 episodes (max 2)
+- L2_fault/meanimp_net1: 1959 vehicles in 8/30 episodes (max 765)
+- L2_fault/meanimp_net2: 15 vehicles in 5/30 episodes (max 7)
+- L2_fault/patchf_net0_b0: 14 vehicles in 7/30 episodes (max 4)
+- L2_fault/patchf_net0_b0_r2: 5 vehicles in 4/30 episodes (max 2)
+- L2_fault/patchf_net0_b0_r3: 27 vehicles in 15/30 episodes (max 4)
+- L2_fault/patchf_net0_b10_r2: 985 vehicles in 1/30 episodes (max 985)
+- L2_fault/patchf_net1_b0_r3: 4 vehicles in 4/30 episodes (max 1)
+- L2_fault/patchf_net1_b5: 1 vehicles in 1/30 episodes (max 1)
+- L2_fault/patchf_net2_b0: 15 vehicles in 9/30 episodes (max 4)
+- L2_fault/patchf_net2_b0_r2: 12 vehicles in 7/30 episodes (max 3)
+- L2_fault/patchf_net2_b10_r2: 14 vehicles in 5/30 episodes (max 3)
+
+## Cap check (3600 s)
+
+- L2/cart_net0_full: TTS 47.22 -> 47.61; unserved 23 -> 23
+- L2/cart_net0_mid: TTS 49.91 -> 51.70; unserved 107 -> 107
+- L2/cart_net0_small: TTS 53.31 -> 55.67; unserved 142 -> 142
+- L2/cart_net1_full: TTS 47.04 -> 47.61; unserved 34 -> 34
+- L2/cart_net1_mid: TTS 48.46 -> 49.18; unserved 43 -> 43
+- L2/cart_net1_small: TTS 53.04 -> 54.83; unserved 107 -> 107
+- L2/cart_net2_full: TTS 46.41 -> 47.10; unserved 41 -> 41
+- L2/cart_net2_mid: TTS 47.94 -> 49.31; unserved 82 -> 82
+- L2/cart_net2_small: TTS 239.13 -> 355.63; unserved 6990 -> 6990
+- L2/dagger_net0_full: TTS 46.34 -> 46.78; unserved 26 -> 26
+- L2/dagger_net0_mid: TTS 47.78 -> 48.30; unserved 31 -> 31
+- L2/dagger_net0_small: TTS 53.31 -> 55.67; unserved 142 -> 142
+- L2/dagger_net1_full: TTS 46.19 -> 46.29; unserved 6 -> 6
+- L2/dagger_net1_mid: TTS 47.97 -> 48.47; unserved 30 -> 30
+- L2/dagger_net1_small: TTS 50.86 -> 52.71; unserved 111 -> 111
+- L2/dagger_net2_full: TTS 45.88 -> 46.08; unserved 12 -> 12
+- L2/dagger_net2_mid: TTS 46.98 -> 47.19; unserved 13 -> 13
+- L2/dagger_net2_small: TTS 50.34 -> 51.61; unserved 76 -> 76
+- L2/es_net0_seed0: TTS 44.84 -> 44.92; unserved 5 -> 5
+- L2/es_net0_seed1: TTS 45.00 -> 45.12; unserved 7 -> 7
+- L2/es_net1_seed0: TTS 45.01 -> 45.13; unserved 7 -> 7
+- L2/es_net1_seed1: TTS 44.63 -> 44.70; unserved 4 -> 4
+- L2/es_net2_seed0: TTS 44.84 -> 44.87; unserved 2 -> 2
+- L2/es_net2_seed1: TTS 44.60 -> 44.62; unserved 1 -> 1
+- L2/explain_net0_full: TTS 45.10 -> 45.28; unserved 11 -> 11
+- L2/explain_net0_small: TTS 45.53 -> 45.88; unserved 21 -> 21
+- L2/explain_net1_full: TTS 44.81 -> 44.96; unserved 9 -> 9
+- L2/explain_net1_small: TTS 45.05 -> 45.32; unserved 16 -> 16
+- L2/ft_net0_s600_1000k: TTS 45.07 -> 45.25; unserved 11 -> 11
+- L2/ft_net0_s600_300k: TTS 44.94 -> 45.09; unserved 9 -> 9
+- L2/ft_net1_s601_1000k: TTS 44.56 -> 44.57; unserved 1 -> 1
+- L2/ft_net1_s601_300k: TTS 44.62 -> 44.77; unserved 9 -> 9
+- L2/ft_net2_s602_1000k: TTS 44.55 -> 44.67; unserved 7 -> 7
+- L2/ft_net2_s602_300k: TTS 44.90 -> 45.02; unserved 7 -> 7
+- L2/init_r1_s400: TTS 45.08 -> 45.41; unserved 20 -> 20
+- L2/init_r1_s401: TTS 44.70 -> 44.77; unserved 4 -> 4
+- L2/init_r2: TTS 47.68 -> 48.12; unserved 26 -> 26
+- L2/init_r2_s400: TTS 45.45 -> 45.87; unserved 25 -> 25
+- L2/init_r2_s401: TTS 44.93 -> 45.11; unserved 11 -> 11
+- L2/init_r3_s400: TTS 45.15 -> 45.68; unserved 32 -> 32
+- L2/init_r3_s401: TTS 45.00 -> 45.27; unserved 16 -> 16
+- L2/patch_net2_b0: TTS 44.77 -> 44.78; unserved 1 -> 1
+- L2/patch_net2_b10: TTS 44.52 -> 44.62; unserved 6 -> 6
+- L2/patchm_net0_haiku: TTS 44.90 -> 44.97; unserved 4 -> 4
+- L2/patchm_net0_sonnet: TTS 44.94 -> 45.11; unserved 10 -> 10
+- L2/patchm_net1_sonnet: TTS 44.84 -> 45.01; unserved 10 -> 10
+- L2/patchm_net2_sonnet: TTS 44.94 -> 45.01; unserved 4 -> 4
+- L2/ppo_s100: TTS 45.02 -> 45.22; unserved 12 -> 12
+- L2/ppo_s102: TTS 44.56 -> 44.58; unserved 1 -> 1
+- L2/ppo_s103: TTS 44.92 -> 45.02; unserved 6 -> 6
+- L2/wrapper_net0: TTS 45.02 -> 45.22; unserved 12 -> 12
+- L2/wrapper_net2: TTS 44.59 -> 44.60; unserved 1 -> 1
+- L2W/pad_net0: TTS 2268.65 -> 3463.67; unserved 71701 -> 71701
+- L2W/pad_net1: TTS 1391.90 -> 2098.36; unserved 42388 -> 42388
+- L2W/pad_net2: TTS 854.25 -> 1272.50; unserved 25095 -> 25095
+- L2W/ppo_s200: TTS 58.73 -> 58.75; unserved 1 -> 1
+- L2W/ppo_s201: TTS 58.18 -> 58.76; unserved 35 -> 35
+- L2W/ppo_s202: TTS 58.52 -> 58.83; unserved 19 -> 19
+- L2W/ppo_s203: TTS 58.15 -> 58.30; unserved 9 -> 9
+- L2W/ppo_s203_r1: TTS 58.23 -> 58.35; unserved 7 -> 7
+- L2W/ppo_s204: TTS 58.55 -> 58.78; unserved 14 -> 14
+- L2W/transfer_net0_s501: TTS 58.44 -> 58.49; unserved 3 -> 3
+- L2W/transfer_net1: TTS 59.50 -> 59.51; unserved 1 -> 1
+- L2W/transfer_net1_s500: TTS 58.15 -> 58.26; unserved 7 -> 7
+- L2W/transfer_net1_s501: TTS 57.79 -> 57.84; unserved 3 -> 3
+- L2W/transfer_net2: TTS 59.88 -> 60.06; unserved 11 -> 11
+- L2W/transfer_net2_s500: TTS 57.93 -> 58.20; unserved 16 -> 16
+- L2W/transfer_net2_s501: TTS 57.89 -> 58.01; unserved 7 -> 7
+- L2_fault/actuated: TTS 49.51 -> 49.74; unserved 14 -> 14
+- L2_fault/es_fault_net0_seed0: TTS 47.82 -> 48.20; unserved 23 -> 23
+- L2_fault/es_fault_net0_seed1: TTS 47.41 -> 47.81; unserved 24 -> 24
+- L2_fault/es_fault_net1_seed0: TTS 47.37 -> 47.67; unserved 18 -> 18
+- L2_fault/es_fault_net1_seed1: TTS 46.57 -> 46.85; unserved 17 -> 17
+- L2_fault/es_fault_net2_seed0: TTS 46.66 -> 46.96; unserved 18 -> 18
+- L2_fault/es_fault_net2_seed1: TTS 46.32 -> 46.62; unserved 18 -> 18
+- L2_fault/faulty_net0: TTS 48.29 -> 48.69; unserved 24 -> 24
+- L2_fault/faulty_net1: TTS 242.20 -> 376.26; unserved 8044 -> 8044
+- L2_fault/faulty_net2: TTS 47.25 -> 47.50; unserved 15 -> 15
+- L2_fault/ft_net0_s800_1000k: TTS 45.09 -> 45.18; unserved 5 -> 5
+- L2_fault/ft_net0_s800_300k: TTS 45.44 -> 45.72; unserved 17 -> 17
+- L2_fault/ft_net1_s801_1000k: TTS 45.03 -> 45.17; unserved 8 -> 8
+- L2_fault/ft_net1_s801_300k: TTS 45.16 -> 45.37; unserved 13 -> 13
+- L2_fault/ft_net2_s802_1000k: TTS 45.15 -> 45.35; unserved 12 -> 12
+- L2_fault/ft_net2_s802_300k: TTS 45.49 -> 45.87; unserved 23 -> 23
+- L2_fault/meanimp_net0: TTS 46.35 -> 46.75; unserved 24 -> 24
+- L2_fault/meanimp_net1: TTS 91.24 -> 123.89; unserved 1959 -> 1959
+- L2_fault/meanimp_net2: TTS 45.66 -> 45.91; unserved 15 -> 15
+- L2_fault/patchf_net0_b0: TTS 45.13 -> 45.36; unserved 14 -> 14
+- L2_fault/patchf_net0_b0_r2: TTS 45.09 -> 45.17; unserved 5 -> 5
+- L2_fault/patchf_net0_b0_r3: TTS 45.39 -> 45.84; unserved 27 -> 27
+- L2_fault/patchf_net0_b10_r2: TTS 67.25 -> 83.66; unserved 985 -> 985
+- L2_fault/patchf_net1_b0_r3: TTS 45.36 -> 45.42; unserved 4 -> 4
+- L2_fault/patchf_net1_b5: TTS 45.02 -> 45.04; unserved 1 -> 1
+- L2_fault/patchf_net2_b0: TTS 45.59 -> 45.84; unserved 15 -> 15
+- L2_fault/patchf_net2_b0_r2: TTS 45.35 -> 45.55; unserved 12 -> 12
+- L2_fault/patchf_net2_b10_r2: TTS 45.11 -> 45.35; unserved 14 -> 14

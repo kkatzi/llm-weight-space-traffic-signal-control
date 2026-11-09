@@ -1,0 +1,134 @@
+[
+ {
+  "pack": "patch/net0_b10",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch/net1_b10",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch/net2_b10",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch/net0_b5",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch/net1_b5",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch/net2_b5",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch/net0_b0",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch/net1_b0",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch/net2_b0",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "init/r1",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "init/r2",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "init/r3",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "transfer/net0",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "transfer/net1",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "transfer/net2",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "explain/net0",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "explain/net1",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "explain/net2",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "constrain/net0_b10",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "constrain/net1_b10",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "constrain/net2_b10",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "constrain/net0_b0",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "constrain/net1_b0",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "constrain/net2_b0",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch_models/net0_sonnet",
+  "model": "claude-sonnet-5-5"
+ },
+ {
+  "pack": "patch_models/net1_sonnet",
+  "model": "claude-sonnet-5-5"
+ },
+ {
+  "pack": "patch_models/net2_sonnet",
+  "model": "claude-sonnet-5-5"
+ },
+ {
+  "pack": "patch_models/net0_haiku",
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "pack": "patch_models/net1_haiku",
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "pack": "patch_models/net2_haiku",
+  "model": "claude-haiku-5-5"
+ },
+ {
+  "pack": "patch_models/net0_fable",
+  "model": "claude-fable-5-1"
+ },
+ {
+  "pack": "patch_models/net1_fable",
+  "model": "claude-fable-5-1"
+ },
+ {
+  "pack": "patch_models/net2_fable",
+  "model": "claude-fable-5-1"
+ }
+]

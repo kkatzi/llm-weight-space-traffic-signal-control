@@ -1,0 +1,1413 @@
+[
+ {
+  "use": "init",
+  "run": "r1",
+  "session_id": "003afb5f-0e88-4213-a642-5d4d7dbc2d09",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 85
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:16.189000+00:00",
+  "active_minutes": 18.9,
+  "tool_calls": {
+   "Bash": 24,
+   "Read": 5,
+   "Write": 8,
+   "Edit": 5
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 114256,
+  "cost_usd": 4.3983463,
+  "turns": 43,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "init",
+  "run": "r2",
+  "session_id": "5b61d429-e7fb-4036-8bcc-ef87f15f3b55",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 49
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:18.193000+00:00",
+  "active_minutes": 13.8,
+  "tool_calls": {
+   "Read": 3,
+   "Bash": 16,
+   "Write": 1
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 80842,
+  "cost_usd": 2.8740648999999996,
+  "turns": 21,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "init",
+  "run": "r3",
+  "session_id": "2969a79a-546c-4ae7-b211-b22803d47179",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 77
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:20.170000+00:00",
+  "active_minutes": 17.4,
+  "tool_calls": {
+   "Read": 3,
+   "Bash": 22,
+   "Write": 7,
+   "Edit": 4
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 102796,
+  "cost_usd": 3.9360833000000004,
+  "turns": 37,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch",
+  "run": "net0_b0",
+  "session_id": "d90cbf09-8814-413a-aea4-d519c39475a5",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 55
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:10.218000+00:00",
+  "active_minutes": 14.6,
+  "tool_calls": {
+   "Bash": 22,
+   "Read": 3,
+   "Write": 1
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 73603,
+  "cost_usd": 2.9639005,
+  "turns": 27,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch",
+  "run": "net0_b10",
+  "session_id": "6fd8a5d4-5018-4c0c-83a2-d6c4183ecda0",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 60
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:15:58.244000+00:00",
+  "active_minutes": 12.2,
+  "tool_calls": {
+   "Bash": 22,
+   "Write": 1
+  },
+  "simulator_calls_logged": 3,
+  "simulator_calls_mirror_log": 3,
+  "simulator_budget": 10,
+  "output_tokens": 69740,
+  "cost_usd": 2.8326797,
+  "turns": 24,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch",
+  "run": "net0_b5",
+  "session_id": "4a5afd98-41a9-4c65-ae25-8d0d541cebeb",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 70
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:04.190000+00:00",
+  "active_minutes": 14.0,
+  "tool_calls": {
+   "Read": 4,
+   "Bash": 24,
+   "Write": 2
+  },
+  "simulator_calls_logged": 1,
+  "simulator_calls_mirror_log": 1,
+  "simulator_budget": 5,
+  "output_tokens": 82252,
+  "cost_usd": 3.2266018,
+  "turns": 31,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch",
+  "run": "net1_b0",
+  "session_id": "685faf89-7f0e-49b8-94aa-32cc04129dbf",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 109
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:12.203000+00:00",
+  "active_minutes": 25.1,
+  "tool_calls": {
+   "Bash": 50,
+   "Write": 2
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 137927,
+  "cost_usd": 6.033985999999998,
+  "turns": 53,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": [
+   "fit_or_search_keyword"
+  ]
+ },
+ {
+  "use": "patch",
+  "run": "net1_b10",
+  "session_id": "e0e7f869-318c-44f2-9a2c-a04384ee5054",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 134
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:00.166000+00:00",
+  "active_minutes": 30.9,
+  "tool_calls": {
+   "Bash": 49,
+   "Write": 1
+  },
+  "simulator_calls_logged": 5,
+  "simulator_calls_mirror_log": 5,
+  "simulator_budget": 10,
+  "output_tokens": 176583,
+  "cost_usd": 6.929445200000001,
+  "turns": 51,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch",
+  "run": "net1_b5",
+  "session_id": "979e9096-a12f-4ba8-98cb-ca7f3a61d979",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 94
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:06.178000+00:00",
+  "active_minutes": 16.0,
+  "tool_calls": {
+   "Bash": 37,
+   "Write": 2
+  },
+  "simulator_calls_logged": 4,
+  "simulator_calls_mirror_log": 4,
+  "simulator_budget": 5,
+  "output_tokens": 90722,
+  "cost_usd": 3.8077781999999987,
+  "turns": 40,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch",
+  "run": "net2_b0",
+  "session_id": "6872f842-8059-4e93-aaab-6e4039e7bd75",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 50
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:14.200000+00:00",
+  "active_minutes": 12.5,
+  "tool_calls": {
+   "Read": 3,
+   "Bash": 20,
+   "Write": 2
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 63923,
+  "cost_usd": 2.6302276000000004,
+  "turns": 26,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch",
+  "run": "net2_b10",
+  "session_id": "0829eb7e-1ed4-4d55-8ced-b916b5a8cd16",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 102
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:02.217000+00:00",
+  "active_minutes": 19.8,
+  "tool_calls": {
+   "Bash": 39,
+   "Write": 1
+  },
+  "simulator_calls_logged": 6,
+  "simulator_calls_mirror_log": 6,
+  "simulator_budget": 10,
+  "output_tokens": 115014,
+  "cost_usd": 4.862263999999999,
+  "turns": 41,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch",
+  "run": "net2_b5",
+  "session_id": "1771ac62-93f7-41cf-ac88-7d3bcbf361ec",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 122
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:16:08.195000+00:00",
+  "active_minutes": 30.1,
+  "tool_calls": {
+   "Bash": 46,
+   "Write": 2
+  },
+  "simulator_calls_logged": 3,
+  "simulator_calls_mirror_log": 3,
+  "simulator_budget": 5,
+  "output_tokens": 171219,
+  "cost_usd": 7.208623300000001,
+  "turns": 49,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_models",
+  "run": "net0_fable",
+  "session_id": "e4f1b9ab-daea-4fb1-975b-bc21ee1b9ca1",
+  "requested_model": "claude-fable-5-1",
+  "models": {
+   "claude-fable-5-1": 55
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:47:08.581000+00:00",
+  "active_minutes": 10.0,
+  "tool_calls": {
+   "Read": 5,
+   "Bash": 18,
+   "Edit": 2,
+   "Write": 2
+  },
+  "simulator_calls_logged": 4,
+  "simulator_calls_mirror_log": 4,
+  "simulator_budget": 10,
+  "output_tokens": 37841,
+  "cost_usd": 4.03864085,
+  "turns": 28,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_models",
+  "run": "net0_haiku",
+  "session_id": "d3e522dd-be19-4490-9947-2396a43f09ca",
+  "requested_model": "claude-haiku-5-5",
+  "models": {
+   "claude-haiku-5-5": 28
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:45:37.599000+00:00",
+  "active_minutes": 2.2,
+  "tool_calls": {
+   "Read": 1,
+   "Bash": 12,
+   "Write": 1
+  },
+  "simulator_calls_logged": 3,
+  "simulator_calls_mirror_log": 3,
+  "simulator_budget": 10,
+  "output_tokens": 14760,
+  "cost_usd": 0.024833800000000003,
+  "turns": 15,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_models",
+  "run": "net0_sonnet",
+  "session_id": "fc901d1c-2c2d-4276-9e1f-377848d4e788",
+  "requested_model": "claude-sonnet-5-5",
+  "models": {
+   "claude-sonnet-5-5": 17
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:41:26.541000+00:00",
+  "active_minutes": 1.3,
+  "tool_calls": {
+   "Read": 1,
+   "Bash": 8
+  },
+  "simulator_calls_logged": 3,
+  "simulator_calls_mirror_log": 3,
+  "simulator_budget": 10,
+  "output_tokens": 4644,
+  "cost_usd": 0.18756499999999998,
+  "turns": 10,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_models",
+  "run": "net1_fable",
+  "session_id": "c69d2470-65f7-426a-bdce-3d03f1c66d9a",
+  "requested_model": "claude-fable-5-1",
+  "models": {
+   "claude-fable-5-1": 62
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:47:50.587000+00:00",
+  "active_minutes": 16.6,
+  "tool_calls": {
+   "Read": 4,
+   "Bash": 24,
+   "Write": 2
+  },
+  "simulator_calls_logged": 7,
+  "simulator_calls_mirror_log": 7,
+  "simulator_budget": 10,
+  "output_tokens": 62161,
+  "cost_usd": 5.5990886,
+  "turns": 31,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_models",
+  "run": "net1_haiku",
+  "session_id": "71155f5c-fbf8-4d3f-a09c-c896613b9cdf",
+  "requested_model": "claude-haiku-5-5",
+  "models": {
+   "claude-haiku-5-5": 32
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:46:24.536000+00:00",
+  "active_minutes": 2.7,
+  "tool_calls": {
+   "Read": 1,
+   "Bash": 15
+  },
+  "simulator_calls_logged": 2,
+  "simulator_calls_mirror_log": 2,
+  "simulator_budget": 10,
+  "output_tokens": 25034,
+  "cost_usd": 0.03451748,
+  "turns": 17,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_models",
+  "run": "net1_sonnet",
+  "session_id": "82cde226-415a-453d-8d3b-919da6dcc1fd",
+  "requested_model": "claude-sonnet-5-5",
+  "models": {
+   "claude-sonnet-5-5": 16
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:42:58.536000+00:00",
+  "active_minutes": 1.2,
+  "tool_calls": {
+   "Read": 1,
+   "Bash": 8
+  },
+  "simulator_calls_logged": 4,
+  "simulator_calls_mirror_log": 4,
+  "simulator_budget": 10,
+  "output_tokens": 4165,
+  "cost_usd": 0.1831866,
+  "turns": 10,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_models",
+  "run": "net2_fable",
+  "session_id": "260898c6-6505-4122-a766-497297548383",
+  "requested_model": "claude-fable-5-1",
+  "models": {
+   "claude-fable-5-1": 61
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:47:57.759000+00:00",
+  "active_minutes": 10.2,
+  "tool_calls": {
+   "Read": 4,
+   "Bash": 18,
+   "Write": 8,
+   "Edit": 1
+  },
+  "simulator_calls_logged": 8,
+  "simulator_calls_mirror_log": 8,
+  "simulator_budget": 10,
+  "output_tokens": 36548,
+  "cost_usd": 3.8483603499999997,
+  "turns": 32,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_models",
+  "run": "net2_haiku",
+  "session_id": "6bdb8b56-a1d5-466d-8a79-575300483b0a",
+  "requested_model": "claude-haiku-5-5",
+  "models": {
+   "claude-haiku-5-5": 38
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:47:01.557000+00:00",
+  "active_minutes": 3.7,
+  "tool_calls": {
+   "Read": 2,
+   "Bash": 15,
+   "Write": 3,
+   "Edit": 1
+  },
+  "simulator_calls_logged": 3,
+  "simulator_calls_mirror_log": 3,
+  "simulator_budget": 10,
+  "output_tokens": 34392,
+  "cost_usd": 0.04617399,
+  "turns": 22,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_models",
+  "run": "net2_sonnet",
+  "session_id": "5cf11196-da3e-42dd-a74c-ecf10cf6bf7b",
+  "requested_model": "claude-sonnet-5-5",
+  "models": {
+   "claude-sonnet-5-5": 15
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:44:20.591000+00:00",
+  "active_minutes": 1.1,
+  "tool_calls": {
+   "Read": 1,
+   "Bash": 6
+  },
+  "simulator_calls_logged": 4,
+  "simulator_calls_mirror_log": 4,
+  "simulator_budget": 10,
+  "output_tokens": 2876,
+  "cost_usd": 0.1534198,
+  "turns": 8,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "transfer",
+  "run": "net0",
+  "session_id": "fad03975-9e9e-4f2d-aaee-c1e618ce0160",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 66
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:28:22.435000+00:00",
+  "active_minutes": 12.9,
+  "tool_calls": {
+   "Bash": 29,
+   "Write": 3
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 76035,
+  "cost_usd": 3.1111211,
+  "turns": 33,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "transfer",
+  "run": "net1",
+  "session_id": "5485fe7a-524d-4316-9aa6-c0c9f6fdd793",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 40
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:28:49.775000+00:00",
+  "active_minutes": 6.8,
+  "tool_calls": {
+   "Read": 3,
+   "Bash": 11,
+   "Write": 4,
+   "Edit": 1
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 42130,
+  "cost_usd": 1.734469,
+  "turns": 20,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "transfer",
+  "run": "net2",
+  "session_id": "c2de16da-7736-45d7-b215-0a3f97a3a014",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 36
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:30:11.458000+00:00",
+  "active_minutes": 5.7,
+  "tool_calls": {
+   "Bash": 12,
+   "Write": 5
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 35989,
+  "cost_usd": 1.4636034000000002,
+  "turns": 18,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "explain",
+  "run": "net0",
+  "session_id": "ef7a505e-1b17-4406-9a73-48c4c08765d3",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 172
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:30:18.293000+00:00",
+  "active_minutes": 29.0,
+  "tool_calls": {
+   "Read": 4,
+   "Bash": 73,
+   "Write": 6,
+   "Edit": 8
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 175069,
+  "cost_usd": 8.433254400000003,
+  "turns": 92,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": [
+   "fit_or_search_keyword"
+  ]
+ },
+ {
+  "use": "explain",
+  "run": "net1",
+  "session_id": "d6359c64-cde0-4e0d-bbb0-721f0f19e9a9",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 166
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:30:55.309000+00:00",
+  "active_minutes": 20.3,
+  "tool_calls": {
+   "Read": 3,
+   "Bash": 68,
+   "Write": 5,
+   "Edit": 2
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 123561,
+  "cost_usd": 6.0891682,
+  "turns": 79,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": [
+   "fit_or_search_keyword"
+  ]
+ },
+ {
+  "use": "explain",
+  "run": "net2",
+  "session_id": "a32e120a-2d55-4598-9b47-6e017306db4a",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 164
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:32:17.353000+00:00",
+  "active_minutes": 24.8,
+  "tool_calls": {
+   "Bash": 64,
+   "Write": 4,
+   "Edit": 4,
+   "Read": 1
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 139523,
+  "cost_usd": 6.7097261999999995,
+  "turns": 74,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": [
+   "fit_or_search_keyword"
+  ]
+ },
+ {
+  "use": "constrain",
+  "run": "net0_b0",
+  "session_id": "ee10e116-1c33-4e43-9ce4-5c07786e8900",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 45
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:36:00.414000+00:00",
+  "active_minutes": 11.7,
+  "tool_calls": {
+   "Read": 3,
+   "Bash": 11,
+   "Write": 10,
+   "Edit": 2
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 69746,
+  "cost_usd": 2.5292277,
+  "turns": 27,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "constrain",
+  "run": "net0_b10",
+  "session_id": "178fa415-b059-49ae-b27d-af99c9b3446c",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 82
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:33:49.451000+00:00",
+  "active_minutes": 18.9,
+  "tool_calls": {
+   "Read": 4,
+   "Bash": 28,
+   "Write": 5
+  },
+  "simulator_calls_logged": 5,
+  "simulator_calls_mirror_log": 5,
+  "simulator_budget": 10,
+  "output_tokens": 103745,
+  "cost_usd": 4.086978999999998,
+  "turns": 38,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "constrain",
+  "run": "net1_b0",
+  "session_id": "9c215f65-6847-498b-90cd-10a689c600f8",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 43
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:36:07.416000+00:00",
+  "active_minutes": 10.9,
+  "tool_calls": {
+   "Read": 3,
+   "Bash": 11,
+   "Write": 10,
+   "Edit": 2
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 64265,
+  "cost_usd": 2.6453292999999998,
+  "turns": 27,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "constrain",
+  "run": "net1_b10",
+  "session_id": "e894b14c-d700-4031-921a-99478f3ca0b6",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 68
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:35:21.691000+00:00",
+  "active_minutes": 15.1,
+  "tool_calls": {
+   "Bash": 21,
+   "Write": 11
+  },
+  "simulator_calls_logged": 3,
+  "simulator_calls_mirror_log": 3,
+  "simulator_budget": 10,
+  "output_tokens": 85120,
+  "cost_usd": 3.1484004999999993,
+  "turns": 33,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "constrain",
+  "run": "net2_b0",
+  "session_id": "61abc483-fc51-4e85-b8b8-fd8766400b6c",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 45
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:41:24.518000+00:00",
+  "active_minutes": 12.8,
+  "tool_calls": {
+   "Read": 3,
+   "Bash": 13,
+   "Write": 4,
+   "Edit": 3
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 73298,
+  "cost_usd": 2.6269660999999997,
+  "turns": 24,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "constrain",
+  "run": "net2_b10",
+  "session_id": "e1349a66-9e44-4090-bb4a-31ef5528d642",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 81
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T15:35:48.453000+00:00",
+  "active_minutes": 20.6,
+  "tool_calls": {
+   "Read": 4,
+   "Bash": 24,
+   "Write": 17,
+   "Edit": 2
+  },
+  "simulator_calls_logged": 5,
+  "simulator_calls_mirror_log": 5,
+  "simulator_budget": 10,
+  "output_tokens": 113981,
+  "cost_usd": 4.2405726999999995,
+  "turns": 48,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net0_b0",
+  "session_id": "c0d6d132-0368-4a62-9641-89717a7fe5d0",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 77
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T16:32:00.602000+00:00",
+  "active_minutes": 17.7,
+  "tool_calls": {
+   "Bash": 27,
+   "Write": 4
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 98980,
+  "cost_usd": 3.8253975000000007,
+  "turns": 32,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net0_b0_r2",
+  "session_id": "17c8abc0-b1bd-490f-ad18-bf30d45cdf7b",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 62
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:36.564000+00:00",
+  "active_minutes": 11.4,
+  "tool_calls": {
+   "Read": 4,
+   "Bash": 21,
+   "Write": 4,
+   "Edit": 1
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 68060,
+  "cost_usd": 2.8388909,
+  "turns": 31,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net0_b0_r3",
+  "session_id": "09586ad6-b051-4de0-ab74-e0af85ad4d58",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 50
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:48.414000+00:00",
+  "active_minutes": 8.2,
+  "tool_calls": {
+   "Read": 3,
+   "Bash": 14,
+   "Write": 11
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 48334,
+  "cost_usd": 1.9490332999999997,
+  "turns": 29,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net0_b10",
+  "session_id": "6bd208ea-7371-4271-a650-67e05d0d799b",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 82
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T16:31:48.750000+00:00",
+  "active_minutes": 16.1,
+  "tool_calls": {
+   "Bash": 29,
+   "Write": 1
+  },
+  "simulator_calls_logged": 7,
+  "simulator_calls_mirror_log": 7,
+  "simulator_budget": 10,
+  "output_tokens": 82738,
+  "cost_usd": 3.2965713000000005,
+  "turns": 31,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net0_b10_r2",
+  "session_id": "c7e506f8-5c39-40e4-8624-950cc0a2690f",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 102
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:30.537000+00:00",
+  "active_minutes": 17.4,
+  "tool_calls": {
+   "Read": 1,
+   "Bash": 35,
+   "Write": 4
+  },
+  "simulator_calls_logged": 5,
+  "simulator_calls_mirror_log": 5,
+  "simulator_budget": 10,
+  "output_tokens": 99655,
+  "cost_usd": 4.125084299999999,
+  "turns": 41,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net0_b10_r3",
+  "session_id": "71e88019-3156-4f6d-8c1b-422fe6e8dce9",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 84
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:42.447000+00:00",
+  "active_minutes": 15.0,
+  "tool_calls": {
+   "Bash": 31,
+   "Write": 1
+  },
+  "simulator_calls_logged": 6,
+  "simulator_calls_mirror_log": 6,
+  "simulator_budget": 10,
+  "output_tokens": 80908,
+  "cost_usd": 3.3284641,
+  "turns": 33,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net0_b5",
+  "session_id": "b9ce67f0-82ae-49c4-8abd-0d67ae493f5e",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 90
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T16:31:54.694000+00:00",
+  "active_minutes": 17.1,
+  "tool_calls": {
+   "Bash": 36,
+   "Write": 7
+  },
+  "simulator_calls_logged": 5,
+  "simulator_calls_mirror_log": 5,
+  "simulator_budget": 5,
+  "output_tokens": 92135,
+  "cost_usd": 3.9276003000000013,
+  "turns": 44,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net1_b0",
+  "session_id": "2ddec4d5-9c82-4784-8e12-4f4964bb68e6",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 52
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T16:32:02.586000+00:00",
+  "active_minutes": 16.5,
+  "tool_calls": {
+   "Bash": 23,
+   "Write": 1
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 84526,
+  "cost_usd": 3.6515535000000003,
+  "turns": 25,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net1_b0_r2",
+  "session_id": "fbb3dc03-ac71-4e1e-8668-2a59898ad985",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 87
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:38.479000+00:00",
+  "active_minutes": 17.4,
+  "tool_calls": {
+   "Bash": 33,
+   "Write": 4,
+   "Edit": 5
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 99046,
+  "cost_usd": 4.372902599999999,
+  "turns": 43,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": [
+   "fit_or_search_keyword"
+  ]
+ },
+ {
+  "use": "patch_fault",
+  "run": "net1_b0_r3",
+  "session_id": "ea901ded-1598-4b84-806f-8036dc5a2d0a",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 69
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:50.549000+00:00",
+  "active_minutes": 10.3,
+  "tool_calls": {
+   "Read": 3,
+   "Bash": 28,
+   "Write": 3
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 60172,
+  "cost_usd": 2.7402909,
+  "turns": 35,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net1_b10",
+  "session_id": "a169f561-2c83-4c86-8c23-8b67eadfc6a7",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 68
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T16:31:50.609000+00:00",
+  "active_minutes": 11.6,
+  "tool_calls": {
+   "Read": 2,
+   "Bash": 24,
+   "Write": 4
+  },
+  "simulator_calls_logged": 2,
+  "simulator_calls_mirror_log": 2,
+  "simulator_budget": 10,
+  "output_tokens": 61727,
+  "cost_usd": 2.6574143,
+  "turns": 31,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net1_b10_r2",
+  "session_id": "342b9c2e-962b-4ef0-baff-1a08b35470cb",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 119
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:32.416000+00:00",
+  "active_minutes": 19.9,
+  "tool_calls": {
+   "Bash": 45,
+   "Write": 4,
+   "Edit": 7,
+   "Read": 1
+  },
+  "simulator_calls_logged": 5,
+  "simulator_calls_mirror_log": 5,
+  "simulator_budget": 10,
+  "output_tokens": 111468,
+  "cost_usd": 4.9382571,
+  "turns": 58,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": [
+   "fit_or_search_keyword"
+  ]
+ },
+ {
+  "use": "patch_fault",
+  "run": "net1_b10_r3",
+  "session_id": "36ca5170-764f-403f-ac07-b08dfc3558ee",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 116
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:44.458000+00:00",
+  "active_minutes": 15.5,
+  "tool_calls": {
+   "Bash": 42,
+   "Write": 1,
+   "Edit": 2
+  },
+  "simulator_calls_logged": 7,
+  "simulator_calls_mirror_log": 7,
+  "simulator_budget": 10,
+  "output_tokens": 83679,
+  "cost_usd": 3.9270281999999996,
+  "turns": 46,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net1_b5",
+  "session_id": "7ea91f2e-4dec-4d52-8cf6-578509d20fef",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 66
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T16:31:56.603000+00:00",
+  "active_minutes": 12.8,
+  "tool_calls": {
+   "Read": 4,
+   "Bash": 23,
+   "Write": 1
+  },
+  "simulator_calls_logged": 3,
+  "simulator_calls_mirror_log": 3,
+  "simulator_budget": 5,
+  "output_tokens": 70975,
+  "cost_usd": 2.8457899,
+  "turns": 29,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net2_b0",
+  "session_id": "02b0f319-cde2-4dfb-accc-3cf78b8dc922",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 34
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T16:32:04.646000+00:00",
+  "active_minutes": 6.5,
+  "tool_calls": {
+   "Bash": 16
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 35582,
+  "cost_usd": 1.4865454000000002,
+  "turns": 17,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net2_b0_r2",
+  "session_id": "31cb1f3d-08b7-4d73-b1d4-2615eaf1f780",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 48
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:40.464000+00:00",
+  "active_minutes": 9.6,
+  "tool_calls": {
+   "Bash": 18,
+   "Write": 5
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 57353,
+  "cost_usd": 2.3171657000000003,
+  "turns": 24,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net2_b0_r3",
+  "session_id": "a402707d-8d4c-47c0-9660-f1e8d3b1c3bf",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 94
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:52.430000+00:00",
+  "active_minutes": 18.7,
+  "tool_calls": {
+   "Bash": 36,
+   "Read": 1,
+   "Write": 3
+  },
+  "simulator_calls_logged": 0,
+  "simulator_calls_mirror_log": 0,
+  "simulator_budget": 0,
+  "output_tokens": 99032,
+  "cost_usd": 4.2539309,
+  "turns": 41,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net2_b10",
+  "session_id": "0622113a-9840-4cb2-bc05-88fb63af23c6",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 85
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T16:31:52.664000+00:00",
+  "active_minutes": 16.2,
+  "tool_calls": {
+   "Bash": 31,
+   "Write": 4,
+   "Edit": 1
+  },
+  "simulator_calls_logged": 6,
+  "simulator_calls_mirror_log": 6,
+  "simulator_budget": 10,
+  "output_tokens": 84208,
+  "cost_usd": 3.6211203,
+  "turns": 37,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net2_b10_r2",
+  "session_id": "59ab40ba-e427-4a76-abdf-0708e6a2e1ec",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 97
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:34.444000+00:00",
+  "active_minutes": 14.4,
+  "tool_calls": {
+   "Bash": 38,
+   "Write": 1
+  },
+  "simulator_calls_logged": 6,
+  "simulator_calls_mirror_log": 6,
+  "simulator_budget": 10,
+  "output_tokens": 79269,
+  "cost_usd": 3.3067184,
+  "turns": 40,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ },
+ {
+  "use": "patch_fault",
+  "run": "net2_b10_r3",
+  "session_id": "f0d9728f-5210-4fec-90e6-67d59729b22e",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 95
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-09T09:08:46.501000+00:00",
+  "active_minutes": 16.7,
+  "tool_calls": {
+   "Bash": 35,
+   "Write": 2,
+   "Edit": 1,
+   "Read": 1
+  },
+  "simulator_calls_logged": 5,
+  "simulator_calls_mirror_log": 5,
+  "simulator_budget": 10,
+  "output_tokens": 92833,
+  "cost_usd": 3.9630458000000006,
+  "turns": 40,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": [
+   "fit_or_search_keyword"
+  ]
+ },
+ {
+  "use": "patch_fault",
+  "run": "net2_b5",
+  "session_id": "07804a5c-4423-449c-8bff-80516a9fc874",
+  "requested_model": "claude-opus-5-5",
+  "models": {
+   "claude-opus-5-5": 74
+  },
+  "prompt_matches_launch": true,
+  "start": "2026-11-08T16:31:58.750000+00:00",
+  "active_minutes": 17.8,
+  "tool_calls": {
+   "Bash": 34,
+   "Write": 2
+  },
+  "simulator_calls_logged": 3,
+  "simulator_calls_mirror_log": 3,
+  "simulator_budget": 5,
+  "output_tokens": 95623,
+  "cost_usd": 3.8755187,
+  "turns": 37,
+  "subagents": false,
+  "n_messages_after_launch": 0,
+  "flags": []
+ }
+]

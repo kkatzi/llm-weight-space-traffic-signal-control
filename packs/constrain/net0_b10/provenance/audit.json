@@ -1,0 +1,30 @@
+{
+ "use": "constrain",
+ "run": "net0_b10",
+ "session_id": "178fa415-b059-49ae-b27d-af99c9b3446c",
+ "source": "/home/traffic-ntua/.claude/projects/-home-traffic-ntua-wsp-v3-agent-runs-constrain-net0-b10/178fa415-b059-49ae-b27d-af99c9b3446c.jsonl",
+ "requested_model": "claude-opus-5-5",
+ "models": {
+  "claude-opus-5-5": 82
+ },
+ "prompt_matches_launch": true,
+ "start": "2026-11-08T15:33:49.451000+00:00",
+ "end": "2026-11-08T15:52:40.917000+00:00",
+ "active_minutes": 18.9,
+ "gaps_over_10_min": [],
+ "tool_calls": {
+  "Read": 4,
+  "Bash": 28,
+  "Write": 5
+ },
+ "simulator_calls_logged": 5,
+ "simulator_calls_mirror_log": 5,
+ "simulator_budget": 10,
+ "output_tokens": 103745,
+ "cost_usd": 4.086978999999998,
+ "turns": 38,
+ "permission_denials": [],
+ "subagents": false,
+ "messages_received_after_launch": [],
+ "flags": {}
+}

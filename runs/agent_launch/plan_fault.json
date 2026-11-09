@@ -1,0 +1,38 @@
+[
+ {
+  "pack": "patch_fault/net0_b10",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch_fault/net1_b10",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch_fault/net2_b10",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch_fault/net0_b5",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch_fault/net1_b5",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch_fault/net2_b5",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch_fault/net0_b0",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch_fault/net1_b0",
+  "model": "claude-opus-5-5"
+ },
+ {
+  "pack": "patch_fault/net2_b0",
+  "model": "claude-opus-5-5"
+ }
+]

@@ -1,0 +1,42 @@
+{
+ "green": 0,
+ "t_green": 0.0,
+ "since_served": [
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "phase_halting": [
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "legal": [
+  true,
+  false,
+  false,
+  false
+ ],
+ "overdue": [
+  false,
+  false,
+  false,
+  false
+ ],
+ "rules": {
+  "min_green": "[15, 10, 15, 10]",
+  "max_green": "45",
+  "max_wait": "90"
+ },
+ "_types": {
+  "green": "int",
+  "t_green": "float",
+  "since_served": "list",
+  "phase_halting": "list",
+  "legal": "list",
+  "overdue": "list",
+  "rules": "dict"
+ }
+}

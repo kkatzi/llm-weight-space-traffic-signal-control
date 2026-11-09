@@ -1,0 +1,18 @@
+You are taking part in a research experiment on programming neural-network weights by hand.
+
+Your task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch/net0_b10
+
+Start by reading TASK.md in that folder, then follow it exactly. In particular:
+- Read only files inside the pack.
+- Write only to its work/ subfolder.
+- Use the simulator only through the pack's eval.py, within its budget of 10 calls. Run eval.py from inside the pack folder; each call takes about 10 s.
+- Do not fit weights to data with any optimiser.
+- Change at most 371 parameters.
+- Use the Python interpreter that TASK.md names.
+
+When you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:
+- what you changed and why;
+- how many parameters you changed;
+- how many simulator calls you used and what they showed;
+- the dev TTS of your final weights;
+- your test predictions.

@@ -1,0 +1,887 @@
+{
+ "problem": "L2_fault",
+ "policy": "actuated:1,10,up",
+ "set": "test",
+ "label": "actuated",
+ "drain_cap": 1800,
+ "summary": {
+  "low": {
+   "tts_veh_h": 36.117222222222225,
+   "delay": 26.641000000000002,
+   "delay_veh_h": 12.862063638637483,
+   "halting_veh_h": 8.196361111111111,
+   "remaining": 0.2,
+   "arrived": 1801.9,
+   "n": 10
+  },
+  "nominal": {
+   "tts_veh_h": 48.91925,
+   "delay": 31.966999999999995,
+   "delay_veh_h": 19.123897843267297,
+   "halting_veh_h": 11.048305555555554,
+   "remaining": 0.5,
+   "arrived": 2266.9,
+   "n": 10
+  },
+  "high": {
+   "tts_veh_h": 63.48036111111112,
+   "delay": 42.004999999999995,
+   "delay_veh_h": 28.50018312763165,
+   "halting_veh_h": 13.485222222222223,
+   "remaining": 0.7,
+   "arrived": 2602.1,
+   "n": 10
+  },
+  "all": {
+   "tts_veh_h": 49.505611111111115,
+   "delay": 33.537666666666674,
+   "delay_veh_h": 20.162048203178813,
+   "halting_veh_h": 10.909962962962965,
+   "remaining": 0.4666666666666667,
+   "arrived": 2223.633333333333,
+   "unserved": 14
+  }
+ },
+ "episodes": [
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "low",
+   "seed": 19001,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 37.780277777777776,
+   "halting_veh_h": 9.410277777777777,
+   "delay_veh_h": 14.230433183672337,
+   "remaining": 2,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1823,
+   "inserted": 1823,
+   "arrived": 1821,
+   "delay": 27.37,
+   "travel": 72.68,
+   "time_loss": 27.36,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "low",
+   "seed": 19002,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 35.63388888888889,
+   "halting_veh_h": 8.057222222222222,
+   "delay_veh_h": 12.492444910644046,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1799,
+   "inserted": 1799,
+   "arrived": 1799,
+   "delay": 25.930000000000003,
+   "travel": 71.3,
+   "time_loss": 25.92,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "low",
+   "seed": 19003,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 37.12916666666667,
+   "halting_veh_h": 8.6425,
+   "delay_veh_h": 13.384292242862372,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1832,
+   "inserted": 1832,
+   "arrived": 1832,
+   "delay": 27.66,
+   "travel": 72.96,
+   "time_loss": 27.66,
+   "depart_delay": 0.0
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "low",
+   "seed": 19004,
+   "time": 3665,
+   "teleports": 0,
+   "tts_veh_h": 37.17666666666667,
+   "halting_veh_h": 8.496666666666666,
+   "delay_veh_h": 13.201996789337484,
+   "remaining": 0,
+   "switches": [
+    240
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1855,
+   "inserted": 1855,
+   "arrived": 1855,
+   "delay": 26.96,
+   "travel": 72.14,
+   "time_loss": 26.95,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "low",
+   "seed": 19005,
+   "time": 3705,
+   "teleports": 0,
+   "tts_veh_h": 37.56472222222222,
+   "halting_veh_h": 8.312222222222223,
+   "delay_veh_h": 13.749867299801174,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1828,
+   "inserted": 1828,
+   "arrived": 1828,
+   "delay": 28.69,
+   "travel": 73.97,
+   "time_loss": 28.68,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "low",
+   "seed": 19006,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 34.89333333333333,
+   "halting_veh_h": 7.967777777777778,
+   "delay_veh_h": 12.27825048281585,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1760,
+   "inserted": 1760,
+   "arrived": 1760,
+   "delay": 26.060000000000002,
+   "travel": 71.37,
+   "time_loss": 26.05,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "low",
+   "seed": 19007,
+   "time": 3680,
+   "teleports": 0,
+   "tts_veh_h": 36.57888888888889,
+   "halting_veh_h": 8.283611111111112,
+   "delay_veh_h": 13.177573611317007,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1813,
+   "inserted": 1813,
+   "arrived": 1813,
+   "delay": 27.330000000000002,
+   "travel": 72.62,
+   "time_loss": 27.32,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "low",
+   "seed": 19008,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 35.278055555555554,
+   "halting_veh_h": 7.885833333333333,
+   "delay_veh_h": 12.562997252683461,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1762,
+   "inserted": 1762,
+   "arrived": 1762,
+   "delay": 26.71,
+   "travel": 72.07,
+   "time_loss": 26.7,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "low",
+   "seed": 19009,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 35.23416666666667,
+   "halting_veh_h": 7.726388888888889,
+   "delay_veh_h": 12.166188386854476,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1795,
+   "inserted": 1795,
+   "arrived": 1795,
+   "delay": 25.39,
+   "travel": 70.66,
+   "time_loss": 25.38,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "low",
+   "seed": 19010,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 33.903055555555554,
+   "halting_veh_h": 7.181111111111111,
+   "delay_veh_h": 11.376592226386618,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1754,
+   "inserted": 1754,
+   "arrived": 1754,
+   "delay": 24.310000000000002,
+   "travel": 69.58,
+   "time_loss": 24.3,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "nominal",
+   "seed": 19001,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 50.69555555555556,
+   "halting_veh_h": 12.286666666666667,
+   "delay_veh_h": 20.401625449845533,
+   "remaining": 2,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2294,
+   "inserted": 2294,
+   "arrived": 2292,
+   "delay": 32.68,
+   "travel": 78.03,
+   "time_loss": 32.67,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "nominal",
+   "seed": 19002,
+   "time": 3680,
+   "teleports": 0,
+   "tts_veh_h": 49.12111111111111,
+   "halting_veh_h": 10.943888888888889,
+   "delay_veh_h": 19.075909545458845,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2290,
+   "inserted": 2290,
+   "arrived": 2290,
+   "delay": 31.860000000000003,
+   "travel": 77.21,
+   "time_loss": 31.85,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "nominal",
+   "seed": 19003,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 50.353611111111114,
+   "halting_veh_h": 11.297777777777778,
+   "delay_veh_h": 19.924774984632936,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2296,
+   "inserted": 2296,
+   "arrived": 2296,
+   "delay": 33.629999999999995,
+   "travel": 78.94,
+   "time_loss": 33.62,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "nominal",
+   "seed": 19004,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 49.72805555555556,
+   "halting_veh_h": 10.983611111111111,
+   "delay_veh_h": 19.345336666363007,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2311,
+   "inserted": 2311,
+   "arrived": 2311,
+   "delay": 32.29,
+   "travel": 77.45,
+   "time_loss": 32.28,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "nominal",
+   "seed": 19005,
+   "time": 3680,
+   "teleports": 0,
+   "tts_veh_h": 49.51833333333333,
+   "halting_veh_h": 10.73,
+   "delay_veh_h": 19.53665501024285,
+   "remaining": 0,
+   "switches": [
+    241
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2281,
+   "inserted": 2281,
+   "arrived": 2281,
+   "delay": 32.91,
+   "travel": 78.14,
+   "time_loss": 32.9,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "nominal",
+   "seed": 19006,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 47.08277777777778,
+   "halting_veh_h": 11.679444444444444,
+   "delay_veh_h": 18.252495117775098,
+   "remaining": 3,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2218,
+   "inserted": 2218,
+   "arrived": 2215,
+   "delay": 28.770000000000003,
+   "travel": 74.06,
+   "time_loss": 28.76,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "nominal",
+   "seed": 19007,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 49.95777777777778,
+   "halting_veh_h": 10.83611111111111,
+   "delay_veh_h": 20.003126349909344,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2270,
+   "inserted": 2270,
+   "arrived": 2270,
+   "delay": 33.93,
+   "travel": 79.22,
+   "time_loss": 33.92,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "nominal",
+   "seed": 19008,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 47.98722222222222,
+   "halting_veh_h": 10.610277777777778,
+   "delay_veh_h": 18.6648756434588,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2226,
+   "inserted": 2226,
+   "arrived": 2226,
+   "delay": 32.239999999999995,
+   "travel": 77.6,
+   "time_loss": 32.23,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "nominal",
+   "seed": 19009,
+   "time": 3700,
+   "teleports": 0,
+   "tts_veh_h": 49.17027777777778,
+   "halting_veh_h": 11.060833333333333,
+   "delay_veh_h": 19.32848150582679,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2270,
+   "inserted": 2270,
+   "arrived": 2270,
+   "delay": 32.69,
+   "travel": 77.97,
+   "time_loss": 32.68,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "nominal",
+   "seed": 19010,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 45.577777777777776,
+   "halting_veh_h": 10.054444444444444,
+   "delay_veh_h": 16.705698159159756,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2218,
+   "inserted": 2218,
+   "arrived": 2218,
+   "delay": 28.67,
+   "travel": 73.97,
+   "time_loss": 28.66,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "high",
+   "seed": 19001,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 66.5963888888889,
+   "halting_veh_h": 13.98638888888889,
+   "delay_veh_h": 30.628620582614975,
+   "remaining": 1,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2670,
+   "inserted": 2670,
+   "arrived": 2669,
+   "delay": 43.8,
+   "travel": 89.14,
+   "time_loss": 43.79,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "high",
+   "seed": 19002,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 64.75055555555555,
+   "halting_veh_h": 14.29861111111111,
+   "delay_veh_h": 29.2043761749377,
+   "remaining": 1,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2628,
+   "inserted": 2628,
+   "arrived": 2627,
+   "delay": 42.72,
+   "travel": 88.03,
+   "time_loss": 42.71,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "high",
+   "seed": 19003,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 65.07777777777778,
+   "halting_veh_h": 13.124722222222223,
+   "delay_veh_h": 29.5675317646471,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2635,
+   "inserted": 2635,
+   "arrived": 2635,
+   "delay": 43.58,
+   "travel": 88.9,
+   "time_loss": 43.57,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "high",
+   "seed": 19004,
+   "time": 3700,
+   "teleports": 0,
+   "tts_veh_h": 60.07083333333333,
+   "halting_veh_h": 12.766111111111112,
+   "delay_veh_h": 25.117565181915488,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2611,
+   "inserted": 2611,
+   "arrived": 2611,
+   "delay": 37.62,
+   "travel": 82.81,
+   "time_loss": 37.61,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "high",
+   "seed": 19005,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 66.94444444444444,
+   "halting_veh_h": 14.143611111111111,
+   "delay_veh_h": 31.892280502285004,
+   "remaining": 2,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2601,
+   "inserted": 2601,
+   "arrived": 2599,
+   "delay": 46.08,
+   "travel": 91.31,
+   "time_loss": 46.07,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "high",
+   "seed": 19006,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 57.45916666666667,
+   "halting_veh_h": 13.2625,
+   "delay_veh_h": 23.665067276467987,
+   "remaining": 2,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2550,
+   "inserted": 2550,
+   "arrived": 2548,
+   "delay": 34.5,
+   "travel": 79.75,
+   "time_loss": 34.49,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "high",
+   "seed": 19007,
+   "time": 3710,
+   "teleports": 0,
+   "tts_veh_h": 66.3075,
+   "halting_veh_h": 13.716944444444444,
+   "delay_veh_h": 30.853154424238106,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2615,
+   "inserted": 2615,
+   "arrived": 2615,
+   "delay": 45.94,
+   "travel": 91.27,
+   "time_loss": 45.93,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "high",
+   "seed": 19008,
+   "time": 3710,
+   "teleports": 0,
+   "tts_veh_h": 62.568888888888885,
+   "halting_veh_h": 12.920833333333333,
+   "delay_veh_h": 28.187667403035856,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2563,
+   "inserted": 2563,
+   "arrived": 2563,
+   "delay": 42.55,
+   "travel": 87.87,
+   "time_loss": 42.54,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "high",
+   "seed": 19009,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 67.17972222222222,
+   "halting_veh_h": 14.120277777777778,
+   "delay_veh_h": 31.969921337944353,
+   "remaining": 1,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2605,
+   "inserted": 2605,
+   "arrived": 2604,
+   "delay": 46.91,
+   "travel": 92.17,
+   "time_loss": 46.9,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_fault",
+   "policy": "actuated:1,10,up",
+   "scenario": "high",
+   "seed": 19010,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 57.848333333333336,
+   "halting_veh_h": 12.512222222222222,
+   "delay_veh_h": 23.915646628229997,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2550,
+   "inserted": 2550,
+   "arrived": 2550,
+   "delay": 36.35,
+   "travel": 81.66,
+   "time_loss": 36.34,
+   "depart_delay": 0.01
+  }
+ ]
+}

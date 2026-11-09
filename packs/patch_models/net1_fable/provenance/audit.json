@@ -1,0 +1,30 @@
+{
+ "use": "patch_models",
+ "run": "net1_fable",
+ "session_id": "c69d2470-65f7-426a-bdce-3d03f1c66d9a",
+ "source": "/home/traffic-ntua/.claude/projects/-home-traffic-ntua-wsp-v3-agent-runs-patch-models-net1-fable/c69d2470-65f7-426a-bdce-3d03f1c66d9a.jsonl",
+ "requested_model": "claude-fable-5-1",
+ "models": {
+  "claude-fable-5-1": 62
+ },
+ "prompt_matches_launch": true,
+ "start": "2026-11-08T15:47:50.587000+00:00",
+ "end": "2026-11-08T16:04:29.188000+00:00",
+ "active_minutes": 16.6,
+ "gaps_over_10_min": [],
+ "tool_calls": {
+  "Read": 4,
+  "Bash": 24,
+  "Write": 2
+ },
+ "simulator_calls_logged": 7,
+ "simulator_calls_mirror_log": 7,
+ "simulator_budget": 10,
+ "output_tokens": 62161,
+ "cost_usd": 5.5990886,
+ "turns": 31,
+ "permission_denials": [],
+ "subagents": false,
+ "messages_received_after_launch": [],
+ "flags": {}
+}

@@ -1,0 +1,29 @@
+Data, models and records: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Konstantinos Katzilieris, Emmanouil Kampitakis, Eleni I. Vlahogianni
+(National Technical University of Athens, Department of Transportation Planning and Engineering)
+
+Everything in this repository that is not source code is licensed under CC BY 4.0:
+  models/          trained PPO networks, checkpoints and baseline networks and rule files
+  results/         evaluations, tuned controllers, baseline logs and analysis outputs
+  runs/            launch records, agent evaluation logs, recorded observations, baseline runs
+  packs/           the agents' task folders, work, notes, deliverables and provenance
+  nets/            the SUMO networks
+  docs/            the analysis plan, provenance record, prompts and route hashes
+  paper/           the figures and tables
+  queue/           the job record
+  audit/           the audit report, results and manifest
+
+You are free to share and adapt this material for any purpose, including commercially, provided you give appropriate
+credit (cite the paper and this repository; see CITATION.cff), provide a link to the licence, and indicate if changes
+were made. Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Source code (wsp/, tests/, audit/*.py, scripts/) is licensed under the MIT License; see LICENSE.
+
+Third-party content. The agent transcripts (packs/*/*/provenance/transcript.jsonl)
+also contain text written by Anthropic and third-party skill/MCP authors: the Claude Code system prompt, tool and skill descriptions, and harness
+messages. That text is not covered by this licence and remains subject to its owner's terms. Agent outputs (the
+agents' messages, scripts, notes and deliverables) are covered by this licence.
+
+SUMO, Stable-Baselines3, PyTorch and the other dependencies listed in requirements.txt are not distributed with this
+repository; they are installed separately under their own licences.

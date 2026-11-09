@@ -1,0 +1,197 @@
+{
+ "problem": "L2",
+ "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter0.py",
+ "set": "rec",
+ "label": "dagger_net2_full_0",
+ "drain_cap": 1800,
+ "summary": {
+  "train": {
+   "tts_veh_h": 41.33620370370371,
+   "delay": 26.909999999999997,
+   "delay_veh_h": 15.199107905303409,
+   "halting_veh_h": 9.599537037037036,
+   "remaining": 0.6666666666666666,
+   "arrived": 2031.0,
+   "n": 6
+  },
+  "all": {
+   "tts_veh_h": 41.33620370370371,
+   "delay": 26.909999999999997,
+   "delay_veh_h": 15.199107905303409,
+   "halting_veh_h": 9.599537037037036,
+   "remaining": 0.6666666666666666,
+   "arrived": 2031.0,
+   "unserved": 4
+  }
+ },
+ "episodes": [
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter0.py",
+   "scenario": "train",
+   "seed": 1201,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 36.90638888888889,
+   "halting_veh_h": 8.269722222222223,
+   "delay_veh_h": 12.766139485616259,
+   "remaining": 0,
+   "switches": [
+    245
+   ],
+   "ignored": [
+    440
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1897,
+   "inserted": 1897,
+   "arrived": 1897,
+   "delay": 24.71,
+   "travel": 70.03,
+   "time_loss": 24.71,
+   "depart_delay": 0.0
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter0.py",
+   "scenario": "train",
+   "seed": 1202,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 28.649166666666666,
+   "halting_veh_h": 7.0377777777777775,
+   "delay_veh_h": 10.224879936273705,
+   "remaining": 1,
+   "switches": [
+    359
+   ],
+   "ignored": [
+    675
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1457,
+   "inserted": 1457,
+   "arrived": 1456,
+   "delay": 24.21,
+   "travel": 69.59,
+   "time_loss": 24.2,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter0.py",
+   "scenario": "train",
+   "seed": 1203,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 35.50111111111111,
+   "halting_veh_h": 8.219722222222222,
+   "delay_veh_h": 12.42033475761554,
+   "remaining": 0,
+   "switches": [
+    246
+   ],
+   "ignored": [
+    434
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1815,
+   "inserted": 1815,
+   "arrived": 1815,
+   "delay": 24.96,
+   "travel": 70.41,
+   "time_loss": 24.96,
+   "depart_delay": 0.0
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter0.py",
+   "scenario": "train",
+   "seed": 1204,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 55.45916666666667,
+   "halting_veh_h": 13.515,
+   "delay_veh_h": 22.260870230288976,
+   "remaining": 3,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    439
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2537,
+   "inserted": 2537,
+   "arrived": 2534,
+   "delay": 31.400000000000002,
+   "travel": 76.64,
+   "time_loss": 31.39,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter0.py",
+   "scenario": "train",
+   "seed": 1205,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 50.41222222222222,
+   "halting_veh_h": 11.468055555555555,
+   "delay_veh_h": 18.80272533096471,
+   "remaining": 0,
+   "switches": [
+    245
+   ],
+   "ignored": [
+    441
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2439,
+   "inserted": 2439,
+   "arrived": 2439,
+   "delay": 29.1,
+   "travel": 74.4,
+   "time_loss": 29.09,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter0.py",
+   "scenario": "train",
+   "seed": 1206,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 41.089166666666664,
+   "halting_veh_h": 9.086944444444445,
+   "delay_veh_h": 14.719697691061272,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    431
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2045,
+   "inserted": 2045,
+   "arrived": 2045,
+   "delay": 27.08,
+   "travel": 72.33,
+   "time_loss": 27.08,
+   "depart_delay": 0.0
+  }
+ ]
+}

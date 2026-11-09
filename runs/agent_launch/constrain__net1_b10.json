@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/constrain/net1_b10",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on adapting trained neural-network controllers.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/constrain/net1_b10\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Use the simulator only through the pack's eval.py, within its budget of 10 calls. Run eval.py from inside the pack folder; each call takes about 10 s.\n- Do not fit any model and do not run automated searches.\n- Use the network through its logits only.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/supervisor.py, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what your supervisor does;\n- when it overrides the network;\n- your simulator calls and what they showed;\n- the dev TTS of your final supervisor;\n- your predictions.",
+ "start": "2026-11-08 17:35:20",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-08 17:50:33",
+ "exit_code": 0,
+ "result": {
+  "session_id": "e894b14c-d700-4031-921a-99478f3ca0b6",
+  "num_turns": 33,
+  "total_cost_usd": 3.1484004999999993,
+  "duration_ms": 907786,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "All three deliverables are in `work/`. The final supervisor's dev TTS is 47.007 veh-h, against 47.048 for the naive shield. That gap is chaos noise, not a real improvement.\n\n**What it does:** it keeps the network in charge and never requests an illegal phase.\n- When the network's top choice is illegal, it takes the legal phase the network scores highest.\n- If the network's choice q would let another phase p reach the 90 s wait limit, the rules force p right after q. It then serves q and p in whichever order delays their queues less.\n- In close calls (within 1 logit) between a through phase and a left phase, it allows for the through green now taking 20 s instead of 15 s.\n\n**When it overrides:** almost only during minimum greens. That is about 65% of all decisions, but there the shield would do exactly the same. Among decisions with a real choice, it changes 14 of 1121 (1.2%).\n\n**Simulator calls (3 of 10):**\n- Respect-only reproduced 47.048 exactly, so the simulator is deterministic.\n- The combined logic and the final file both gave 47.007.\n\nThe network already clears every queue within each green, and its phase choices are close to optimal under the rules. Most of the 2.5 veh-h lost to the rules comes from the 17 s minimum on through greens, which no supervisor can avoid. I stopped at 3 calls because further variants couldn't be told apart from noise.\n\n**Predictions:** low 36.1, nominal 47.2, high 57.9."
+ }
+}

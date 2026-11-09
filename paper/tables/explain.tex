@@ -1,0 +1,32 @@
+\begin{tabular}{llrrrr}
+\toprule
+Target & Rule file & Comparisons & Constants & Fidelity (\%) & Test TTS vs.\ network (\%) \\
+\midrule
+Net 0 & LLM, small & 8 & 80 & 91.1 & +1.1 \\
+ & LLM, full & 1 & 132 & 91.1 & +0.2 \\
+ & CART, depth 3 & 7 & 22 & 71.3 & +18.4$^{*}$ \\
+ & CART, depth 5 & 31 & 94 & 56.7 & +10.9$^{*}$ \\
+ & CART, depth 8 & 135 & 406 & 64.2 & +4.9$^{*}$ \\
+ & DAgger, depth 3 & 7 & 22 & 71.3 & +18.4$^{*}$ \\
+ & DAgger, depth 5 & 31 & 94 & 56.2 & +6.1$^{*}$ \\
+ & DAgger, depth 8 & 153 & 460 & 84.5 & +2.9$^{*}$ \\
+\midrule
+Net 1 & LLM, small & 3 & 43 & 91.2 & +0.6 \\
+ & LLM, full & 3 & 53 & 92.8 & +0.1 \\
+ & CART, depth 3 & 7 & 22 & 40.0 & +18.5$^{*}$ \\
+ & CART, depth 5 & 31 & 94 & 62.2 & +8.3$^{*}$ \\
+ & CART, depth 8 & 159 & 478 & 50.7 & +5.1$^{*}$ \\
+ & DAgger, depth 3 & 7 & 22 & 40.1 & +13.6$^{*}$ \\
+ & DAgger, depth 5 & 31 & 94 & 45.7 & +7.2$^{*}$ \\
+ & DAgger, depth 8 & 208 & 625 & 84.5 & +3.2$^{*}$ \\
+\midrule
+Net 2 & LLM, small & 6 & 65 & 67.4 & +0.5 \\
+ & LLM, full & 6 & 69 & 68.1 & +0.5 \\
+ & CART, depth 3 & 7 & 22 & 45.1 & +436.6$^{*}$ \\
+ & CART, depth 5 & 31 & 94 & 58.2 & +7.6$^{*}$ \\
+ & CART, depth 8 & 148 & 445 & 55.3 & +4.2$^{*}$ \\
+ & DAgger, depth 3 & 7 & 22 & 44.3 & +13.0$^{*}$ \\
+ & DAgger, depth 5 & 31 & 94 & 51.2 & +5.4$^{*}$ \\
+ & DAgger, depth 8 & 192 & 577 & 64.3 & +3.0$^{*}$ \\
+\bottomrule
+\end{tabular}

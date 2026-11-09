@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net1_b0_r3",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net1_b0_r3\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Do not run any simulator. You get one shot.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- the checks you ran;\n- your test predictions.",
+ "start": "2026-11-09 11:08:49",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-09 11:19:13",
+ "exit_code": 0,
+ "result": {
+  "session_id": "ea901ded-1598-4b84-806f-8036dc5a2d0a",
+  "num_turns": 35,
+  "total_cost_usd": 2.7402909,
+  "duration_ms": 618390,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "I patched the network by feeding the east left-pocket readings (E2) into the weights of the dead west left-pocket inputs (W2). The three files are in `work/`, along with my scripts.\n\n**What I changed and why:** In 4 of the 6 recorded start-network runs, the junction gridlocked. West left-turners filled their 3-car pocket and backed up, blocking the west straight lane. The network couldn't see this and held phase 2 (EW_through) with nothing moving. East and west carry the same demand, and phase 3 empties both left pockets together, so E2 is the best stand-in for W2. I added the W2 weight columns onto the E2 columns (`W1[:,5] += W1[:,11]`, `W1[:,17] += W1[:,23]`). The network now behaves exactly as if the W2 readings equalled the E2 readings. Nothing was fitted.\n\n**Parameters changed:** 128 of 7428, confirmed with `tools.edit_size`.\n\n**Checks (forward passes only, no simulator):**\n- **Gridlock states:** in 2123 recorded states where the start network wrongly held phase 2, the patched network picks phase 3 in 2120.\n- **Wasted holds** (keeping a green with empty lanes while others queue): down from 2200 to 31.\n- **Proxy check on the north/south pockets,** where both detectors work: rebuilding one pocket from the other matched the true decision 87\u201393% of the time.\n- **Other proxies:** I also tried scaled-down estimates, but they did worse.\n\nI couldn't test the closed loop, so a leftover gridlock at high demand can't be ruled out. One such episode would add about 50 veh-h to the high mean.\n\n**Predicted test TTS:**\n\n| Scenario | Predicted (veh-h) |\n|---|---|\n| low | 35.5 |\n| nominal | 46.0 |\n| high | 58.0 |"
+ }
+}

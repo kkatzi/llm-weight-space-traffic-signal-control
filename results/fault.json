@@ -1,0 +1,6 @@
+{
+ "lane": "UW_J0_2",
+ "name": "W2",
+ "selected_by": "largest mean val-TTS increase over Nets 0-2 among the 20 lane detectors (EXPERIMENT_PLAN.md P-F)",
+ "mean_val_increase_pct": 128.78619597239654
+}

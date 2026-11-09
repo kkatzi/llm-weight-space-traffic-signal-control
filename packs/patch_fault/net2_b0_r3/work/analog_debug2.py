@@ -1,0 +1,13 @@
+import sys, os
+exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "analog_test.py")).read().split("report(\"fault")[0])
+np.set_printoptions(precision=3, suppress=True, linewidth=220)
+w = edit(0.3, "serve")
+a = tools.greedy(w, Xf)
+m = sn & ok & (ph == 2) & (a == 1) & (truth == 2)
+print(m.sum())
+print("mean state of flipped cluster:\n", Xf[m].mean(0))
+print("std:\n", Xf[m].std(0))
+lg0 = tools.forward(w0, X[m]); lgf = tools.forward(w, Xf[m])
+print("truth logits mean", lg0.mean(0), " edited logits mean", lgf.mean(0))
+print("time_s of cluster", np.percentile(S["time_s"][m], [0, 10, 50, 90, 100]))
+print("count of exactly-zero queue rows:", np.sum(Xf[m][:, :40].sum(1) == 0))

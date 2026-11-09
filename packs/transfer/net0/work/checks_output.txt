@@ -1,0 +1,26 @@
+0. W2 b2 W3 b3 identical to source: True  shapes {'W1': (64, 54), 'b1': (64,), 'W2': (64, 64), 'b2': (64,), 'W3': (4, 64), 'b3': (4,)}
+1. max |logit(net, x) - logit(source, Mx + c)| = 1.5e-07  decisions equal: True
+   unstick term inert at t_green = 12 s: decisions equal to plain mapping on 1.000 of ok states with tg=12; on ok states with tg>12: 0.919
+2. trainability (delivered, L2W states): {'median_max_prob': 0.9878, 'share_max_prob_above_0.99': 0.4792, 'median_logit_gap': 4.5999, 'max_abs_logit': 9.5522, 'sat_l1': 0.0003, 'sat_l2': 0.1253, 'dead_l1': 0, 'dead_l2': 0}
+   trainability (plain map, L2W states): {'median_max_prob': 0.9868, 'share_max_prob_above_0.99': 0.4685, 'median_logit_gap': 4.5304, 'max_abs_logit': 9.5522, 'sat_l1': 0.0002, 'sat_l2': 0.1275, 'dead_l1': 0, 'dead_l2': 0}
+   trainability (source, own L2 states): {'median_max_prob': 0.9632, 'share_max_prob_above_0.99': 0.3625, 'median_logit_gap': 3.4586, 'max_abs_logit': 9.3983, 'sat_l1': 0.0, 'sat_l2': 0.0701, 'dead_l1': 0, 'dead_l2': 0}
+   |W1| max: delivered 2.179  source 0.785;  row-norm mean: delivered 1.553  source 1.482
+3. mapped L2W inputs at honoured states: min 0.000 max 1.530
+   layer-1 |pre-act| mean/q99: delivered-L2W 0.532/1.995  source-L2 0.439/1.678
+4. pick distribution at honoured states [0.269 0.128 0.218 0.385]  switch share 0.992
+   queue-served proxy on fixed    states: net {'served/best': 0.8650260143051718, 'pick_best': 0.6570266606416629, 'wasted': 0.0018075011296882061, 'n': 2213}
+                                      recorded controller {'served/best': 0.49395122763165317, 'pick_best': 0.25666516041572524, 'wasted': 0.016719385449615907, 'n': 2213}
+   queue-served proxy on actuated states: net {'served/best': 0.783083884064556, 'pick_best': 0.5011389521640092, 'wasted': 0.0011389521640091116, 'n': 1756}
+                                      recorded controller {'served/best': 0.7558082705289959, 'pick_best': 0.5723234624145785, 'wasted': 0.002277904328018223, 'n': 1756}
+   source on its own L2 states {'served/best': 0.8534074428459463, 'pick_best': 0.531403604587657, 'wasted': 0.1938831239759694, 'n': 1831}
+5. single-movement probes: pick from current phase 0/1/2/3 (lane level 0.67 | 1.0)
+   NS through      [0, 0, 0, 0] [0, 0, 0, 0]
+   NS left         [1, 1, 1, 1] [1, 1, 1, 1]
+   EW through      [2, 2, 2, 2] [2, 2, 2, 2]
+   EW left         [3, 3, 3, 3] [3, 3, 3, 3]
+   E left only     [3, 3, 3, 3] [3, 3, 3, 3]
+   W through only  [2, 2, 2, 2] [2, 2, 2, 2]
+   S left only     [1, 1, 1, 1] [1, 1, 1, 1]
+6. frozen lone-vehicle snapshots
+plain mapping (no unstick)         cases 289  never served (30 min)  44  mean wait (served)   1.2 s  max (served)   50 s
+delivered                          cases 289  never served (30 min)   0  mean wait (served)   3.2 s  max (served)   30 s

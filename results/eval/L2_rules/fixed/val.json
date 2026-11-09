@@ -1,0 +1,215 @@
+{
+ "problem": "L2_rules",
+ "policy": "fixed:10,10,20,15",
+ "set": "val",
+ "label": "fixed",
+ "drain_cap": 1800,
+ "summary": {
+  "low": {
+   "tts_veh_h": 39.76208333333334,
+   "delay": 31.16,
+   "delay_veh_h": 15.516449544891508,
+   "halting_veh_h": 10.658888888888889,
+   "remaining": 0.0,
+   "arrived": 1869.5,
+   "n": 2
+  },
+  "nominal": {
+   "tts_veh_h": 51.60875,
+   "delay": 34.385,
+   "delay_veh_h": 20.931254794262934,
+   "halting_veh_h": 13.017499999999998,
+   "remaining": 0.0,
+   "arrived": 2330.0,
+   "n": 2
+  },
+  "high": {
+   "tts_veh_h": 64.36805555555556,
+   "delay": 41.61,
+   "delay_veh_h": 28.748992157075357,
+   "halting_veh_h": 14.633611111111112,
+   "remaining": 0.0,
+   "arrived": 2665.0,
+   "n": 2
+  },
+  "all": {
+   "tts_veh_h": 51.91296296296296,
+   "delay": 35.718333333333334,
+   "delay_veh_h": 21.732232165409936,
+   "halting_veh_h": 12.770000000000001,
+   "remaining": 0.0,
+   "arrived": 2288.1666666666665,
+   "unserved": 0
+  }
+ },
+ "episodes": [
+  {
+   "problem": "L2_rules",
+   "policy": "fixed:10,10,20,15",
+   "scenario": "low",
+   "seed": 1301,
+   "time": 3700,
+   "teleports": 0,
+   "tts_veh_h": 40.50527777777778,
+   "halting_veh_h": 10.818333333333333,
+   "delay_veh_h": 15.905038961639956,
+   "remaining": 0,
+   "switches": [
+    185
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    47
+   ],
+   "loaded": 1888,
+   "inserted": 1888,
+   "arrived": 1888,
+   "delay": 31.78,
+   "travel": 77.23,
+   "time_loss": 31.77,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_rules",
+   "policy": "fixed:10,10,20,15",
+   "scenario": "low",
+   "seed": 1302,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 39.01888888888889,
+   "halting_veh_h": 10.499444444444444,
+   "delay_veh_h": 15.12786012814306,
+   "remaining": 0,
+   "switches": [
+    184
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    46
+   ],
+   "loaded": 1851,
+   "inserted": 1851,
+   "arrived": 1851,
+   "delay": 30.54,
+   "travel": 75.88,
+   "time_loss": 30.54,
+   "depart_delay": 0.0
+  },
+  {
+   "problem": "L2_rules",
+   "policy": "fixed:10,10,20,15",
+   "scenario": "nominal",
+   "seed": 1301,
+   "time": 3710,
+   "teleports": 0,
+   "tts_veh_h": 52.84527777777778,
+   "halting_veh_h": 13.079722222222221,
+   "delay_veh_h": 21.993047569472672,
+   "remaining": 0,
+   "switches": [
+    185
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    47
+   ],
+   "loaded": 2338,
+   "inserted": 2338,
+   "arrived": 2338,
+   "delay": 35.949999999999996,
+   "travel": 81.36,
+   "time_loss": 35.94,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_rules",
+   "policy": "fixed:10,10,20,15",
+   "scenario": "nominal",
+   "seed": 1302,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 50.37222222222222,
+   "halting_veh_h": 12.955277777777777,
+   "delay_veh_h": 19.869462019053195,
+   "remaining": 0,
+   "switches": [
+    184
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    46
+   ],
+   "loaded": 2322,
+   "inserted": 2322,
+   "arrived": 2322,
+   "delay": 32.82,
+   "travel": 78.09,
+   "time_loss": 32.81,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_rules",
+   "policy": "fixed:10,10,20,15",
+   "scenario": "high",
+   "seed": 1301,
+   "time": 3705,
+   "teleports": 0,
+   "tts_veh_h": 67.66555555555556,
+   "halting_veh_h": 14.829444444444444,
+   "delay_veh_h": 31.76445199790496,
+   "remaining": 0,
+   "switches": [
+    185
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    47
+   ],
+   "loaded": 2671,
+   "inserted": 2671,
+   "arrived": 2671,
+   "delay": 45.79,
+   "travel": 91.19,
+   "time_loss": 45.78,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2_rules",
+   "policy": "fixed:10,10,20,15",
+   "scenario": "high",
+   "seed": 1302,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 61.07055555555556,
+   "halting_veh_h": 14.437777777777777,
+   "delay_veh_h": 25.733532316245757,
+   "remaining": 0,
+   "switches": [
+    184
+   ],
+   "ignored": [
+    0
+   ],
+   "overrides": [
+    46
+   ],
+   "loaded": 2659,
+   "inserted": 2659,
+   "arrived": 2659,
+   "delay": 37.43,
+   "travel": 82.67,
+   "time_loss": 37.42,
+   "depart_delay": 0.01
+  }
+ ]
+}

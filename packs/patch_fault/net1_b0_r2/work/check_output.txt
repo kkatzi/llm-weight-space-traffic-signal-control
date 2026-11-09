@@ -1,0 +1,29 @@
+1. edit size: {'changed': 336, 'total': 7428, 'fraction': 0.045234248788368334}
+2. watchdog unit 31 on recorded states: non-empty max -0.999964 (n=14590), empty min 0.999860 (n=424)
+3. honoured decisions (ok=1), by recording controller:
+   start_network n=3811  final==patch1 0.9903   final==start 0.1900   phase share start [0.068 0.055 0.826 0.051] final [0.044 0.03  0.066 0.859]
+   fixed         n=2058  final==patch1 0.9825   final==start 0.8042   phase share start [0.487 0.087 0.308 0.118] final [0.362 0.069 0.264 0.304]
+   actuated      n=1487  final==patch1 0.9785   final==start 0.6705   phase share start [0.178 0.334 0.282 0.206] final [0.126 0.173 0.171 0.529]
+4. all-visible-empty states (phase x t_green, ok=1): chosen [ 0  0  0 48]  min margin for phase 3: 3.09
+5. single-vehicle synthetic states: n=2128, watchdog max -0.999933, decisions equal to patch-1-only: 0.9836
+6. gridlock-like states n=2372: start picks [   2   11 2354    5], final picks [   0    0    0 2372]
+7. rotated W-spillback states (n=424), agreement with full-detector decision:
+   E2=0.00  start 0.64  final 0.76
+   E2=0.33  start 0.46  final 0.82
+   E2=0.67  start 0.46  final 0.83
+   E2=1.00  start 0.47  final 0.94
+8. float64 build vs saved float32: decision agreement on recorded states 1.00000, max |logit diff| 2.11e-07
+9. trainability (info only): {'median_max_prob': 0.9811476985769103, 'share_max_prob_above_0.99': 0.42813374184094843, 'median_logit_gap': 3.972856576273296, 'max_abs_logit': 12.262649949975131, 'sat_l1': 0.050048080125216464, 'sat_l2': 0.1382053833089117, 'dead_l1': 0, 'dead_l2': 0}
+10. blockage unit 0: |h| min 0.999686; fires on 2717 recorded states; signature (computed directly) 2717; mismatch 0
+    start_network fires 2459 /  5793   decisions there: [   3    2    0 2454]
+    fixed         fires   91 /  4445   decisions there: [13  0  1 77]
+    actuated      fires  167 /  4776   decisions there: [  4  19   2 142]
+    single-vehicle synthetic: G fires on 12 (all = halting car on W1u under phase 2 & ok: True); decisions equal to patch-1-only where G is off: 0.9891
+11. rotated W-blockage states (n=241), agreement with full-detector decision:
+   E2=0.00  start 0.59  patch1 0.59  final 0.79   final picks [115  57  23  46]
+   E2=0.33  start 0.40  patch1 0.62  final 0.97   final picks [ 63  36   1 141]
+   E2=0.67  start 0.49  patch1 0.84  final 0.85   final picks [ 11  10   0 220]
+   E2=1.00  start 0.53  patch1 0.99  final 0.91   final picks [  0   0   0 241]
+start   stuck single-car states: 30  N0@ph1 N1@ph1 N1@ph2 N1@ph3 E0@ph1 E0@ph3 E2@ph1 E2@ph2 S1@ph1 S1@ph3 W0@ph1 W0@ph3 W1@ph1 W1@ph3 N0u@ph1 N0u@ph2 N0u@ph3 N1u@ph2 N1u@ph3 E0u@ph1 E0u@ph3 E1u@ph1 S0u@ph1 S0u@ph2 S0u@ph3 S1u@ph2 S1u@ph3 W0u@ph1 W0u@ph3 W1u@ph1
+patch1  stuck single-car states: 28  N0@ph1 N1@ph1 N1@ph2 N1@ph3 E0@ph1 E0@ph3 S1@ph1 S1@ph3 W0@ph1 W0@ph3 W1@ph1 W1@ph3 N0u@ph1 N0u@ph2 N0u@ph3 N1u@ph2 N1u@ph3 E0u@ph1 E0u@ph3 E1u@ph1 S0u@ph1 S0u@ph2 S0u@ph3 S1u@ph2 S1u@ph3 W0u@ph1 W0u@ph3 W1u@ph1
+final   stuck single-car states: 28  N0@ph1 N1@ph1 N1@ph2 N1@ph3 E0@ph1 E0@ph3 S1@ph1 S1@ph3 W0@ph1 W0@ph3 W1@ph1 W1@ph3 N0u@ph1 N0u@ph2 N0u@ph3 N1u@ph2 N1u@ph3 E0u@ph1 E0u@ph3 E1u@ph1 S0u@ph1 S0u@ph2 S0u@ph3 S1u@ph2 S1u@ph3 W0u@ph1 W0u@ph3 W1u@ph1

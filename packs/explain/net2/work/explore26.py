@@ -1,0 +1,16 @@
+from common import *
+exec(open('explore25.py').read().split("evalmodel(lambda p: GP[p], \"per-phase full\")")[0])
+np.set_printoptions(linewidth=250, precision=2, suppress=True)
+Gs = np.mean([GP[p] for p in range(4)], 0)
+Gc = Gs - Gs.mean(0, keepdims=True)
+print("shared centered gradient, per halting vehicle ((q+d)/3) by lane, logit rows")
+print("      " + " ".join(f"{l:>5s}" for l in LANES))
+for o in range(4): print(f"L{o}    " + " ".join(f"{(Gc[o, i] + Gc[o, 12+i])/3:5.2f}" for i in range(12)))
+print("moving vehicle (d/3)")
+for o in range(4): print(f"L{o}    " + " ".join(f"{Gc[o, 12+i]/3:5.2f}" for i in range(12)))
+print("halting-only part (q/3)")
+for o in range(4): print(f"L{o}    " + " ".join(f"{Gc[o, i]/3:5.2f}" for i in range(12)))
+for p in range(4):
+    G = GP[p]; Gc = G - G.mean(0, keepdims=True)
+    print(f"--- phase {p} per halting vehicle")
+    for o in range(4): print(f"L{o}    " + " ".join(f"{(Gc[o, i] + Gc[o, 12+i])/3:5.2f}" for i in range(12)))

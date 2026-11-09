@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net2_b10_r3",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net2_b10_r3\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Use the simulator only through the pack's eval.py, within its budget of 10 calls. Run eval.py from inside the pack folder; each call takes about 10 s.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- how many simulator calls you used and what they showed;\n- the dev TTS of your final weights;\n- your test predictions.",
+ "start": "2026-11-09 11:08:45",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-09 11:25:33",
+ "exit_code": 0,
+ "result": {
+  "session_id": "f0d9728f-5210-4fec-90e6-67d59729b22e",
+  "num_turns": 40,
+  "total_cost_usd": 3.9630458000000006,
+  "duration_ms": 1001631,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "The repaired network scores **44.7 veh-h** on dev (low 34.6, nominal 45.2, high 54.4). That is about the same as the original network with every detector working (44.8) and better than the start network with the failed detector (47.9).\n\n**What I changed and why:**\n- **Stand-in for the dead W2 reading:** I used the east left-turn pocket (E2) as a shrunken proxy, 0.45\u00b7E2 plus a constant that is lower while phase 3 is green. The numbers come from statistics of the N/S pocket pair, where both detectors work. I folded this into existing weights and biases.\n- **Spillback unit:** I rewired the least-important layer-1 unit. When a car halts on upstream lane W1u outside phase 3, the W2 pocket is almost always full, so the unit feeds the network a \"W2 full\" signal.\n- **Anti-starvation guards:** after about 50 s of the same green, phases 0\u20132 hand over to phase 3 and phase 3 hands over to phase 2. These stop end-of-run lock-ups where a single car waited forever. Such long greens never occur during the demand hour in the recorded data.\n\n**Parameters changed:** 332 of 7428 (limit 371).\n\n**Simulator calls:** 5 of 10. The proxy plus spillback unit scored 44.8 but left one vehicle stuck at the end of one episode, and the first guard alone didn't fix it (44.8). Adding the phase-3 guard gave 44.7 with no leftovers; that is the final version. Trying the proxy slope at 0.7 and 0.25 gave 45.1 and 45.0, which is within dev noise.\n\n**Test predictions:** low 34.7, nominal 45.2, high 54.7.\n\nFiles are in `work/`:\n- weights.npz\n- NOTES.md\n- predictions.json\n- build.py"
+ }
+}

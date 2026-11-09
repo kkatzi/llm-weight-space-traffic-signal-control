@@ -1,0 +1,28 @@
+{
+ "use": "patch_fault",
+ "run": "net2_b0",
+ "session_id": "02b0f319-cde2-4dfb-accc-3cf78b8dc922",
+ "source": "/home/traffic-ntua/.claude/projects/-home-traffic-ntua-wsp-v3-agent-runs-patch-fault-net2-b0/02b0f319-cde2-4dfb-accc-3cf78b8dc922.jsonl",
+ "requested_model": "claude-opus-5-5",
+ "models": {
+  "claude-opus-5-5": 34
+ },
+ "prompt_matches_launch": true,
+ "start": "2026-11-08T16:32:04.646000+00:00",
+ "end": "2026-11-08T16:38:37.379000+00:00",
+ "active_minutes": 6.5,
+ "gaps_over_10_min": [],
+ "tool_calls": {
+  "Bash": 16
+ },
+ "simulator_calls_logged": 0,
+ "simulator_calls_mirror_log": 0,
+ "simulator_budget": 0,
+ "output_tokens": 35582,
+ "cost_usd": 1.4865454000000002,
+ "turns": 17,
+ "permission_denials": [],
+ "subagents": false,
+ "messages_received_after_launch": [],
+ "flags": {}
+}

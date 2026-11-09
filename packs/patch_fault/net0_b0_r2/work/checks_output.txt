@@ -1,0 +1,54 @@
+faulty start network on recorded data, deadlock tails picks: [  0   0 678   0]
+=== A=0.0 G=0.00 C=0.0 mirror=1.0  changed=128  equiv_err=3.55e-15
+  deadlock-tail picks (0..3): [   7    0 1012    0]
+  empty junction: first honoured switch (green s, new phase) from each phase: {0: (12, 2), 1: (12, 2), 2: None, 3: (12, 2)}  | phase 2 with 6 halting on W1u: None
+  phase-3 lock check (picks; 3 = stays): [2, 3, 2, 3, 2, 3, 2, 3, 2, 3]
+  start_network  changed 0.211  picks before [353 286 582 302]  after [245 206 474 598]
+  fixed          changed 0.154  picks before [936 177 593 363]  after [672 156 573 668]
+  actuated       changed 0.257  picks before [230 427 467 383]  after [138 273 365 731]
+  trainability: {'median_max_prob': 0.981, 'share_max_prob_above_0.99': 0.437, 'median_logit_gap': 4.172, 'max_abs_logit': 9.596, 'sat_l1': 0.0, 'sat_l2': 0.111, 'dead_l1': 0, 'dead_l2': 0}
+=== A=0.4 G=0.08 C=0.0 mirror=1.0  changed=256  equiv_err=3.55e-15
+  deadlock-tail picks (0..3): [  7   0 336 676]
+  empty junction: first honoured switch (green s, new phase) from each phase: {0: (12, 2), 1: (12, 2), 2: (57, 3), 3: (12, 2)}  | phase 2 with 6 halting on W1u: (42, 3)
+  phase-3 lock check (picks; 3 = stays): [2, 3, 2, 3, 2, 3, 2, 3, 3, 3]
+  start_network  changed 0.242  picks before [353 286 582 302]  after [231 194 461 637]
+  fixed          changed 0.181  picks before [936 177 593 363]  after [628 156 573 712]
+  actuated       changed 0.287  picks before [230 427 467 383]  after [123 257 353 774]
+  trainability: {'median_max_prob': 0.983, 'share_max_prob_above_0.99': 0.444, 'median_logit_gap': 4.222, 'max_abs_logit': 9.618, 'sat_l1': 0.0, 'sat_l2': 0.114, 'dead_l1': 0, 'dead_l2': 0}
+=== A=0.5 G=0.10 C=0.0 mirror=1.0  changed=256  equiv_err=2.66e-15
+  deadlock-tail picks (0..3): [  7   0  14 998]
+  empty junction: first honoured switch (green s, new phase) from each phase: {0: (12, 2), 1: (12, 2), 2: (47, 3), 3: (12, 2)}  | phase 2 with 6 halting on W1u: (32, 3)
+  phase-3 lock check (picks; 3 = stays): [2, 3, 2, 3, 2, 3, 3, 3, 3, 3]
+  start_network  changed 0.248  picks before [353 286 582 302]  after [228 193 457 645]
+  fixed          changed 0.190  picks before [936 177 593 363]  after [617 154 575 723]
+  actuated       changed 0.291  picks before [230 427 467 383]  after [123 253 349 782]
+  trainability: {'median_max_prob': 0.983, 'share_max_prob_above_0.99': 0.445, 'median_logit_gap': 4.234, 'max_abs_logit': 9.621, 'sat_l1': 0.0, 'sat_l2': 0.115, 'dead_l1': 0, 'dead_l2': 0}
+=== A=0.6 G=0.12 C=0.0 mirror=1.0  changed=256  equiv_err=3.55e-15
+  deadlock-tail picks (0..3): [   7    0   12 1000]
+  empty junction: first honoured switch (green s, new phase) from each phase: {0: (12, 2), 1: (12, 2), 2: (42, 3), 3: (12, 2)}  | phase 2 with 6 halting on W1u: (32, 3)
+  phase-3 lock check (picks; 3 = stays): [2, 3, 2, 3, 2, 3, 3, 3, 3, 3]
+  start_network  changed 0.253  picks before [353 286 582 302]  after [225 192 453 653]
+  fixed          changed 0.194  picks before [936 177 593 363]  after [611 152 576 730]
+  actuated       changed 0.299  picks before [230 427 467 383]  after [118 249 349 791]
+  trainability: {'median_max_prob': 0.983, 'share_max_prob_above_0.99': 0.447, 'median_logit_gap': 4.246, 'max_abs_logit': 9.624, 'sat_l1': 0.0, 'sat_l2': 0.117, 'dead_l1': 0, 'dead_l2': 0}
+=== A=1.0 G=0.20 C=0.0 mirror=1.0  changed=256  equiv_err=2.66e-15
+  deadlock-tail picks (0..3): [   6    0    9 1004]
+  empty junction: first honoured switch (green s, new phase) from each phase: {0: (12, 2), 1: (12, 2), 2: (27, 3), 3: (12, 2)}  | phase 2 with 6 halting on W1u: (22, 3)
+  phase-3 lock check (picks; 3 = stays): [2, 3, 2, 3, 3, 3, 3, 3, 3, 3]
+  start_network  changed 0.285  picks before [353 286 582 302]  after [213 184 425 701]
+  fixed          changed 0.214  picks before [936 177 593 363]  after [581 148 573 767]
+  actuated       changed 0.318  picks before [230 427 467 383]  after [113 239 333 822]
+  trainability: {'median_max_prob': 0.99, 'share_max_prob_above_0.99': 0.478, 'median_logit_gap': 4.6, 'max_abs_logit': 9.626, 'sat_l1': 0.0, 'sat_l2': 0.124, 'dead_l1': 0, 'dead_l2': 0}
+=== A=0.6 G=0.12 C=2.0 mirror=1.0  changed=320  equiv_err=3.55e-15
+  deadlock-tail picks (0..3): [   4    0   11 1004]
+  empty junction: first honoured switch (green s, new phase) from each phase: {0: (12, 2), 1: (12, 2), 2: (42, 3), 3: (12, 2)}  | phase 2 with 6 halting on W1u: (12, 3)
+  phase-3 lock check (picks; 3 = stays): [2, 3, 2, 3, 2, 3, 3, 3, 3, 3]
+  start_network  changed 0.268  picks before [353 286 582 302]  after [221 188 439 675]
+  fixed          changed 0.197  picks before [936 177 593 363]  after [606 152 576 735]
+  actuated       changed 0.309  picks before [230 427 467 383]  after [115 242 344 806]
+  trainability: {'median_max_prob': 0.987, 'share_max_prob_above_0.99': 0.476, 'median_logit_gap': 4.532, 'max_abs_logit': 9.624, 'sat_l1': 0.0, 'sat_l2': 0.123, 'dead_l1': 0, 'dead_l2': 0}
+
+N/S surrogate (agreement with full-info decisions: zero-imputed vs constructed)
+ A = 0.0 [(np.str_('start_network'), 0.871, 0.88), (np.str_('fixed'), 0.949, 0.942), (np.str_('actuated'), 0.792, 0.883)]
+ A = 0.5 [(np.str_('start_network'), 0.871, 0.863), (np.str_('fixed'), 0.949, 0.928), (np.str_('actuated'), 0.792, 0.864)]
+ A = 1.0 [(np.str_('start_network'), 0.871, 0.839), (np.str_('fixed'), 0.949, 0.908), (np.str_('actuated'), 0.792, 0.85)]

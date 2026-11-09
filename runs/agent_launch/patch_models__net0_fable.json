@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch_models/net0_fable",
+ "model": "claude-fable-5-1",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net0_fable\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Use the simulator only through the pack's eval.py, within its budget of 10 calls. Run eval.py from inside the pack folder; each call takes about 10 s.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- how many simulator calls you used and what they showed;\n- the dev TTS of your final weights;\n- your test predictions.",
+ "start": "2026-11-08 17:47:07",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-08 17:57:08",
+ "exit_code": 0,
+ "result": {
+  "session_id": "e4f1b9ab-daea-4fb1-975b-bc21ee1b9ca1",
+  "num_turns": 28,
+  "total_cost_usd": 4.03864085,
+  "duration_ms": 598273,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "Deliverables are in place: `work/weights.npz`, `work/NOTES.md`, `work/predictions.json`, plus the build and check scripts.\n\n**What I changed and why.** The trained network rests in phase 2 (EW through) whenever the EW-through lanes are empty and other queues are small. In one of the six recorded network episodes that rest became a trap: three cars (N0, N1, W2) waited the entire 30-minute drain cap, about 1.45 veh-h lost. I repurposed layer-1 unit 13 as a hand-set detector for \"phase 2, min green elapsed, EW-through stop line empty, at most one EW car upstream, at least one car halting elsewhere\", relayed it through layer-2 unit 5, and lowered logit 2 by 20 when it fires, plus a +1 nudge on logit 0 so a lone N/S car is served instead of looping 2\u21923\u21922. Removed units were bias-compensated by their mean activations.\n\n**Parameters changed:** 246 of 7428.\n\n**Simulator calls:** 4 of 10. Baseline 44.7; final weights 44.8 (low 34.8, nominal 44.9, high 54.6). No dev episode hits the trap, so the dev score is unchanged within noise. Offline: 0 of 1169 trap states still pick phase 2, and only 14 of 4247 honoured decisions flip, all original near-ties.\n\n**Dev TTS of final weights:** 44.8 veh-h.\n\n**Test predictions:** low 34.6, nominal 44.7, high 54.4."
+ }
+}

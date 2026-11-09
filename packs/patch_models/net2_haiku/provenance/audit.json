@@ -1,0 +1,31 @@
+{
+ "use": "patch_models",
+ "run": "net2_haiku",
+ "session_id": "6bdb8b56-a1d5-466d-8a79-575300483b0a",
+ "source": "/home/traffic-ntua/.claude/projects/-home-traffic-ntua-wsp-v3-agent-runs-patch-models-net2-haiku/6bdb8b56-a1d5-466d-8a79-575300483b0a.jsonl",
+ "requested_model": "claude-haiku-5-5",
+ "models": {
+  "claude-haiku-5-5": 38
+ },
+ "prompt_matches_launch": true,
+ "start": "2026-11-08T15:47:01.557000+00:00",
+ "end": "2026-11-08T15:50:45.496000+00:00",
+ "active_minutes": 3.7,
+ "gaps_over_10_min": [],
+ "tool_calls": {
+  "Read": 2,
+  "Bash": 15,
+  "Write": 3,
+  "Edit": 1
+ },
+ "simulator_calls_logged": 3,
+ "simulator_calls_mirror_log": 3,
+ "simulator_budget": 10,
+ "output_tokens": 34392,
+ "cost_usd": 0.04617399,
+ "turns": 22,
+ "permission_denials": [],
+ "subagents": false,
+ "messages_received_after_launch": [],
+ "flags": {}
+}

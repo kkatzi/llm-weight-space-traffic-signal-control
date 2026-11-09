@@ -1,0 +1,18 @@
+\begin{tabular}{lrrrrr}
+\toprule
+Controller under the rules & Net 0 & Net 1 & Net 2 & Pooled vs.\ naive & Departs from best legal (\%) \\
+\midrule
+Network without the rules (TTS) & 45.0 & 44.8 & 44.6 & & \\
+Network + shield, naive (TTS) & 47.7 & 47.3 & 47.3 & +6.0 [+5.1, +6.8]$^{\dagger}$ & \\
+\midrule
+LLM supervisor, one shot & +0.26 & $-$0.38 & $-$0.19 & $-$0.10 [$-$0.43, +0.23] & 0.1, 3.2, 0.4 \\
+LLM supervisor, 10 calls & $-$1.15$^{*}$ & +0.24 & 0.00 & $-$0.31 [$-$0.63, +0.02] & 8.3, 1.4, 0.0 \\
+Network, best legal phase & 0.00 & 0.00 & 0.00 & 0.00 [0.00, 0.00] & \\
+PPO fine-tuned under the rules, 300k & $-$1.43$^{*}$ & $-$0.76 & $-$1.23$^{*}$ & $-$1.14 [$-$1.65, $-$0.63] & \\
+PPO fine-tuned under the rules, 1M & $-$0.67 & $-$0.51 & $-$0.39 & $-$0.53 [$-$1.05, 0.00] & \\
+PPO trained under the rules, 3M (3 seeds) & \multicolumn{3}{r}{TTS 47.0, 46.9, 47.0} & $-$1.03 [$-$1.61, $-$0.44] & \\
+\midrule
+Actuated, tuned under the rules (TTS) & \multicolumn{3}{r}{48.7} & & \\
+Fixed time, tuned under the rules (TTS) & \multicolumn{3}{r}{49.8} & & \\
+\bottomrule
+\end{tabular}

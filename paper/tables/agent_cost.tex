@@ -1,0 +1,22 @@
+\begin{tabular}{lrrrrr}
+\toprule
+Use (Opus 5.5 unless stated; 3 runs each) & Active min & Tool calls & Output tokens (k) & Simulator calls & Cost (USD) \\
+\midrule
+Initialise (one shot) & 17 (14--19) & 33 & 99 & 0.0 & 3.74 \\
+Transfer (one shot) & 8 (6--13) & 23 & 51 & 0.0 & 2.10 \\
+Explain (one shot) & 25 (20--29) & 81 & 146 & 0.0 & 7.08 \\
+Patch, one shot & 17 (12--25) & 34 & 92 & 0.0 & 3.87 \\
+Patch, 5 calls & 20 (14--30) & 39 & 115 & 2.7 & 4.75 \\
+Patch, 10 calls & 21 (12--31) & 38 & 120 & 4.7 & 4.87 \\
+Patch (fault), one shot & 14 (6--18) & 24 & 73 & 0.0 & 2.99 \\
+Patch (fault), 5 calls & 16 (13--18) & 36 & 86 & 3.7 & 3.55 \\
+Patch (fault), 10 calls & 15 (12--16) & 32 & 76 & 5.0 & 3.19 \\
+Constrain, one shot & 12 (11--13) & 25 & 69 & 0.0 & 2.60 \\
+Constrain, 10 calls & 18 (15--21) & 39 & 101 & 4.3 & 3.83 \\
+Patch, Fable 5.1, 10 calls & 12 (10--17) & 29 & 46 & 6.3 & 4.50 \\
+Patch, Sonnet 5.5, 10 calls & 1 (1--1) & 8 & 4 & 3.7 & 0.17 \\
+Patch, Haiku 5.5, 10 calls & 3 (2--4) & 17 & 25 & 2.7 & 0.03 \\
+\midrule
+All 54 runs & 771 & & 4{,}290 & & 183.89 \\
+\bottomrule
+\end{tabular}

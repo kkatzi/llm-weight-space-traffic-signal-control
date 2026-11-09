@@ -1,0 +1,887 @@
+{
+ "problem": "L2",
+ "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+ "set": "test",
+ "label": "es_net0_seed0",
+ "drain_cap": 3600,
+ "summary": {
+  "low": {
+   "tts_veh_h": 34.484666666666676,
+   "delay": 23.391,
+   "delay_veh_h": 11.687568943666673,
+   "halting_veh_h": 7.727472222222221,
+   "remaining": 0.1,
+   "arrived": 1802.0,
+   "n": 10
+  },
+  "nominal": {
+   "tts_veh_h": 45.43977777777778,
+   "delay": 26.214,
+   "delay_veh_h": 16.330311646244283,
+   "halting_veh_h": 10.397166666666665,
+   "remaining": 0.4,
+   "arrived": 2267.0,
+   "n": 10
+  },
+  "high": {
+   "tts_veh_h": 54.84455555555555,
+   "delay": 30.532000000000004,
+   "delay_veh_h": 20.87058971387637,
+   "halting_veh_h": 11.975333333333332,
+   "remaining": 0.0,
+   "arrived": 2602.8,
+   "n": 10
+  },
+  "all": {
+   "tts_veh_h": 44.922999999999995,
+   "delay": 26.712333333333333,
+   "delay_veh_h": 16.296156767929112,
+   "halting_veh_h": 10.033324074074075,
+   "remaining": 0.16666666666666666,
+   "arrived": 2223.9333333333334,
+   "unserved": 5
+  }
+ },
+ "episodes": [
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "low",
+   "seed": 19001,
+   "time": 3725,
+   "teleports": 0,
+   "tts_veh_h": 34.69,
+   "halting_veh_h": 7.6325,
+   "delay_veh_h": 11.628435125794793,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    446
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1823,
+   "inserted": 1823,
+   "arrived": 1823,
+   "delay": 23.180000000000003,
+   "travel": 68.5,
+   "time_loss": 23.17,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "low",
+   "seed": 19002,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 34.31138888888889,
+   "halting_veh_h": 7.620277777777778,
+   "delay_veh_h": 11.58272052507557,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    445
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1799,
+   "inserted": 1799,
+   "arrived": 1799,
+   "delay": 23.28,
+   "travel": 68.66,
+   "time_loss": 23.27,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "low",
+   "seed": 19003,
+   "time": 7200,
+   "teleports": 0,
+   "tts_veh_h": 36.265277777777776,
+   "halting_veh_h": 8.7825,
+   "delay_veh_h": 12.978231509537151,
+   "remaining": 1,
+   "switches": [
+    241
+   ],
+   "ignored": [
+    425
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1832,
+   "inserted": 1832,
+   "arrived": 1831,
+   "delay": 24.02,
+   "travel": 69.32,
+   "time_loss": 24.02,
+   "depart_delay": 0.0
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "low",
+   "seed": 19004,
+   "time": 3675,
+   "teleports": 0,
+   "tts_veh_h": 34.952222222222225,
+   "halting_veh_h": 7.625277777777778,
+   "delay_veh_h": 11.56995112398741,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    432
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1855,
+   "inserted": 1855,
+   "arrived": 1855,
+   "delay": 22.650000000000002,
+   "travel": 67.82,
+   "time_loss": 22.64,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "low",
+   "seed": 19005,
+   "time": 3675,
+   "teleports": 0,
+   "tts_veh_h": 34.84027777777778,
+   "halting_veh_h": 7.617222222222222,
+   "delay_veh_h": 11.694446791010636,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    432
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1828,
+   "inserted": 1828,
+   "arrived": 1828,
+   "delay": 23.32,
+   "travel": 68.61,
+   "time_loss": 23.31,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "low",
+   "seed": 19006,
+   "time": 3730,
+   "teleports": 0,
+   "tts_veh_h": 33.58972222222222,
+   "halting_veh_h": 7.5119444444444445,
+   "delay_veh_h": 11.353692475341337,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    430
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1760,
+   "inserted": 1760,
+   "arrived": 1760,
+   "delay": 23.39,
+   "travel": 68.7,
+   "time_loss": 23.38,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "low",
+   "seed": 19007,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 34.8625,
+   "halting_veh_h": 7.986666666666666,
+   "delay_veh_h": 11.957133981008745,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    454
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1813,
+   "inserted": 1813,
+   "arrived": 1813,
+   "delay": 23.92,
+   "travel": 69.22,
+   "time_loss": 23.91,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "low",
+   "seed": 19008,
+   "time": 3680,
+   "teleports": 0,
+   "tts_veh_h": 33.580555555555556,
+   "halting_veh_h": 7.405555555555556,
+   "delay_veh_h": 11.247334067103752,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    438
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1762,
+   "inserted": 1762,
+   "arrived": 1762,
+   "delay": 23.25,
+   "travel": 68.6,
+   "time_loss": 23.24,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "low",
+   "seed": 19009,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 34.21222222222222,
+   "halting_veh_h": 7.525277777777778,
+   "delay_veh_h": 11.495745794683025,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    427
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1795,
+   "inserted": 1795,
+   "arrived": 1795,
+   "delay": 23.34,
+   "travel": 68.61,
+   "time_loss": 23.33,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "low",
+   "seed": 19010,
+   "time": 3680,
+   "teleports": 0,
+   "tts_veh_h": 33.5425,
+   "halting_veh_h": 7.5675,
+   "delay_veh_h": 11.367998043124322,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    447
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1754,
+   "inserted": 1754,
+   "arrived": 1754,
+   "delay": 23.560000000000002,
+   "travel": 68.84,
+   "time_loss": 23.55,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "nominal",
+   "seed": 19001,
+   "time": 7200,
+   "teleports": 0,
+   "tts_veh_h": 46.27638888888889,
+   "halting_veh_h": 10.948888888888888,
+   "delay_veh_h": 16.88507365752106,
+   "remaining": 1,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    449
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2294,
+   "inserted": 2294,
+   "arrived": 2293,
+   "delay": 25.73,
+   "travel": 71.07,
+   "time_loss": 25.72,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "nominal",
+   "seed": 19002,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 45.37305555555555,
+   "halting_veh_h": 10.189444444444444,
+   "delay_veh_h": 15.949760231676578,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    441
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2290,
+   "inserted": 2290,
+   "arrived": 2290,
+   "delay": 25.990000000000002,
+   "travel": 71.32,
+   "time_loss": 25.98,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "nominal",
+   "seed": 19003,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 47.464444444444446,
+   "halting_veh_h": 10.293055555555556,
+   "delay_veh_h": 17.738481933160724,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    443
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2296,
+   "inserted": 2296,
+   "arrived": 2296,
+   "delay": 29.1,
+   "travel": 74.42,
+   "time_loss": 29.09,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "nominal",
+   "seed": 19004,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 45.70444444444445,
+   "halting_veh_h": 10.19,
+   "delay_veh_h": 15.971789836774933,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    445
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2311,
+   "inserted": 2311,
+   "arrived": 2311,
+   "delay": 25.990000000000002,
+   "travel": 71.19,
+   "time_loss": 25.98,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "nominal",
+   "seed": 19005,
+   "time": 3680,
+   "teleports": 0,
+   "tts_veh_h": 45.87916666666667,
+   "halting_veh_h": 10.12111111111111,
+   "delay_veh_h": 16.499116586432926,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    452
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2281,
+   "inserted": 2281,
+   "arrived": 2281,
+   "delay": 27.180000000000003,
+   "travel": 72.4,
+   "time_loss": 27.17,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "nominal",
+   "seed": 19006,
+   "time": 7200,
+   "teleports": 0,
+   "tts_veh_h": 45.43194444444445,
+   "halting_veh_h": 11.681944444444444,
+   "delay_veh_h": 17.02743886643623,
+   "remaining": 2,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    441
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2218,
+   "inserted": 2218,
+   "arrived": 2216,
+   "delay": 25.26,
+   "travel": 70.54,
+   "time_loss": 25.25,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "nominal",
+   "seed": 19007,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 45.39416666666666,
+   "halting_veh_h": 10.3925,
+   "delay_veh_h": 16.33064540638546,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    436
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2270,
+   "inserted": 2270,
+   "arrived": 2270,
+   "delay": 26.71,
+   "travel": 71.98,
+   "time_loss": 26.7,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "nominal",
+   "seed": 19008,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 43.859722222222224,
+   "halting_veh_h": 9.705277777777777,
+   "delay_veh_h": 15.336877851199034,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    446
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2226,
+   "inserted": 2226,
+   "arrived": 2226,
+   "delay": 25.57,
+   "travel": 70.92,
+   "time_loss": 25.56,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "nominal",
+   "seed": 19009,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 45.02194444444444,
+   "halting_veh_h": 10.136111111111111,
+   "delay_veh_h": 15.925202430424093,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    436
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2270,
+   "inserted": 2270,
+   "arrived": 2270,
+   "delay": 26.12,
+   "travel": 71.39,
+   "time_loss": 26.11,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "nominal",
+   "seed": 19010,
+   "time": 7200,
+   "teleports": 0,
+   "tts_veh_h": 43.9925,
+   "halting_veh_h": 10.313333333333333,
+   "delay_veh_h": 15.638729662431793,
+   "remaining": 1,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    451
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2218,
+   "inserted": 2218,
+   "arrived": 2217,
+   "delay": 24.490000000000002,
+   "travel": 69.8,
+   "time_loss": 24.48,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "high",
+   "seed": 19001,
+   "time": 3725,
+   "teleports": 0,
+   "tts_veh_h": 59.57333333333333,
+   "halting_veh_h": 12.512222222222222,
+   "delay_veh_h": 24.490138509764964,
+   "remaining": 0,
+   "switches": [
+    246
+   ],
+   "ignored": [
+    456
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2670,
+   "inserted": 2670,
+   "arrived": 2670,
+   "delay": 34.98,
+   "travel": 80.31,
+   "time_loss": 34.97,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "high",
+   "seed": 19002,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 54.14611111111111,
+   "halting_veh_h": 11.945833333333333,
+   "delay_veh_h": 20.004957506895224,
+   "remaining": 0,
+   "switches": [
+    245
+   ],
+   "ignored": [
+    451
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2628,
+   "inserted": 2628,
+   "arrived": 2628,
+   "delay": 28.84,
+   "travel": 74.16,
+   "time_loss": 28.83,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "high",
+   "seed": 19003,
+   "time": 3735,
+   "teleports": 0,
+   "tts_veh_h": 56.7025,
+   "halting_veh_h": 12.103055555555555,
+   "delay_veh_h": 22.056179828363607,
+   "remaining": 0,
+   "switches": [
+    245
+   ],
+   "ignored": [
+    453
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2635,
+   "inserted": 2635,
+   "arrived": 2635,
+   "delay": 32.14,
+   "travel": 77.46,
+   "time_loss": 32.13,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "high",
+   "seed": 19004,
+   "time": 3700,
+   "teleports": 0,
+   "tts_veh_h": 55.806111111111115,
+   "halting_veh_h": 12.299444444444445,
+   "delay_veh_h": 21.48227112695129,
+   "remaining": 0,
+   "switches": [
+    245
+   ],
+   "ignored": [
+    462
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2611,
+   "inserted": 2611,
+   "arrived": 2611,
+   "delay": 31.740000000000002,
+   "travel": 76.93,
+   "time_loss": 31.73,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "high",
+   "seed": 19005,
+   "time": 3680,
+   "teleports": 0,
+   "tts_veh_h": 55.1975,
+   "halting_veh_h": 11.908055555555556,
+   "delay_veh_h": 21.21413909111332,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    436
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2601,
+   "inserted": 2601,
+   "arrived": 2601,
+   "delay": 31.150000000000002,
+   "travel": 76.39,
+   "time_loss": 31.14,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "high",
+   "seed": 19006,
+   "time": 3740,
+   "teleports": 0,
+   "tts_veh_h": 51.818888888888885,
+   "halting_veh_h": 11.558055555555555,
+   "delay_veh_h": 18.75072595985201,
+   "remaining": 0,
+   "switches": [
+    246
+   ],
+   "ignored": [
+    451
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2550,
+   "inserted": 2550,
+   "arrived": 2550,
+   "delay": 27.89,
+   "travel": 73.15,
+   "time_loss": 27.88,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "high",
+   "seed": 19007,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 56.261944444444445,
+   "halting_veh_h": 12.076666666666666,
+   "delay_veh_h": 22.12071699666226,
+   "remaining": 0,
+   "switches": [
+    245
+   ],
+   "ignored": [
+    453
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2615,
+   "inserted": 2615,
+   "arrived": 2615,
+   "delay": 32.11,
+   "travel": 77.44,
+   "time_loss": 32.1,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "high",
+   "seed": 19008,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 53.7825,
+   "halting_veh_h": 12.01,
+   "delay_veh_h": 20.276150919674862,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    454
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2563,
+   "inserted": 2563,
+   "arrived": 2563,
+   "delay": 30.200000000000003,
+   "travel": 75.53,
+   "time_loss": 30.19,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "high",
+   "seed": 19009,
+   "time": 3710,
+   "teleports": 0,
+   "tts_veh_h": 53.588055555555556,
+   "halting_veh_h": 11.953055555555556,
+   "delay_veh_h": 19.69377147827567,
+   "remaining": 0,
+   "switches": [
+    246
+   ],
+   "ignored": [
+    444
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2605,
+   "inserted": 2605,
+   "arrived": 2605,
+   "delay": 28.78,
+   "travel": 74.05,
+   "time_loss": 28.77,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "npz:/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/es_net0_sig0.3_seed0.npz",
+   "scenario": "high",
+   "seed": 19010,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 51.56861111111111,
+   "halting_veh_h": 11.386944444444444,
+   "delay_veh_h": 18.61684572121051,
+   "remaining": 0,
+   "switches": [
+    245
+   ],
+   "ignored": [
+    445
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2550,
+   "inserted": 2550,
+   "arrived": 2550,
+   "delay": 27.490000000000002,
+   "travel": 72.79,
+   "time_loss": 27.48,
+   "depart_delay": 0.01
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+[17:15:57] start patch/net0_b10 (claude-opus-5-5)
+[17:15:59] start patch/net1_b10 (claude-opus-5-5)
+[17:16:01] start patch/net2_b10 (claude-opus-5-5)
+[17:16:03] start patch/net0_b5 (claude-opus-5-5)
+[17:16:05] start patch/net1_b5 (claude-opus-5-5)
+[17:16:07] start patch/net2_b5 (claude-opus-5-5)
+[17:16:09] start patch/net0_b0 (claude-opus-5-5)
+[17:16:11] start patch/net1_b0 (claude-opus-5-5)
+[17:16:13] start patch/net2_b0 (claude-opus-5-5)
+[17:16:15] start init/r1 (claude-opus-5-5)
+[17:16:17] start init/r2 (claude-opus-5-5)
+[17:16:19] start init/r3 (claude-opus-5-5)
+[2026-11-08 17:28:16] done /home/traffic-ntua/wsp_v3_agent_runs/patch/net0_b10 rc=0 session=6fd8a5d4-5018-4c0c-83a2-d6c4183ecda0
+[17:28:21] start transfer/net0 (claude-opus-5-5)
+[2026-11-08 17:28:43] done /home/traffic-ntua/wsp_v3_agent_runs/patch/net2_b0 rc=0 session=6872f842-8059-4e93-aaab-6e4039e7bd75
+[17:28:48] start transfer/net1 (claude-opus-5-5)
+[2026-11-08 17:30:05] done /home/traffic-ntua/wsp_v3_agent_runs/patch/net0_b5 rc=0 session=4a5afd98-41a9-4c65-ae25-8d0d541cebeb
+[17:30:10] start transfer/net2 (claude-opus-5-5)
+[2026-11-08 17:30:12] done /home/traffic-ntua/wsp_v3_agent_runs/init/r2 rc=0 session=5b61d429-e7fb-4036-8bcc-ef87f15f3b55
+[17:30:17] start explain/net0 (claude-opus-5-5)
+[2026-11-08 17:30:49] done /home/traffic-ntua/wsp_v3_agent_runs/patch/net0_b0 rc=0 session=d90cbf09-8814-413a-aea4-d519c39475a5
+[17:30:54] start explain/net1 (claude-opus-5-5)
+[2026-11-08 17:32:11] done /home/traffic-ntua/wsp_v3_agent_runs/patch/net1_b5 rc=0 session=979e9096-a12f-4ba8-98cb-ca7f3a61d979
+[17:32:16] start explain/net2 (claude-opus-5-5)
+[2026-11-08 17:33:43] done /home/traffic-ntua/wsp_v3_agent_runs/init/r3 rc=0 session=2969a79a-546c-4ae7-b211-b22803d47179
+[17:33:48] start constrain/net0_b10 (claude-opus-5-5)
+[2026-11-08 17:35:15] done /home/traffic-ntua/wsp_v3_agent_runs/init/r1 rc=0 session=003afb5f-0e88-4213-a642-5d4d7dbc2d09
+[17:35:20] start constrain/net1_b10 (claude-opus-5-5)
+[2026-11-08 17:35:42] done /home/traffic-ntua/wsp_v3_agent_runs/transfer/net1 rc=0 session=5485fe7a-524d-4316-9aa6-c0c9f6fdd793
+[17:35:47] start constrain/net2_b10 (claude-opus-5-5)
+[2026-11-08 17:35:54] done /home/traffic-ntua/wsp_v3_agent_runs/patch/net2_b10 rc=0 session=0829eb7e-1ed4-4d55-8ced-b916b5a8cd16
+[17:35:59] start constrain/net0_b0 (claude-opus-5-5)
+[2026-11-08 17:36:01] done /home/traffic-ntua/wsp_v3_agent_runs/transfer/net2 rc=0 session=c2de16da-7736-45d7-b215-0a3f97a3a014
+[17:36:06] start constrain/net1_b0 (claude-opus-5-5)
+[2026-11-08 17:41:18] done /home/traffic-ntua/wsp_v3_agent_runs/patch/net1_b0 rc=0 session=685faf89-7f0e-49b8-94aa-32cc04129dbf
+[2026-11-08 17:41:18] done /home/traffic-ntua/wsp_v3_agent_runs/transfer/net0 rc=0 session=fad03975-9e9e-4f2d-aaee-c1e618ce0160
+[17:41:23] start constrain/net2_b0 (claude-opus-5-5)
+[17:41:25] start patch_models/net0_sonnet (claude-sonnet-5-5)
+[2026-11-08 17:42:52] done /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net0_sonnet rc=0 session=fc901d1c-2c2d-4276-9e1f-377848d4e788
+[17:42:57] start patch_models/net1_sonnet (claude-sonnet-5-5)
+[2026-11-08 17:44:14] done /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net1_sonnet rc=0 session=82cde226-415a-453d-8d3b-919da6dcc1fd
+[17:44:19] start patch_models/net2_sonnet (claude-sonnet-5-5)
+[2026-11-08 17:45:31] done /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net2_sonnet rc=0 session=5cf11196-da3e-42dd-a74c-ecf10cf6bf7b
+[17:45:36] start patch_models/net0_haiku (claude-haiku-5-5)
+[2026-11-08 17:46:18] done /home/traffic-ntua/wsp_v3_agent_runs/patch/net2_b5 rc=0 session=1771ac62-93f7-41cf-ac88-7d3bcbf361ec
+[17:46:23] start patch_models/net1_haiku (claude-haiku-5-5)
+[2026-11-08 17:46:55] done /home/traffic-ntua/wsp_v3_agent_runs/patch/net1_b10 rc=0 session=e0e7f869-318c-44f2-9a2c-a04384ee5054
+[17:47:00] start patch_models/net2_haiku (claude-haiku-5-5)
+[2026-11-08 17:47:02] done /home/traffic-ntua/wsp_v3_agent_runs/constrain/net1_b0 rc=0 session=9c215f65-6847-498b-90cd-10a689c600f8
+[17:47:07] start patch_models/net0_fable (claude-fable-5-1)
+[2026-11-08 17:47:44] done /home/traffic-ntua/wsp_v3_agent_runs/constrain/net0_b0 rc=0 session=ee10e116-1c33-4e43-9ce4-5c07786e8900
+[17:47:49] start patch_models/net1_fable (claude-fable-5-1)
+[2026-11-08 17:47:51] done /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net0_haiku rc=0 session=d3e522dd-be19-4490-9947-2396a43f09ca
+[17:47:56] start patch_models/net2_fable (claude-fable-5-1)
+[2026-11-08 17:49:13] done /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net1_haiku rc=0 session=71155f5c-fbf8-4d3f-a09c-c896613b9cdf
+[2026-11-08 17:50:33] done /home/traffic-ntua/wsp_v3_agent_runs/constrain/net1_b10 rc=0 session=e894b14c-d700-4031-921a-99478f3ca0b6
+[2026-11-08 17:50:48] done /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net2_haiku rc=0 session=6bdb8b56-a1d5-466d-8a79-575300483b0a
+[2026-11-08 17:51:18] done /home/traffic-ntua/wsp_v3_agent_runs/explain/net1 rc=0 session=d6359c64-cde0-4e0d-bbb0-721f0f19e9a9
+[2026-11-08 17:52:43] done /home/traffic-ntua/wsp_v3_agent_runs/constrain/net0_b10 rc=0 session=178fa415-b059-49ae-b27d-af99c9b3446c
+[2026-11-08 17:54:13] done /home/traffic-ntua/wsp_v3_agent_runs/constrain/net2_b0 rc=0 session=61abc483-fc51-4e85-b8b8-fd8766400b6c
+[2026-11-08 17:56:23] done /home/traffic-ntua/wsp_v3_agent_runs/constrain/net2_b10 rc=0 session=e1349a66-9e44-4090-bb4a-31ef5528d642
+[2026-11-08 17:57:08] done /home/traffic-ntua/wsp_v3_agent_runs/explain/net2 rc=0 session=a32e120a-2d55-4598-9b47-6e017306db4a
+[2026-11-08 17:57:08] done /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net0_fable rc=0 session=e4f1b9ab-daea-4fb1-975b-bc21ee1b9ca1
+[2026-11-08 17:58:08] done /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net2_fable rc=0 session=260898c6-6505-4122-a766-497297548383
+[2026-11-08 17:59:18] done /home/traffic-ntua/wsp_v3_agent_runs/explain/net0 rc=0 session=ef7a505e-1b17-4406-9a73-48c4c08765d3
+[2026-11-08 18:04:33] done /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net1_fable rc=0 session=c69d2470-65f7-426a-bdce-3d03f1c66d9a
+all runs finished

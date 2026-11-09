@@ -1,0 +1,59 @@
+{
+ "pack": "/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/patch_fault/net0_b0_r3",
+ "case": "patch_fault",
+ "missing": [],
+ "predictions": {
+  "low": 35.1,
+  "nominal": 45.8,
+  "high": 57.2
+ },
+ "trainability": {
+  "median_max_prob": 0.9835185579787233,
+  "share_max_prob_above_0.99": 0.44783821478382146,
+  "max_abs_logit": 9.65889804401349,
+  "sat_l1": 0.0049577231520223156,
+  "sat_l2": 0.12165271966527197,
+  "dead_l1": 0,
+  "dead_l2": 0
+ },
+ "params_changed": 301,
+ "within_cap": true,
+ "test": {
+  "low": {
+   "tts_veh_h": 34.78580555555556,
+   "delay": 23.711,
+   "delay_veh_h": 11.940047283980531,
+   "halting_veh_h": 7.901083333333334,
+   "remaining": 0.5,
+   "arrived": 1801.6,
+   "n": 10
+  },
+  "nominal": {
+   "tts_veh_h": 45.55,
+   "delay": 26.399,
+   "delay_veh_h": 16.42270517879593,
+   "halting_veh_h": 10.535138888888888,
+   "remaining": 0.8,
+   "arrived": 2266.6,
+   "n": 10
+  },
+  "high": {
+   "tts_veh_h": 55.83005555555555,
+   "delay": 30.961000000000002,
+   "delay_veh_h": 21.692607324520907,
+   "halting_veh_h": 12.673194444444444,
+   "remaining": 1.4,
+   "arrived": 2601.4,
+   "n": 10
+  },
+  "all": {
+   "tts_veh_h": 45.38862037037037,
+   "delay": 27.023666666666667,
+   "delay_veh_h": 16.68511992909912,
+   "halting_veh_h": 10.369805555555557,
+   "remaining": 0.9,
+   "arrived": 2223.2,
+   "unserved": 27
+  }
+ }
+}

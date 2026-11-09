@@ -1,0 +1,11 @@
+# The environment the study ran in (Python 3.11 on Linux). Create with:
+#   conda env create -f environment.yml && conda activate wsp-traffic
+# CPU is sufficient; the study used torch 2.6.0 (CUDA build) on CPU only.
+name: wsp-traffic
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - -r requirements.txt

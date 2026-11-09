@@ -1,0 +1,43 @@
+=== 0. frozen layers identical, NS scale 0.9373
+ok
+
+=== 1. plumbing: L2 states lifted to L2W layout and run through the L2W net vs the L2 net
+ns_scale 0.857: agreement all 0.9659  honoured(ok=1) 0.9527
+ns_scale 0.937: agreement all 0.9562  honoured(ok=1) 0.9507
+ns_scale 1.000: agreement all 0.9319  honoured(ok=1) 0.9270
+exact plumbing (identity N/S, identity lift): max |logit diff| = 1.7763568394002505e-15
+
+=== 2. virtual-L2 feature statistics: L2W recorded states mapped by M vs L2 recorded states
+q_E0   L2 mean 0.297 q90 0.670 | L2W->L2 mean 0.293 q90 0.835  (fixed 0.379, actuated 0.207)
+q_E1   L2 mean 0.163 q90 0.670 | L2W->L2 mean 0.130 q90 0.335  (fixed 0.204, actuated 0.057)
+q_E2   L2 mean 0.263 q90 1.000 | L2W->L2 mean 0.424 q90 1.000  (fixed 0.382, actuated 0.465)
+d_E0   L2 mean 0.418 q90 1.000 | L2W->L2 mean 0.399 q90 0.835  (fixed 0.478, actuated 0.319)
+d_E1   L2 mean 0.247 q90 0.670 | L2W->L2 mean 0.182 q90 0.670  (fixed 0.263, actuated 0.101)
+d_E2   L2 mean 0.351 q90 1.000 | L2W->L2 mean 0.526 q90 1.000  (fixed 0.484, actuated 0.569)
+q_N0   L2 mean 0.280 q90 0.670 | L2W->L2 mean 0.380 q90 0.937  (fixed 0.457, actuated 0.302)
+q_N2   L2 mean 0.260 q90 0.670 | L2W->L2 mean 0.290 q90 0.937  (fixed 0.217, actuated 0.362)
+d_N0   L2 mean 0.361 q90 0.670 | L2W->L2 mean 0.459 q90 0.937  (fixed 0.532, actuated 0.385)
+d_N2   L2 mean 0.317 q90 1.000 | L2W->L2 mean 0.344 q90 0.937  (fixed 0.273, actuated 0.416)
+q_E0u  L2 mean 0.002 q90 0.000 | L2W->L2 mean 0.002 q90 0.000  (fixed 0.004, actuated 0.001)
+q_E1u  L2 mean 0.003 q90 0.000 | L2W->L2 mean 0.031 q90 0.088  (fixed 0.010, actuated 0.051)
+d_E0u  L2 mean 0.056 q90 0.117 | L2W->L2 mean 0.048 q90 0.088  (fixed 0.050, actuated 0.046)
+d_E1u  L2 mean 0.057 q90 0.117 | L2W->L2 mean 0.092 q90 0.205  (fixed 0.070, actuated 0.114)
+d_N0u  L2 mean 0.036 q90 0.088 | L2W->L2 mean 0.061 q90 0.146  (fixed 0.082, actuated 0.041)
+d_N1u  L2 mean 0.036 q90 0.088 | L2W->L2 mean 0.065 q90 0.176  (fixed 0.083, actuated 0.046)
+
+=== 3. variants on the L2W recorded states
+role   picks [0.241 0.241 0.184 0.335]  ok=1 picks [0.313 0.136 0.158 0.392]  switch|ok 0.974  agree actuated 0.251  median_max_prob 0.992 sat_l1 0.0003 sat_l2 0.0975
+interp picks [0.245 0.23  0.211 0.313]  ok=1 picks [0.321 0.123 0.19  0.366]  switch|ok 0.978  agree actuated 0.260  median_max_prob 0.991 sat_l1 0.0003 sat_l2 0.0970
+drop   picks [0.233 0.223 0.211 0.334]  ok=1 picks [0.306 0.117 0.189 0.388]  switch|ok 0.974  agree actuated 0.261  median_max_prob 0.990 sat_l1 0.0003 sat_l2 0.1000
+sum    picks [0.185 0.183 0.334 0.298]  ok=1 picks [0.243 0.085 0.315 0.358]  switch|ok 0.975  agree actuated 0.300  median_max_prob 0.992 sat_l1 0.0013 sat_l2 0.1354
+agreement role vs interp: all 0.953, ok=1 0.946
+agreement role vs drop: all 0.957, ok=1 0.955
+agreement role vs sum: all 0.827, ok=1 0.819
+source on L2 own states: picks [0.215 0.302 0.3   0.184]  ok=1 picks [0.238 0.179 0.329 0.253]  switch|ok 0.953
+
+=== 4. trainability (delivered variant 'role')
+L2W net on L2W states: {'median_max_prob': 0.9920070598575326, 'share_max_prob_above_0.99': 0.5217196093837693, 'median_logit_gap': 4.973815694702322, 'max_abs_logit': 12.23627307753842, 'sat_l1': 0.0002630766640475923, 'sat_l2': 0.09747341171848692, 'dead_l1': 0, 'dead_l2': 0}
+source net on L2 states: {'median_max_prob': 0.9821497374414575, 'share_max_prob_above_0.99': 0.4387547935935033, 'median_logit_gap': 4.1666165532310995, 'max_abs_logit': 12.004549868884718, 'sat_l1': 0.00014098804421385067, 'sat_l2': 0.05757246785472592, 'dead_l1': 0, 'dead_l2': 0}
+h1 |act| mean L2W 0.396 vs source 0.348; h2 0.723 vs 0.677
+layer-1 pre-activation std L2W 0.647 vs source 0.546; max |pre| 3.82 vs 3.51
+|W1| max L2W 0.877 source 0.877; Frobenius 11.40 vs 12.12

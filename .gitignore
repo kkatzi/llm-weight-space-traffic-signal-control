@@ -1,0 +1,31 @@
+__pycache__/
+*.pyc
+# SUMO working folders, training scratch and audit copies (all regenerable)
+runs/tmp/
+runs/train/
+runs/tune/
+runs/curves/
+runs/eval/**/routes.rou.xml
+runs/eval/**/statistics.xml
+wsp_audit_*/
+# Intermediate PPO checkpoints (about 318 MB): distributed as a data archive, not in git.
+# The 300k checkpoints of the fine-tuning runs are kept: stored evaluations use them.
+models/**/ckpt_*_steps.zip
+!models/*/ft_net*_s*/ckpt_300000_steps.zip
+# needed by the audit from a git checkout: the 100k checkpoints it retrains against (stage E) and the 600k
+# checkpoint the Initialise task files quote (stage G)
+!models/L2/ppo_s100/ckpt_100000_steps.zip
+!models/L2/ppo_s100/ckpt_600000_steps.zip
+!models/L2/init_r1_s400/ckpt_100000_steps.zip
+!models/L2W/transfer_net0_s500/ckpt_100000_steps.zip
+!models/L2/ft_net0_s600/ckpt_100000_steps.zip
+!models/L2_rules/ppo_s300/ckpt_100000_steps.zip
+!models/L2_fault/ft_net0_s800/ckpt_100000_steps.zip
+# Queue runtime files
+queue/logs/
+queue/runner.log
+queue/runner.pid
+queue/budget
+queue/budget_now
+queue/stop
+queue/cancel

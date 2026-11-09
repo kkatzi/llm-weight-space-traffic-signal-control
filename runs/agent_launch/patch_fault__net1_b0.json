@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net1_b0",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net1_b0\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Do not run any simulator. You get one shot.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- the checks you ran;\n- your test predictions.",
+ "start": "2026-11-08 18:32:01",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-08 18:48:35",
+ "exit_code": 0,
+ "result": {
+  "session_id": "2ddec4d5-9c82-4784-8e12-4f4964bb68e6",
+  "num_turns": 25,
+  "total_cost_usd": 3.6515535000000003,
+  "duration_ms": 988352,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "I changed 304 of the 7,428 parameters (budget 371). `work/weights.npz`, `work/NOTES.md` and `work/predictions.json` are written, with all scripts in `work/`.\n\n**What I changed and why**\n- **The fault:** the network can't see the west left-turn pocket overflow. Waiting left-turners then block the shared west upstream lane, and the network reads that as straight-ahead demand. It holds east\u2013west through green while north\u2013south traffic gridlocks.\n- **Mirror input (112 params):** the network now gets the east left pocket's queue and density in place of the dead west ones. Both pockets have the same demand and are served by the same phase. This breaks every gridlock in the recorded data.\n- **Max-green rule (8 units):** a phase held about 60 s is forced to the next phase in the cycle 0\u21921\u21922\u21923. Under heavy queues this drops to about 30 s. It also ends the old network's habit of stranding single cars.\n- **Congestion rule (8 units):** when upstream queues are heavy, the network may only hold the current phase or move to the next one. This stops it starving north\u2013south.\n- **Bias corrections:** biases absorb the side effects of reusing those units.\n\n**Checks (forward passes only, nothing fitted, no simulator)**\n- 98% of decisions match the plain mirror version where no rule fires; the rest are near-ties.\n- Both rules fire correctly in 100% of the recorded and synthetic states where they apply.\n- Single stuck cars: 11 of 36 test cases never got served before, 0 of 36 now; the longest wait is 135 s.\n\n**Predicted test TTS (veh-h):** low 35.8, nominal 46.3, high 58.0."
+ }
+}

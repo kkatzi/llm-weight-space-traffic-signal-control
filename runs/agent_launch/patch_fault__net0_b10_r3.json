@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net0_b10_r3",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net0_b10_r3\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Use the simulator only through the pack's eval.py, within its budget of 10 calls. Run eval.py from inside the pack folder; each call takes about 10 s.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- how many simulator calls you used and what they showed;\n- the dev TTS of your final weights;\n- your test predictions.",
+ "start": "2026-11-09 11:08:41",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-09 11:23:48",
+ "exit_code": 0,
+ "result": {
+  "session_id": "71e88019-3156-4f6d-8c1b-422fe6e8dce9",
+  "num_turns": 33,
+  "total_cost_usd": 3.3284641,
+  "duration_ms": 901121,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "The repaired network scores **45.0 veh-h dev TTS** (low 34.9, nominal 45.3, high 54.8). That's down from 48.0 for the original with the failed detector, and 0.3 above the network with every detector working (44.7).\n\n**What I changed and why:** I rebuilt the two dead W2 inputs from inputs that still work and folded that into the first layer. Nothing was fitted.\n- **Mirror lane:** W2 gets the readings of E2, the opposite left pocket. It has the same demand and is served by the same phase.\n- **Upstream spill-back:** 6 \u00d7 q_W1u is added. In the recorded data, any halted car in the lane feeding a left pocket means that pocket is almost always full.\n- **Time phantom:** a term that grows with time in the current green, starting at 12 s, on W2 and the N/S through lanes. Without it, the junction left cars stranded until the 30-minute drain cap: unseen W2 cars, and lone N/S cars that the original network never served.\n\n**Parameters changed:** 320 of 7428, all in the first layer (four W1 columns and b1).\n\n**Simulator calls:** 6 of 10.\n\n| call | variant | dev TTS | cars left at cap |\n|---|---|---|---|\n| 1 | mirror only | 45.6 | 5 |\n| 2 | + W2 phantom | 45.7 | 4 |\n| 3 | + N/S phantom | 45.6 | 0 |\n| 4 | + spill-back, k=3 | 45.3 | 0 |\n| 5 | k=6 (delivered) | 45.0 | 0 |\n| 6 | k=10 | 45.1 | 0 |\n\n**Test predictions:** low 35.1, nominal 45.5, high 55.1. These are a little above dev because I picked the best of several variants on the same 9 episodes.\n\nEverything is in `work/`; open `NOTES.md` first."
+ }
+}

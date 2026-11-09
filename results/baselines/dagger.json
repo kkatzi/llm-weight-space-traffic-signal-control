@@ -1,0 +1,488 @@
+{
+ "net0_small": {
+  "iterations": [
+   {
+    "iter": 0,
+    "n_states": 5416,
+    "comparisons": 7,
+    "train_agreement": 0.7091949778434269,
+    "rollout_tts": 46.61615740740741,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_small_iter0.py"
+   },
+   {
+    "iter": 1,
+    "n_states": 9146,
+    "comparisons": 7,
+    "train_agreement": 0.7380275530286464,
+    "rollout_tts": 197.9838888888889,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_small_iter1.py"
+   },
+   {
+    "iter": 2,
+    "n_states": 13290,
+    "comparisons": 7,
+    "train_agreement": 0.7669676448457486,
+    "rollout_tts": 277.87810185185185,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_small_iter2.py"
+   },
+   {
+    "iter": 3,
+    "n_states": 17202,
+    "comparisons": 7,
+    "train_agreement": 0.7229391931170794,
+    "rollout_tts": 50.37277777777777,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_small_iter3.py"
+   },
+   {
+    "iter": 4,
+    "n_states": 21070,
+    "comparisons": 7,
+    "train_agreement": 0.7111058376839108,
+    "rollout_tts": 50.00782407407407,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_small_iter4.py"
+   },
+   {
+    "iter": 5,
+    "n_states": 24163,
+    "comparisons": 7,
+    "train_agreement": 0.6925878409137938,
+    "rollout_tts": 66.23625,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_small_iter5.py"
+   }
+  ],
+  "selected_iter": 0,
+  "file": "/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/dagger_net0_small.py"
+ },
+ "net0_mid": {
+  "iterations": [
+   {
+    "iter": 0,
+    "n_states": 5416,
+    "comparisons": 31,
+    "train_agreement": 0.7845273264401772,
+    "rollout_tts": 44.353287037037035,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_mid_iter0.py"
+   },
+   {
+    "iter": 1,
+    "n_states": 8429,
+    "comparisons": 29,
+    "train_agreement": 0.8149246648475501,
+    "rollout_tts": 42.7938425925926,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_mid_iter1.py"
+   },
+   {
+    "iter": 2,
+    "n_states": 11354,
+    "comparisons": 31,
+    "train_agreement": 0.8361810815571604,
+    "rollout_tts": 42.85296296296297,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_mid_iter2.py"
+   },
+   {
+    "iter": 3,
+    "n_states": 14254,
+    "comparisons": 31,
+    "train_agreement": 0.8342219727795707,
+    "rollout_tts": 42.10444444444445,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_mid_iter3.py"
+   },
+   {
+    "iter": 4,
+    "n_states": 16793,
+    "comparisons": 31,
+    "train_agreement": 0.8346930268564283,
+    "rollout_tts": 42.574444444444445,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_mid_iter4.py"
+   },
+   {
+    "iter": 5,
+    "n_states": 19331,
+    "comparisons": 31,
+    "train_agreement": 0.8375666028658632,
+    "rollout_tts": 41.81462962962963,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_mid_iter5.py"
+   }
+  ],
+  "selected_iter": 5,
+  "file": "/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/dagger_net0_mid.py"
+ },
+ "net0_full": {
+  "iterations": [
+   {
+    "iter": 0,
+    "n_states": 5416,
+    "comparisons": 135,
+    "train_agreement": 0.8812776957163959,
+    "rollout_tts": 41.54657407407407,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_full_iter0.py"
+   },
+   {
+    "iter": 1,
+    "n_states": 7943,
+    "comparisons": 115,
+    "train_agreement": 0.875361953921692,
+    "rollout_tts": 521.4708796296296,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_full_iter1.py"
+   },
+   {
+    "iter": 2,
+    "n_states": 12260,
+    "comparisons": 153,
+    "train_agreement": 0.9175367047308319,
+    "rollout_tts": 41.17217592592593,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_full_iter2.py"
+   },
+   {
+    "iter": 3,
+    "n_states": 14567,
+    "comparisons": 164,
+    "train_agreement": 0.9093155763026017,
+    "rollout_tts": 41.25467592592592,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_full_iter3.py"
+   },
+   {
+    "iter": 4,
+    "n_states": 17455,
+    "comparisons": 133,
+    "train_agreement": 0.900945287883128,
+    "rollout_tts": 41.98319444444444,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_full_iter4.py"
+   },
+   {
+    "iter": 5,
+    "n_states": 20358,
+    "comparisons": 148,
+    "train_agreement": 0.9035268690441104,
+    "rollout_tts": 41.62847222222222,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net0_full_iter5.py"
+   }
+  ],
+  "selected_iter": 2,
+  "file": "/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/dagger_net0_full.py"
+ },
+ "net1_small": {
+  "iterations": [
+   {
+    "iter": 0,
+    "n_states": 5095,
+    "comparisons": 7,
+    "train_agreement": 0.6359175662414132,
+    "rollout_tts": 46.67550925925926,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_small_iter0.py"
+   },
+   {
+    "iter": 1,
+    "n_states": 8000,
+    "comparisons": 7,
+    "train_agreement": 0.68675,
+    "rollout_tts": 56.78236111111111,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_small_iter1.py"
+   },
+   {
+    "iter": 2,
+    "n_states": 10919,
+    "comparisons": 7,
+    "train_agreement": 0.707940287572122,
+    "rollout_tts": 45.62055555555555,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_small_iter2.py"
+   },
+   {
+    "iter": 3,
+    "n_states": 14209,
+    "comparisons": 7,
+    "train_agreement": 0.7040608065310718,
+    "rollout_tts": 45.71212962962963,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_small_iter3.py"
+   },
+   {
+    "iter": 4,
+    "n_states": 17512,
+    "comparisons": 7,
+    "train_agreement": 0.6624029237094564,
+    "rollout_tts": 60.48796296296297,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_small_iter4.py"
+   },
+   {
+    "iter": 5,
+    "n_states": 19447,
+    "comparisons": 7,
+    "train_agreement": 0.6827274129685813,
+    "rollout_tts": 47.92833333333334,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_small_iter5.py"
+   }
+  ],
+  "selected_iter": 2,
+  "file": "/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/dagger_net1_small.py"
+ },
+ "net1_mid": {
+  "iterations": [
+   {
+    "iter": 0,
+    "n_states": 5095,
+    "comparisons": 31,
+    "train_agreement": 0.7366045142296369,
+    "rollout_tts": 44.53226851851852,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_mid_iter0.py"
+   },
+   {
+    "iter": 1,
+    "n_states": 8671,
+    "comparisons": 31,
+    "train_agreement": 0.780878791373544,
+    "rollout_tts": 43.952638888888885,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_mid_iter1.py"
+   },
+   {
+    "iter": 2,
+    "n_states": 11615,
+    "comparisons": 31,
+    "train_agreement": 0.7519586741282824,
+    "rollout_tts": 43.242361111111116,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_mid_iter2.py"
+   },
+   {
+    "iter": 3,
+    "n_states": 14218,
+    "comparisons": 31,
+    "train_agreement": 0.776902517935012,
+    "rollout_tts": 42.46837962962963,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_mid_iter3.py"
+   },
+   {
+    "iter": 4,
+    "n_states": 16051,
+    "comparisons": 31,
+    "train_agreement": 0.7607625693103234,
+    "rollout_tts": 44.50958333333333,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_mid_iter4.py"
+   },
+   {
+    "iter": 5,
+    "n_states": 18680,
+    "comparisons": 31,
+    "train_agreement": 0.7486616702355461,
+    "rollout_tts": 42.74407407407407,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_mid_iter5.py"
+   }
+  ],
+  "selected_iter": 3,
+  "file": "/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/dagger_net1_mid.py"
+ },
+ "net1_full": {
+  "iterations": [
+   {
+    "iter": 0,
+    "n_states": 5095,
+    "comparisons": 159,
+    "train_agreement": 0.8437684003925418,
+    "rollout_tts": 42.603796296296295,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_full_iter0.py"
+   },
+   {
+    "iter": 1,
+    "n_states": 7639,
+    "comparisons": 152,
+    "train_agreement": 0.8520748789108522,
+    "rollout_tts": 41.93453703703704,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_full_iter1.py"
+   },
+   {
+    "iter": 2,
+    "n_states": 10862,
+    "comparisons": 141,
+    "train_agreement": 0.8546308230528448,
+    "rollout_tts": 41.35740740740741,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_full_iter2.py"
+   },
+   {
+    "iter": 3,
+    "n_states": 12844,
+    "comparisons": 165,
+    "train_agreement": 0.8585331672376206,
+    "rollout_tts": 41.48671296296296,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_full_iter3.py"
+   },
+   {
+    "iter": 4,
+    "n_states": 14705,
+    "comparisons": 197,
+    "train_agreement": 0.8640598435906154,
+    "rollout_tts": 41.21736111111111,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_full_iter4.py"
+   },
+   {
+    "iter": 5,
+    "n_states": 16565,
+    "comparisons": 208,
+    "train_agreement": 0.8668276486568065,
+    "rollout_tts": 40.84162037037037,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net1_full_iter5.py"
+   }
+  ],
+  "selected_iter": 5,
+  "file": "/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/dagger_net1_full.py"
+ },
+ "net2_small": {
+  "iterations": [
+   {
+    "iter": 0,
+    "n_states": 5077,
+    "comparisons": 7,
+    "train_agreement": 0.6478235178254875,
+    "rollout_tts": 135.8148148148148,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_small_iter0.py"
+   },
+   {
+    "iter": 1,
+    "n_states": 8121,
+    "comparisons": 7,
+    "train_agreement": 0.6676517670237655,
+    "rollout_tts": 43.87351851851852,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_small_iter1.py"
+   },
+   {
+    "iter": 2,
+    "n_states": 11384,
+    "comparisons": 7,
+    "train_agreement": 0.7238229093464511,
+    "rollout_tts": 146.84074074074076,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_small_iter2.py"
+   },
+   {
+    "iter": 3,
+    "n_states": 15350,
+    "comparisons": 7,
+    "train_agreement": 0.7030618892508144,
+    "rollout_tts": 141.01148148148147,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_small_iter3.py"
+   },
+   {
+    "iter": 4,
+    "n_states": 17166,
+    "comparisons": 7,
+    "train_agreement": 0.6983572177560293,
+    "rollout_tts": 51.53402777777779,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_small_iter4.py"
+   },
+   {
+    "iter": 5,
+    "n_states": 18983,
+    "comparisons": 7,
+    "train_agreement": 0.6960965074013591,
+    "rollout_tts": 45.96523148148148,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_small_iter5.py"
+   }
+  ],
+  "selected_iter": 1,
+  "file": "/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/dagger_net2_small.py"
+ },
+ "net2_mid": {
+  "iterations": [
+   {
+    "iter": 0,
+    "n_states": 5077,
+    "comparisons": 31,
+    "train_agreement": 0.7449281071498917,
+    "rollout_tts": 42.99851851851852,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_mid_iter0.py"
+   },
+   {
+    "iter": 1,
+    "n_states": 8054,
+    "comparisons": 31,
+    "train_agreement": 0.7755152719145766,
+    "rollout_tts": 43.15097222222223,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_mid_iter1.py"
+   },
+   {
+    "iter": 2,
+    "n_states": 9642,
+    "comparisons": 31,
+    "train_agreement": 0.7654013690105788,
+    "rollout_tts": 42.2149074074074,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_mid_iter2.py"
+   },
+   {
+    "iter": 3,
+    "n_states": 11597,
+    "comparisons": 31,
+    "train_agreement": 0.7369147193239631,
+    "rollout_tts": 43.5825,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_mid_iter3.py"
+   },
+   {
+    "iter": 4,
+    "n_states": 13305,
+    "comparisons": 31,
+    "train_agreement": 0.7341600901916573,
+    "rollout_tts": 41.92398148148148,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_mid_iter4.py"
+   },
+   {
+    "iter": 5,
+    "n_states": 14782,
+    "comparisons": 31,
+    "train_agreement": 0.726085780002706,
+    "rollout_tts": 42.97550925925926,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_mid_iter5.py"
+   }
+  ],
+  "selected_iter": 4,
+  "file": "/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/dagger_net2_mid.py"
+ },
+ "net2_full": {
+  "iterations": [
+   {
+    "iter": 0,
+    "n_states": 5077,
+    "comparisons": 148,
+    "train_agreement": 0.8329722276935198,
+    "rollout_tts": 41.33620370370371,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter0.py"
+   },
+   {
+    "iter": 1,
+    "n_states": 7025,
+    "comparisons": 178,
+    "train_agreement": 0.8493950177935943,
+    "rollout_tts": 41.40347222222223,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter1.py"
+   },
+   {
+    "iter": 2,
+    "n_states": 8658,
+    "comparisons": 181,
+    "train_agreement": 0.8366828366828367,
+    "rollout_tts": 41.30532407407408,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter2.py"
+   },
+   {
+    "iter": 3,
+    "n_states": 10510,
+    "comparisons": 192,
+    "train_agreement": 0.8325404376784015,
+    "rollout_tts": 40.91504629629629,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter3.py"
+   },
+   {
+    "iter": 4,
+    "n_states": 12027,
+    "comparisons": 187,
+    "train_agreement": 0.8253097197971231,
+    "rollout_tts": 41.54810185185185,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter4.py"
+   },
+   {
+    "iter": 5,
+    "n_states": 13747,
+    "comparisons": 206,
+    "train_agreement": 0.8273805193860478,
+    "rollout_tts": 41.22337962962963,
+    "path": "/home/traffic-ntua/Documents/weight_space_traffic/v3/runs/baselines/dagger/net2_full_iter5.py"
+   }
+  ],
+  "selected_iter": 3,
+  "file": "/home/traffic-ntua/Documents/weight_space_traffic/v3/models/L2/baselines/dagger_net2_full.py"
+ }
+}

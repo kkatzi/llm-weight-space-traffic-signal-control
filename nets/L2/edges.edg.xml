@@ -1,0 +1,18 @@
+<edges>
+    <edge id="BN_UN" from="BN" to="UN" numLanes="2" speed="13.89"/>
+    <edge id="UN_J0" from="UN" to="J0" numLanes="3" speed="13.89"/>
+    <edge id="J0_UN" from="J0" to="UN" numLanes="2" speed="13.89"/>
+    <edge id="UN_BN" from="UN" to="BN" numLanes="2" speed="13.89"/>
+    <edge id="BE_UE" from="BE" to="UE" numLanes="2" speed="13.89"/>
+    <edge id="UE_J0" from="UE" to="J0" numLanes="3" speed="13.89"/>
+    <edge id="J0_UE" from="J0" to="UE" numLanes="2" speed="13.89"/>
+    <edge id="UE_BE" from="UE" to="BE" numLanes="2" speed="13.89"/>
+    <edge id="BS_US" from="BS" to="US" numLanes="2" speed="13.89"/>
+    <edge id="US_J0" from="US" to="J0" numLanes="3" speed="13.89"/>
+    <edge id="J0_US" from="J0" to="US" numLanes="2" speed="13.89"/>
+    <edge id="US_BS" from="US" to="BS" numLanes="2" speed="13.89"/>
+    <edge id="BW_UW" from="BW" to="UW" numLanes="2" speed="13.89"/>
+    <edge id="UW_J0" from="UW" to="J0" numLanes="3" speed="13.89"/>
+    <edge id="J0_UW" from="J0" to="UW" numLanes="2" speed="13.89"/>
+    <edge id="UW_BW" from="UW" to="BW" numLanes="2" speed="13.89"/>
+</edges>

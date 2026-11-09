@@ -1,0 +1,16 @@
+You are taking part in a research experiment on reading neural-network weights.
+
+Your task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/explain/net2
+
+Start by reading TASK.md in that folder, then follow it exactly. In particular:
+- Read only files inside the pack.
+- Write only to its work/ subfolder.
+- Do not run any simulator. You get one shot.
+- Do not fit any model and do not run automated searches over rules or thresholds.
+- Keep rules_small.py within 8 comparisons.
+- Use the Python interpreter that TASK.md names.
+
+When you finish, make sure work/rules_small.py, work/rules_full.py, work/EXPLANATION.md, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:
+- the policy in a few sentences;
+- the fidelity and comparison count of both rule files on the recorded states;
+- your predictions.

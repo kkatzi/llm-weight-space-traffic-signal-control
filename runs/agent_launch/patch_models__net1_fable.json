@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch_models/net1_fable",
+ "model": "claude-fable-5-1",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net1_fable\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Use the simulator only through the pack's eval.py, within its budget of 10 calls. Run eval.py from inside the pack folder; each call takes about 10 s.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- how many simulator calls you used and what they showed;\n- the dev TTS of your final weights;\n- your test predictions.",
+ "start": "2026-11-08 17:47:49",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-08 18:04:33",
+ "exit_code": 0,
+ "result": {
+  "session_id": "c69d2470-65f7-426a-bdce-3d03f1c66d9a",
+  "num_turns": 31,
+  "total_cost_usd": 5.5990886,
+  "duration_ms": 998633,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "**Summary**\n\n**What I changed and why.** The delivered network differs from the original in only the output biases of the two NS phases, each raised by 0.5. The training demand carried a random directional bias whose average favoured EW over NS by about 10%, while the test demand is unbiased. On the recorded states, a 10% shift in the NS/EW input ratio moves the net's own NS-versus-EW logit preference by 0.53, so +0.5 is the net's own scale for that correction. It flips about 2% of honoured decisions.\n\n**Parameters changed:** 2 of 7428.\n\n**Simulator calls:** 7 of 10. A constructed \"stay bonus\" (a phase-level unit plus three threshold decoders, 317 params) caused lock-in at high demand (143 and 1107 veh-h). A time-gated version was safe but neutral (44.55, 44.64). The baseline scored 44.51. The NS bias gave 44.48 at +0.5 and 44.61 at +1.0. All differences other than the lock-ins are within the dev noise of about \u00b10.3 veh-h.\n\n**Dev TTS of final weights:** 44.48 veh-h (low 34.5, nominal 44.9, high 54.0), no vehicles left.\n\n**Test predictions:** low 34.5, nominal 44.8, high 54.2 veh-h. Honest expectation: roughly equal to the original, with the edit justified by the demand-bias argument rather than a measured gain."
+ }
+}

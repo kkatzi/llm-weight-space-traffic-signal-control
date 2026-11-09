@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper and this repository. Code is licensed under MIT (LICENSE); data, models and records are licensed under CC BY 4.0 (LICENSE-DATA)."
+title: "Can Large Language Models Program Traffic Signal Controllers in Weight Space?"
+type: software
+authors:
+  - given-names: Konstantinos
+    family-names: Katzilieris
+    affiliation: "National Technical University of Athens, Department of Transportation Planning and Engineering"
+  - given-names: Emmanouil
+    family-names: Kampitakis
+    affiliation: "National Technical University of Athens, Department of Transportation Planning and Engineering"
+  - given-names: "Eleni I."
+    family-names: Vlahogianni
+    affiliation: "National Technical University of Athens, Department of Transportation Planning and Engineering"
+license: MIT
+version: "1.0.0"
+date-released: "2026-11-09"
+keywords:
+  - traffic signal control
+  - reinforcement learning
+  - large language models
+  - weight-space programming
+repository-code: "https://github.com/kkatzi/llm-weight-space-traffic-signal-control"
+preferred-citation:
+  type: article
+  title: "Can Large Language Models Program Traffic Signal Controllers in Weight Space?"
+  authors:
+    - given-names: Konstantinos
+      family-names: Katzilieris
+      affiliation: "National Technical University of Athens, Department of Transportation Planning and Engineering"
+    - given-names: Emmanouil
+      family-names: Kampitakis
+      affiliation: "National Technical University of Athens, Department of Transportation Planning and Engineering"
+    - given-names: "Eleni I."
+      family-names: Vlahogianni
+      affiliation: "National Technical University of Athens, Department of Transportation Planning and Engineering"
+  year: 2026
+  # Add the venue (journal / conference / arXiv identifier) and DOI once known.

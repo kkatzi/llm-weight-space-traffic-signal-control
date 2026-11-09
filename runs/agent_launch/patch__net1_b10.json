@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch/net1_b10",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch/net1_b10\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Use the simulator only through the pack's eval.py, within its budget of 10 calls. Run eval.py from inside the pack folder; each call takes about 10 s.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- how many simulator calls you used and what they showed;\n- the dev TTS of your final weights;\n- your test predictions.",
+ "start": "2026-11-08 17:15:59",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-08 17:46:55",
+ "exit_code": 0,
+ "result": {
+  "session_id": "e0e7f869-318c-44f2-9a2c-a04384ee5054",
+  "num_turns": 51,
+  "total_cost_usd": 6.929445200000001,
+  "duration_ms": 1854615,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "I added a max-green safety rule: it fixes a real deadlock in the original network but doesn't improve its normal phase choices, so the expected test gain is small and chance could still flip the result.\n\n**What I changed and why:** At every decision the network serves the phase with the most halting cars per lane. Rescaling how it weighs the left-turn lanes, in either direction, made dev TTS worse, so that choice already looks near-optimal. The real defect is that it ignores a few stranded cars on some lanes when the junction is otherwise empty and holds the current green forever. It failed to clear about 20% of synthetic stranded-car cases and left a car stuck at the 30-minute cap in dev episode nominal_1103. The fix: two repurposed layer-1 units that fire once phase 2 or 3 has been green for about 47 s, wired into 20 existing layer-2 units each, which pushes that phase's score down. Normal greens never exceeded 37 s. About 0.3% of normal decisions change. All probed stranded cases now clear within about 2 minutes.\n\n**Parameters changed:** 110 of 7428.\n\n**Simulator calls:** 5 of 10.\n- Left-lane weighting \u00d70.75: 45.15\n- Left-lane weighting \u00d71.3: 44.87\n- Max-green, four-gate version: 44.78\n- Unmodified original: 44.51 (one stuck car)\n- Final: 44.63, no stuck cars\n\nThe original scores best on dev against every variant, even ones that change about one decision per episode, so its dev runs look like a lucky draw.\n\n**Final dev TTS:** 44.63 (low 34.43, nominal 44.75, high 54.71).\n\n**Test predictions:** low 34.5, nominal 44.8, high 54.8.\n\nFiles are in `work/`:\n- weights.npz\n- NOTES.md\n- predictions.json"
+ }
+}

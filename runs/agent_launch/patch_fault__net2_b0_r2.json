@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net2_b0_r2",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net2_b0_r2\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Do not run any simulator. You get one shot.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- the checks you ran;\n- your test predictions.",
+ "start": "2026-11-09 11:08:39",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-09 11:18:18",
+ "exit_code": 0,
+ "result": {
+  "session_id": "31cb1f3d-08b7-4d73-b1d4-2615eaf1f780",
+  "num_turns": 24,
+  "total_cost_usd": 2.3171657000000003,
+  "duration_ms": 574859,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "I've repaired the network by changing 301 of its 7,428 parameters (limit 371). The three deliverables (`weights.npz`, `NOTES.md`, `predictions.json`) are in `work/` with the scripts. Every check compares decisions on recorded states, so the actual travel-time gain is untested.\n\n**What I changed and why:**\n- **Copy E2 into the dead W2 inputs (128 parameters).** The network weighs the two left-turn pockets (E2 and W2) roughly by their sum, so with W2 reading 0 it saw half the left-turn pressure. E2 has the same demand and empties in the same phase, so its values stand in for the missing ones.\n- **A W2-overflow detector (175 parameters, 2 shared with the first edit).** I rebuilt hidden unit 50, the least important one, to fire when a vehicle is halted on W1u (the upstream lane feeding W2) outside phase 3. On the east side that pattern means the pocket is full about 97% of the time. When it fires, it shifts the next layer the way a full W2 reading would. The unit's old average output is compensated in the layer-2 bias.\n\n**Checks:**\n- The detector fires exactly on that condition.\n- On other states, the new network matches the start network with W2 copied from E2 in 98.8\u201399.9% of decisions.\n- On overflow states, it matches the original network fed \"W2 full\" in about 92% of cases; the unrepaired network matches in 48%.\n- Phase-3 share rises from 25% to 44% on the recorded states.\n\n**Predicted test TTS (veh-h):** low 35.2, nominal 45.8, high 57.5."
+ }
+}

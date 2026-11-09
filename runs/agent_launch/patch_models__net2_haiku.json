@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch_models/net2_haiku",
+ "model": "claude-haiku-5-5",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch_models/net2_haiku\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Use the simulator only through the pack's eval.py, within its budget of 10 calls. Run eval.py from inside the pack folder; each call takes about 10 s.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- how many simulator calls you used and what they showed;\n- the dev TTS of your final weights;\n- your test predictions.",
+ "start": "2026-11-08 17:47:00",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-08 17:50:48",
+ "exit_code": 0,
+ "result": {
+  "session_id": "6bdb8b56-a1d5-466d-8a79-575300483b0a",
+  "num_turns": 22,
+  "total_cost_usd": 0.04617399,
+  "duration_ms": 224005,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "The edited network does not beat the start network. Its dev TTS is 46.5 veh-h against 44.8 for the original.\n\n**What I changed:** The start network switches phase almost every time it is allowed to, and its phase choice agrees only about half the time with a max-queue rule. I rewired three hidden units per layer, chosen as the ones with the least outgoing weight, into a max-pressure readout (pick the phase with the most queued traffic on its stop-line lanes). Everything was set by hand, with no fitting.\n\n**Parameters changed:** 348 of 7428 (4.7%), checked with `tools.edit_size`.\n\n**Simulator calls:** 3 of 10 used.\n1. Stay bonus 0 (the delivered file): 46.5.\n2. Stay bonus 1: 47.1.\n3. Stay bonus 3: 57.3, with vehicles left at the drain cap. This was a single check on the stay-bonus design, not a tuning search.\n\n**Dev TTS of final weights:** 46.5 mean (low 34.2, nominal 44.9, high 60.4). The gap is at high demand, where the original scores 55.0.\n\n**Test predictions** (`work/predictions.json`): low 34.2, nominal 44.9, high 60.4.\n\n**Other notes:** The edited network is nearly deterministic (median max-probability 1.0), so PPO would have little exploration to continue from. `NOTES.md` covers the checks and likely failure modes.\n\nFiles are in `/home/traffic-ntua/wsp_v3_agent_runs/patch_models/net2_haiku/work/`: `weights.npz`, `NOTES.md`, `predictions.json`, and `build_maxpressure.py`."
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "pack": "/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0",
+ "case": "explain",
+ "missing": [],
+ "predictions": {
+  "fidelity_small": 0.9,
+  "fidelity_full": 0.905,
+  "tts_small": 45.3,
+  "tts_full": 45.0
+ },
+ "heldout_states": 1831,
+ "comparisons_small": 8,
+ "fidelity_small": 0.9115237575095576,
+ "test_small": {
+  "low": {
+   "tts_veh_h": 34.56141666666666,
+   "delay": 23.354000000000003,
+   "delay_veh_h": 11.75272592930432,
+   "halting_veh_h": 7.750749999999999,
+   "remaining": 0.4,
+   "arrived": 1801.7,
+   "n": 10
+  },
+  "nominal": {
+   "tts_veh_h": 45.40969444444444,
+   "delay": 26.178000000000004,
+   "delay_veh_h": 16.30711803190888,
+   "halting_veh_h": 10.362944444444443,
+   "remaining": 0.8,
+   "arrived": 2266.6,
+   "n": 10
+  },
+  "high": {
+   "tts_veh_h": 56.62774999999999,
+   "delay": 32.398,
+   "delay_veh_h": 22.58211138631277,
+   "halting_veh_h": 12.465388888888889,
+   "remaining": 0.9,
+   "arrived": 2601.9,
+   "n": 10
+  },
+  "all": {
+   "tts_veh_h": 45.532953703703704,
+   "delay": 27.310000000000006,
+   "delay_veh_h": 16.880651782508657,
+   "halting_veh_h": 10.193027777777779,
+   "remaining": 0.7,
+   "arrived": 2223.4,
+   "unserved": 21
+  }
+ },
+ "comparisons_full": 1,
+ "fidelity_full": 0.9109776078645548,
+ "test_full": {
+  "low": {
+   "tts_veh_h": 34.38052777777778,
+   "delay": 23.186,
+   "delay_veh_h": 11.586744363379234,
+   "halting_veh_h": 7.632416666666667,
+   "remaining": 0.2,
+   "arrived": 1801.9,
+   "n": 10
+  },
+  "nominal": {
+   "tts_veh_h": 45.19408333333333,
+   "delay": 26.064999999999998,
+   "delay_veh_h": 16.105699304813054,
+   "halting_veh_h": 10.175611111111111,
+   "remaining": 0.5,
+   "arrived": 2266.9,
+   "n": 10
+  },
+  "high": {
+   "tts_veh_h": 55.727694444444445,
+   "delay": 31.494,
+   "delay_veh_h": 21.726236383930804,
+   "halting_veh_h": 12.147472222222223,
+   "remaining": 0.4,
+   "arrived": 2602.4,
+   "n": 10
+  },
+  "all": {
+   "tts_veh_h": 45.100768518518514,
+   "delay": 26.91500000000001,
+   "delay_veh_h": 16.472893350707697,
+   "halting_veh_h": 9.985166666666668,
+   "remaining": 0.36666666666666664,
+   "arrived": 2223.733333333333,
+   "unserved": 11
+  }
+ },
+ "within_size": true
+}

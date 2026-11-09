@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch/net2_b5",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch/net2_b5\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Use the simulator only through the pack's eval.py, within its budget of 5 calls. Run eval.py from inside the pack folder; each call takes about 10 s.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- how many simulator calls you used and what they showed;\n- the dev TTS of your final weights;\n- your test predictions.",
+ "start": "2026-11-08 17:16:07",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-08 17:46:18",
+ "exit_code": 0,
+ "result": {
+  "session_id": "1771ac62-93f7-41cf-ac88-7d3bcbf361ec",
+  "num_turns": 49,
+  "total_cost_usd": 7.208623300000001,
+  "duration_ms": 1807052,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "The edited network scores 44.6 veh-h mean dev TTS, down from the original's 44.8; nearly all of the gain is in the high scenario. All three deliverables are in `work/`.\n\n**What I changed and why.** The trained network was already good, so I left its normal phase choice alone and added two hand-built rules that each push one phase's logit down:\n- **Idle-hold rule (R1):** with EW-left green, the minimum green over and both EW left pockets empty, it can no longer hold EW-left while vehicles queue elsewhere. The original did this in 36 of 842 such recorded states.\n- **Drain rules (E0\u2013E3):** when no vehicle is moving on any upstream lane (in the recorded data, only in the first 300 s and after 3600 s), a phase with an empty stop line cannot get green. The original deadlocks on lone leftover vehicles: on frozen drain states it never served the waiting lane in 790 of 6948 cases. With the fix that drops to 0.\n\nEach rule reuses one of the least important first-layer units and one second-layer unit. As a side effect, 31 of 5077 recorded decisions (0.7%) flip, all near-ties.\n\n**Parameters changed:** 271 of 7428 (limit 371).\n\n**Simulator calls:** 3 of 5. Mean dev TTS by scenario:\n\n| version | low | nominal | high | mean | vehicles left at cap |\n|---|---|---|---|---|---|\n| original | 34.5 | 44.9 | 55.0 | 44.8 | not reported |\n| R1 only | 34.8 | 44.9 | 54.7 | 44.8 | 1 |\n| **final (R1 + E0\u2013E3)** | 34.7 | 44.9 | **54.2** | **44.6** | 0 |\n| drain rules only | 34.6 | 45.0 | 54.5 | 44.7 | 0 |\n\nThe gain is about the size of run-to-run noise. Low demand came out slightly worse than the original in every version, which may be noise or a small cost of the flipped near-ties.\n\n**Final dev TTS:** 44.6 veh-h.\n\n**Test predictions:** low 34.6, nominal 44.9, high 54.5.\n\nFiles are in `work/`:\n- weights.npz\n- NOTES.md\n- predictions.json"
+ }
+}

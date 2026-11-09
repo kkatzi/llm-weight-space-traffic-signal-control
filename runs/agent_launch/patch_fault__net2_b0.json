@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net2_b0",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net2_b0\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Do not run any simulator. You get one shot.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- the checks you ran;\n- your test predictions.",
+ "start": "2026-11-08 18:32:03",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-08 18:38:40",
+ "exit_code": 0,
+ "result": {
+  "session_id": "02b0f319-cde2-4dfb-accc-3cf78b8dc922",
+  "num_turns": 17,
+  "total_cost_usd": 1.4865454000000002,
+  "duration_ms": 392759,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "I repaired the network by making it read the east left-turn pocket (E2) wherever it used to read the failed west one (W2). It changes 128 parameters. All three files are in `work/`; the test TTS can only be predicted, since no simulator was run.\n\n**What I changed and why:** The network leans heavily on W2: raising it from 0 to 1 takes its EW_left picks from 21% to 71%. With W2 stuck at 0 it under-serves west left-turners, and their 3-car pocket backs up into the upstream lane. E2 has the same demand as W2 and gets green in the same phase, so I added the W2 input weights onto E2's inputs:\n- `W1[:,5] += W1[:,11]` (halting count)\n- `W1[:,17] += W1[:,23]` (vehicle count)\n\nThe network now behaves exactly as if W2 read the same as E2. All other weights are unchanged.\n\n**Parameters changed:** 128 of 7428 (two columns of W1), well under the 371 limit.\n\n**Checks:**\n- **Choosing the fix:** I faked the same failure on the south pocket, whose partner is the north pocket. Copying the partner beat a constant, a shrunk copy and upstream-lane terms in both directions. It matched the full-detector decisions 88\u201389% of the time, against 85\u201388% with the fault.\n- **Correctness:** the edit count is 128 after saving and reloading. On all 14,337 recorded states the decisions are identical to the original network fed W2 = E2. When E2 is empty, nothing changes.\n\n**Predictions:** low 35.3, nominal 46.0, high 57.8 veh-h. These sit between the faulty network and the full-detector one. I expect most of the gain under high demand and the smallest gain under low demand, where the two pockets differ more."
+ }
+}

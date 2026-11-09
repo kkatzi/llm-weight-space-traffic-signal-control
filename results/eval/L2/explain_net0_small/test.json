@@ -1,0 +1,887 @@
+{
+ "problem": "L2",
+ "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+ "set": "test",
+ "label": "explain_net0_small",
+ "drain_cap": 1800,
+ "summary": {
+  "low": {
+   "tts_veh_h": 34.56141666666666,
+   "delay": 23.354000000000003,
+   "delay_veh_h": 11.75272592930432,
+   "halting_veh_h": 7.750749999999999,
+   "remaining": 0.4,
+   "arrived": 1801.7,
+   "n": 10
+  },
+  "nominal": {
+   "tts_veh_h": 45.40969444444444,
+   "delay": 26.178000000000004,
+   "delay_veh_h": 16.30711803190888,
+   "halting_veh_h": 10.362944444444443,
+   "remaining": 0.8,
+   "arrived": 2266.6,
+   "n": 10
+  },
+  "high": {
+   "tts_veh_h": 56.62774999999999,
+   "delay": 32.398,
+   "delay_veh_h": 22.58211138631277,
+   "halting_veh_h": 12.465388888888889,
+   "remaining": 0.9,
+   "arrived": 2601.9,
+   "n": 10
+  },
+  "all": {
+   "tts_veh_h": 45.532953703703704,
+   "delay": 27.310000000000006,
+   "delay_veh_h": 16.880651782508657,
+   "halting_veh_h": 10.193027777777779,
+   "remaining": 0.7,
+   "arrived": 2223.4,
+   "unserved": 21
+  }
+ },
+ "episodes": [
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "low",
+   "seed": 19001,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 34.68055555555556,
+   "halting_veh_h": 7.5808333333333335,
+   "delay_veh_h": 11.613260305547778,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    443
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1823,
+   "inserted": 1823,
+   "arrived": 1823,
+   "delay": 23.16,
+   "travel": 68.48,
+   "time_loss": 23.15,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "low",
+   "seed": 19002,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 34.13722222222222,
+   "halting_veh_h": 7.424722222222222,
+   "delay_veh_h": 11.36545874304974,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    438
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1799,
+   "inserted": 1799,
+   "arrived": 1799,
+   "delay": 22.930000000000003,
+   "travel": 68.31,
+   "time_loss": 22.92,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "low",
+   "seed": 19003,
+   "time": 3680,
+   "teleports": 0,
+   "tts_veh_h": 34.73583333333333,
+   "halting_veh_h": 7.477777777777778,
+   "delay_veh_h": 11.53841528424451,
+   "remaining": 0,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    419
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1832,
+   "inserted": 1832,
+   "arrived": 1832,
+   "delay": 22.95,
+   "travel": 68.25,
+   "time_loss": 22.95,
+   "depart_delay": 0.0
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "low",
+   "seed": 19004,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 35.931666666666665,
+   "halting_veh_h": 8.4725,
+   "delay_veh_h": 12.500815621467137,
+   "remaining": 1,
+   "switches": [
+    240
+   ],
+   "ignored": [
+    439
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1855,
+   "inserted": 1855,
+   "arrived": 1854,
+   "delay": 23.6,
+   "travel": 68.78,
+   "time_loss": 23.59,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "low",
+   "seed": 19005,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 35.908611111111114,
+   "halting_veh_h": 8.485555555555555,
+   "delay_veh_h": 12.684704042682688,
+   "remaining": 2,
+   "switches": [
+    241
+   ],
+   "ignored": [
+    437
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1828,
+   "inserted": 1828,
+   "arrived": 1826,
+   "delay": 23.53,
+   "travel": 68.8,
+   "time_loss": 23.52,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "low",
+   "seed": 19006,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 34.17944444444444,
+   "halting_veh_h": 8.111666666666666,
+   "delay_veh_h": 11.973799421473887,
+   "remaining": 1,
+   "switches": [
+    240
+   ],
+   "ignored": [
+    430
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1760,
+   "inserted": 1760,
+   "arrived": 1759,
+   "delay": 23.6,
+   "travel": 68.92,
+   "time_loss": 23.59,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "low",
+   "seed": 19007,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 34.56583333333333,
+   "halting_veh_h": 7.438888888888889,
+   "delay_veh_h": 11.55829665890384,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    438
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1813,
+   "inserted": 1813,
+   "arrived": 1813,
+   "delay": 23.330000000000002,
+   "travel": 68.63,
+   "time_loss": 23.32,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "low",
+   "seed": 19008,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 33.92194444444444,
+   "halting_veh_h": 7.599444444444444,
+   "delay_veh_h": 11.591668648267738,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    443
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1762,
+   "inserted": 1762,
+   "arrived": 1762,
+   "delay": 23.94,
+   "travel": 69.3,
+   "time_loss": 23.93,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "low",
+   "seed": 19009,
+   "time": 3715,
+   "teleports": 0,
+   "tts_veh_h": 34.04694444444444,
+   "halting_veh_h": 7.395833333333333,
+   "delay_veh_h": 11.354917575708392,
+   "remaining": 0,
+   "switches": [
+    246
+   ],
+   "ignored": [
+    441
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1795,
+   "inserted": 1795,
+   "arrived": 1795,
+   "delay": 23.01,
+   "travel": 68.28,
+   "time_loss": 23.0,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "low",
+   "seed": 19010,
+   "time": 3680,
+   "teleports": 0,
+   "tts_veh_h": 33.50611111111111,
+   "halting_veh_h": 7.520277777777777,
+   "delay_veh_h": 11.345922991697487,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    440
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 1754,
+   "inserted": 1754,
+   "arrived": 1754,
+   "delay": 23.490000000000002,
+   "travel": 68.76,
+   "time_loss": 23.48,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "nominal",
+   "seed": 19001,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 45.971944444444446,
+   "halting_veh_h": 10.054166666666667,
+   "delay_veh_h": 16.615684607623454,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    448
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2294,
+   "inserted": 2294,
+   "arrived": 2294,
+   "delay": 26.790000000000003,
+   "travel": 72.14,
+   "time_loss": 26.78,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "nominal",
+   "seed": 19002,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 45.41972222222222,
+   "halting_veh_h": 10.243611111111111,
+   "delay_veh_h": 16.012972210994494,
+   "remaining": 0,
+   "switches": [
+    245
+   ],
+   "ignored": [
+    450
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2290,
+   "inserted": 2290,
+   "arrived": 2290,
+   "delay": 26.060000000000002,
+   "travel": 71.39,
+   "time_loss": 26.05,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "nominal",
+   "seed": 19003,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 46.18277777777778,
+   "halting_veh_h": 9.992222222222223,
+   "delay_veh_h": 16.561217341534608,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    431
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2296,
+   "inserted": 2296,
+   "arrived": 2296,
+   "delay": 27.09,
+   "travel": 72.41,
+   "time_loss": 27.08,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "nominal",
+   "seed": 19004,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 46.355555555555554,
+   "halting_veh_h": 10.422222222222222,
+   "delay_veh_h": 16.559028831583795,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    448
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2311,
+   "inserted": 2311,
+   "arrived": 2311,
+   "delay": 27.01,
+   "travel": 72.2,
+   "time_loss": 27.0,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "nominal",
+   "seed": 19005,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 46.9225,
+   "halting_veh_h": 11.08361111111111,
+   "delay_veh_h": 17.50262262482005,
+   "remaining": 2,
+   "switches": [
+    241
+   ],
+   "ignored": [
+    448
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2281,
+   "inserted": 2281,
+   "arrived": 2279,
+   "delay": 27.3,
+   "travel": 72.52,
+   "time_loss": 27.29,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "nominal",
+   "seed": 19006,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 43.97,
+   "halting_veh_h": 10.238888888888889,
+   "delay_veh_h": 15.586555895912824,
+   "remaining": 1,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    438
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2218,
+   "inserted": 2218,
+   "arrived": 2217,
+   "delay": 25.3,
+   "travel": 70.58,
+   "time_loss": 25.29,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "nominal",
+   "seed": 19007,
+   "time": 3705,
+   "teleports": 0,
+   "tts_veh_h": 44.8625,
+   "halting_veh_h": 9.864722222222222,
+   "delay_veh_h": 15.734704301844026,
+   "remaining": 0,
+   "switches": [
+    245
+   ],
+   "ignored": [
+    447
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2270,
+   "inserted": 2270,
+   "arrived": 2270,
+   "delay": 25.85,
+   "travel": 71.14,
+   "time_loss": 25.84,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "nominal",
+   "seed": 19008,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 44.543055555555554,
+   "halting_veh_h": 10.512222222222222,
+   "delay_veh_h": 16.08081392275318,
+   "remaining": 2,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    445
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2226,
+   "inserted": 2226,
+   "arrived": 2224,
+   "delay": 25.110000000000003,
+   "travel": 70.47,
+   "time_loss": 25.1,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "nominal",
+   "seed": 19009,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 45.34722222222222,
+   "halting_veh_h": 10.491111111111111,
+   "delay_veh_h": 16.272041241433378,
+   "remaining": 1,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    434
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2270,
+   "inserted": 2270,
+   "arrived": 2269,
+   "delay": 25.880000000000003,
+   "travel": 71.14,
+   "time_loss": 25.87,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "nominal",
+   "seed": 19010,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 44.52166666666667,
+   "halting_veh_h": 10.726666666666667,
+   "delay_veh_h": 16.14553934058902,
+   "remaining": 2,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    438
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2218,
+   "inserted": 2218,
+   "arrived": 2216,
+   "delay": 25.39,
+   "travel": 70.69,
+   "time_loss": 25.38,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "high",
+   "seed": 19001,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 60.38194444444444,
+   "halting_veh_h": 13.169722222222223,
+   "delay_veh_h": 25.27039160471089,
+   "remaining": 1,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    448
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2670,
+   "inserted": 2670,
+   "arrived": 2669,
+   "delay": 35.43,
+   "travel": 80.76,
+   "time_loss": 35.42,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "high",
+   "seed": 19002,
+   "time": 3690,
+   "teleports": 0,
+   "tts_veh_h": 54.71194444444444,
+   "halting_veh_h": 12.002222222222223,
+   "delay_veh_h": 20.399032970263438,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    452
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2628,
+   "inserted": 2628,
+   "arrived": 2628,
+   "delay": 29.62,
+   "travel": 74.94,
+   "time_loss": 29.61,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "high",
+   "seed": 19003,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 62.04361111111111,
+   "halting_veh_h": 12.845277777777778,
+   "delay_veh_h": 27.276019260578618,
+   "remaining": 1,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    450
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2635,
+   "inserted": 2635,
+   "arrived": 2634,
+   "delay": 38.79,
+   "travel": 84.1,
+   "time_loss": 38.78,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "high",
+   "seed": 19004,
+   "time": 3680,
+   "teleports": 0,
+   "tts_veh_h": 55.621944444444445,
+   "halting_veh_h": 12.187777777777777,
+   "delay_veh_h": 21.349204352288066,
+   "remaining": 0,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    439
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2611,
+   "inserted": 2611,
+   "arrived": 2611,
+   "delay": 31.490000000000002,
+   "travel": 76.68,
+   "time_loss": 31.48,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "high",
+   "seed": 19005,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 56.67027777777778,
+   "halting_veh_h": 12.31861111111111,
+   "delay_veh_h": 22.44899299248161,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    458
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2601,
+   "inserted": 2601,
+   "arrived": 2601,
+   "delay": 33.199999999999996,
+   "travel": 78.43,
+   "time_loss": 33.19,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "high",
+   "seed": 19006,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 52.91138888888889,
+   "halting_veh_h": 12.081666666666667,
+   "delay_veh_h": 19.75589789353122,
+   "remaining": 1,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    454
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2550,
+   "inserted": 2550,
+   "arrived": 2549,
+   "delay": 28.76,
+   "travel": 74.01,
+   "time_loss": 28.75,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "high",
+   "seed": 19007,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 60.46888888888889,
+   "halting_veh_h": 14.299444444444445,
+   "delay_veh_h": 26.178788216459225,
+   "remaining": 4,
+   "switches": [
+    242
+   ],
+   "ignored": [
+    456
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2615,
+   "inserted": 2615,
+   "arrived": 2611,
+   "delay": 35.269999999999996,
+   "travel": 80.59,
+   "time_loss": 35.26,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "high",
+   "seed": 19008,
+   "time": 5400,
+   "teleports": 0,
+   "tts_veh_h": 55.096944444444446,
+   "halting_veh_h": 12.800277777777778,
+   "delay_veh_h": 21.698335210201936,
+   "remaining": 2,
+   "switches": [
+    243
+   ],
+   "ignored": [
+    452
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2563,
+   "inserted": 2563,
+   "arrived": 2561,
+   "delay": 30.69,
+   "travel": 76.03,
+   "time_loss": 30.68,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "high",
+   "seed": 19009,
+   "time": 3695,
+   "teleports": 0,
+   "tts_veh_h": 56.272777777777776,
+   "halting_veh_h": 11.675,
+   "delay_veh_h": 22.356050758272143,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    454
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2605,
+   "inserted": 2605,
+   "arrived": 2605,
+   "delay": 32.489999999999995,
+   "travel": 77.75,
+   "time_loss": 32.48,
+   "depart_delay": 0.01
+  },
+  {
+   "problem": "L2",
+   "policy": "rules:/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/explain/net0/work/rules_small.py",
+   "scenario": "high",
+   "seed": 19010,
+   "time": 3685,
+   "teleports": 0,
+   "tts_veh_h": 52.09777777777778,
+   "halting_veh_h": 11.273888888888889,
+   "delay_veh_h": 19.088400604340553,
+   "remaining": 0,
+   "switches": [
+    244
+   ],
+   "ignored": [
+    433
+   ],
+   "overrides": [
+    0
+   ],
+   "loaded": 2550,
+   "inserted": 2550,
+   "arrived": 2550,
+   "delay": 28.240000000000002,
+   "travel": 73.54,
+   "time_loss": 28.23,
+   "depart_delay": 0.01
+  }
+ ]
+}

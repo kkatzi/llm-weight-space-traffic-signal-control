@@ -1,0 +1,34 @@
+edit size {'changed': 128, 'total': 7428, 'fraction': 0.01723209477652127}
+
+1) honoured decisions (ok=1) per recorded controller: share changed, pick distribution old -> new
+   start_network  changed 0.799  old [0.068 0.056 0.824 0.052]  new [0.046 0.033 0.072 0.849]
+   fixed          changed 0.179  old [0.485 0.092 0.306 0.117]  new [0.372 0.075 0.264 0.289]
+   actuated       changed 0.252  old [0.143 0.449 0.228 0.179]  new [0.105 0.329 0.141 0.426]
+
+2) wasted holds (keep a phase whose stop-line lanes are empty while others queue)
+   start     2200 of 4987  (green >= 30 s: 2115)
+   patched     31 of 4987  (green >= 30 s: 1)
+
+3) gridlock-like states from the start net's failed episodes: phase 2 green >= 30 s, E/W through lanes empty
+   start    picks [   4    2 2115    2] of 2123
+   patched  picks [   1    1    1 2120] of 2123
+
+4) onset of the episode-3 gridlock (start-net run), logits start -> patched
+   t=495  [-1.09 -7.79  4.67  1.81] -> [-2.59 -9.3   3.06  6.11]
+   t=500  [ 0.29 -7.92  3.76  1.72] -> [-1.53 -9.51  2.4   6.09]
+   t=505  [-0.78 -7.99  4.05  2.37] -> [-2.3  -9.29  2.42  6.51]
+   t=510  [ 0.21 -7.82  3.35  2.12] -> [-1.61 -9.27  2.05  6.29]
+   t=515  [-0.22 -6.78  3.44  1.53] -> [-1.89 -8.5   2.33  5.55]
+   t=520  [ 0.05 -6.08  2.81  1.41] -> [-1.56 -8.16  2.    5.34]
+   t=525  [ 0.   -4.89  2.33  1.01] -> [-1.61 -7.62  1.9   5.06]
+   t=530  [ 0.28 -4.85  2.    1.1 ] -> [-1.28 -7.61  1.63  5.06]
+
+5) frozen-queue chains on sparse synthetic states (permanent holds)
+   start: chains 468 stuck 25
+   patched: chains 468 stuck 20
+
+6) trainability {'median_max_prob': 0.9727065036142228, 'share_max_prob_above_0.99': 0.42200612761422673, 'median_logit_gap': 3.7049938821496027, 'max_abs_logit': 12.269570637589837, 'sat_l1': 0.018798080125216464, 'sat_l2': 0.11780359164779539, 'dead_l1': 0, 'dead_l2': 0}
+start-net good eps, hide S2 -> zero      agree 0.897  phase1 picks true 94 est 24
+start-net good eps, hide S2 -> mirror    agree 0.869  phase1 picks true 94 est 122
+start-net good eps, hide S2 -> shrunk    agree 0.881  phase1 picks true 94 est 110
+start-net good eps, hide S2 -> 0.1+0.75  agree 0.874  phase1 picks true 94 est 118

@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/constrain/net0_b10",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on adapting trained neural-network controllers.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/constrain/net0_b10\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Use the simulator only through the pack's eval.py, within its budget of 10 calls. Run eval.py from inside the pack folder; each call takes about 10 s.\n- Do not fit any model and do not run automated searches.\n- Use the network through its logits only.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/supervisor.py, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what your supervisor does;\n- when it overrides the network;\n- your simulator calls and what they showed;\n- the dev TTS of your final supervisor;\n- your predictions.",
+ "start": "2026-11-08 17:33:48",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-08 17:52:43",
+ "exit_code": 0,
+ "result": {
+  "session_id": "178fa415-b059-49ae-b27d-af99c9b3446c",
+  "num_turns": 38,
+  "total_cost_usd": 4.086978999999998,
+  "duration_ms": 1131525,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "The final supervisor scores 46.86 veh-h on dev, against 46.92 for the naive shield. That gap is within noise, so in practice it performs the same as the shield alone. `work/supervisor.py`, `work/NOTES.md` and `work/predictions.json` are all in place.\n\n**What it does:** it always returns a legal phase. Where several phases are legal, it takes the network's highest-logit one instead of the shield's most-halting phase.\n\n**When it overrides:** it overrides when the network wants to start a new through phase and all of these hold:\n- a legal left phase has at least 4 halting vehicles;\n- the network ranks that left phase within 4 logits of the through phase;\n- the through phase is not overdue.\n\nThen it serves the left first. The reason: through greens now run 17 s, their queues are gone by 12 s, and the 3-car left pockets overflow meanwhile. This changes about 7% of real decisions, mostly at high demand. All other changes are holds and overdue services the rules force.\n\n**Simulator calls (5 of 10):**\n- The pass-through run matched the naive reference episode by episode, so the simulator is deterministic.\n- Penalising every through start by 2 or 4 logits gave \u22120.01 and \u22120.13 veh-h, with low demand slightly worse both times.\n- The final rule gave \u22120.06; the last call re-ran the final file and reproduced it exactly.\n- Paired noise is about \u00b10.3 veh-h, so no variant is distinguishable from naive.\n\n**Final dev TTS:** 36.04 low, 47.01 nominal, 57.55 high.\n\n**Predictions:** low 36.0, nominal 47.0, high 57.6 veh-h."
+ }
+}

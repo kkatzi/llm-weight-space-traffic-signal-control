@@ -1,0 +1,38 @@
+\begin{tabular}{llrrr}
+\toprule
+Use & Run & Low & Nominal & High \\
+\midrule
+init & r1 & +0.1 & $-$0.6 & $-$1.7 \\
+init & r2 & $-$1.7 & $-$3.2 & $-$7.1 \\
+init & r3 & +0.1 & $-$1.7 & $-$3.1 \\
+patch & net0 b0 & $-$0.2 & $-$1.0 & $-$2.3 \\
+patch & net0 b5 & +0.9 & $-$1.0 & $-$1.8 \\
+patch & net0 b10 & +1.0 & $-$0.8 & $-$0.6 \\
+patch & net1 b0 & +0.3 & $-$0.9 & $-$0.8 \\
+patch & net1 b5 & $-$0.2 & $-$0.6 & $-$1.9 \\
+patch & net1 b10 & +0.3 & $-$0.4 & +0.3 \\
+patch & net2 b0 & $-$0.2 & $-$1.1 & +0.6 \\
+patch & net2 b5 & +0.2 & +0.2 & $-$0.1 \\
+patch & net2 b10 & $-$0.5 & $-$0.3 & +0.3 \\
+patch fault & net0 b0 & +0.8 & +0.4 & +3.0 \\
+patch fault & net0 b5 & +0.3 & +0.4 & $-$1.1 \\
+patch fault & net0 b10 & +1.1 & +0.7 & +0.8 \\
+patch fault & net1 b0 & +3.1 & +2.1 & +4.5 \\
+patch fault & net1 b5 & +0.7 & +0.9 & +0.9 \\
+patch fault & net1 b10 & +1.0 & +0.4 & +2.4 \\
+patch fault & net2 b0 & +1.1 & +0.7 & +2.9 \\
+patch fault & net2 b5 & +1.3 & +1.2 & +1.0 \\
+patch fault & net2 b10 & +1.1 & +0.4 & 0.0 \\
+transfer & net0 & $-$0.3 & +2.2 & +10.3 \\
+transfer & net1 & +3.3 & +2.3 & +0.3 \\
+transfer & net2 & +0.3 & +0.7 & $-$3.5 \\
+constrain & net0 b0 & $-$1.3 & $-$1.2 & $-$2.5 \\
+constrain & net0 b10 & $-$0.4 & $-$0.6 & $-$0.7 \\
+constrain & net1 b0 & $-$0.2 & $-$1.1 & $-$0.3 \\
+constrain & net1 b10 & +0.2 & $-$0.7 & $-$1.6 \\
+constrain & net2 b0 & $-$0.5 & $-$1.1 & $-$0.1 \\
+constrain & net2 b10 & $-$0.4 & $-$1.7 & $-$0.1 \\
+\midrule
+All (30 runs) & mean $|$error$|$ & 0.8 & 1.0 & 1.9 \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,48 @@
+{
+ "pack": "/home/traffic-ntua/Documents/weight_space_traffic/v3/packs/constrain/net1_b10",
+ "case": "constrain",
+ "missing": [],
+ "predictions": {
+  "low": 36.1,
+  "nominal": 47.2,
+  "high": 57.9
+ },
+ "test": {
+  "low": {
+   "tts_veh_h": 36.01225,
+   "delay": 26.639,
+   "delay_veh_h": 13.027284380689741,
+   "halting_veh_h": 8.82188888888889,
+   "remaining": 0.0,
+   "arrived": 1802.1,
+   "n": 10
+  },
+  "nominal": {
+   "tts_veh_h": 47.516666666666666,
+   "delay": 30.135,
+   "delay_veh_h": 18.08225843752213,
+   "halting_veh_h": 11.34472222222222,
+   "remaining": 0.0,
+   "arrived": 2267.4,
+   "n": 10
+  },
+  "high": {
+   "tts_veh_h": 58.82030555555556,
+   "delay": 36.03099999999999,
+   "delay_veh_h": 24.410954749295065,
+   "halting_veh_h": 13.494583333333333,
+   "remaining": 0.0,
+   "arrived": 2602.8,
+   "n": 10
+  },
+  "all": {
+   "tts_veh_h": 47.44974074074074,
+   "delay": 30.934999999999995,
+   "delay_veh_h": 18.506832522502307,
+   "halting_veh_h": 11.220398148148147,
+   "remaining": 0.0,
+   "arrived": 2224.1,
+   "unserved": 0
+  }
+ }
+}

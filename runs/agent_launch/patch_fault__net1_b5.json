@@ -1,0 +1,26 @@
+{
+ "pack": "/home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net1_b5",
+ "model": "claude-opus-5-5",
+ "prompt": "You are taking part in a research experiment on programming neural-network weights by hand.\n\nYour task pack is the folder /home/traffic-ntua/wsp_v3_agent_runs/patch_fault/net1_b5\n\nStart by reading TASK.md in that folder, then follow it exactly. In particular:\n- Read only files inside the pack.\n- Write only to its work/ subfolder.\n- Use the simulator only through the pack's eval.py, within its budget of 5 calls. Run eval.py from inside the pack folder; each call takes about 10 s.\n- Do not fit weights to data with any optimiser.\n- Change at most 371 parameters.\n- Use the Python interpreter that TASK.md names.\n\nWhen you finish, make sure work/weights.npz, work/NOTES.md and work/predictions.json exist. Then reply with a short summary (under 200 words) covering:\n- what you changed and why;\n- how many parameters you changed;\n- how many simulator calls you used and what they showed;\n- the dev TTS of your final weights;\n- your test predictions.",
+ "start": "2026-11-08 18:31:55",
+ "cli": "/home/traffic-ntua/.vscode-server/extensions/anthropic.claude-code-2.1.319-linux-x64/resources/native-binary/claude",
+ "tools": [
+  "Bash",
+  "Read",
+  "Write",
+  "Edit",
+  "Glob",
+  "Grep"
+ ],
+ "end": "2026-11-08 18:44:45",
+ "exit_code": 0,
+ "result": {
+  "session_id": "7ea91f2e-4dec-4d52-8cf6-578509d20fef",
+  "num_turns": 29,
+  "total_cost_usd": 2.8457899,
+  "duration_ms": 767277,
+  "is_error": false,
+  "permission_denials": [],
+  "result": "The repaired network scores **45.1 veh-h on dev**, down from 214.3 with the failed detector. The network with every detector working scores 44.5. `work/weights.npz`, `work/NOTES.md` and `work/predictions.json` are all written.\n\n**What I changed and why:**\n- **Use E2 in place of W2 (128 parameters):** the dead W2 inputs' weights now sit on the east left pocket E2, which has the same demand and is served by the same phase. The network then acts as if W2 reads the same as E2. The original network had locked on EW_through, because the hidden W2 queue was blocking the west through lane.\n- **Two trigger units and a relay (164 parameters):** each trigger adds +10 to the phase-3 (EW_left) logit.\n  - One fires when phases 0\u20132 have been green for 57 s, so W2 cars left over when the junction looks empty get served.\n  - The other fires when EW_through is green, a car is halting on upstream lane W1u and lane W1 is empty. On the east side that pattern means the pocket is full 99% of the time.\n  - Bias adjustments keep ordinary decisions unchanged in over 99% of recorded states.\n\n**Parameters changed:** 292 of 7428 (limit 371).\n\n**Simulator calls:** 3 of 5 used.\n\n| call | weights | dev TTS | vehicles left at the drain cap |\n|---|---|---|---|\n| 1 | E2 in place of W2 only | 46.0 | 2 and 5 in two episodes |\n| 2 | plus triggers (final) | 45.1 (low 34.6, nominal 45.1, high 55.5) | none |\n| 3 | stronger trigger push | 45.1 | none |\n\nThe stronger push was no better, so I kept the milder one.\n\n**Test predictions:** low 34.8, nominal 45.4, high 56.0. These are slightly above dev, to allow for the different test seeds."
+ }
+}

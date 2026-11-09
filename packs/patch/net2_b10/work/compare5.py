@@ -1,0 +1,12 @@
+import sys, os
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(HERE, "work"))
+exec(open(os.path.join(HERE, "work", "compare.py")).read().split("for args in")[0])
+gC = report("C", build(rho_left=2.0, rho_l1=1.0, rho_thr=2.0, mode_thr="avg", topk_left=48, topk_thr=40))
+for args in [dict(rho_left=2.0, rho_l1=1.0, rho_thr=3.0, mode_thr="avg", topk_left=48, topk_thr=40),
+             dict(rho_left=2.0, rho_l1=1.5, rho_thr=2.0, mode_thr="avg", topk_left=48, topk_thr=40),
+             dict(rho_left=2.0, rho_l1=1.0, mode_l1="avg", rho_thr=2.0, mode_thr="avg", topk_left=48, topk_thr=40),
+             dict(rho_left=2.0, rho_l1=1.0, rho_thr=2.0, mode_thr="avg", topk_left=48, topk_thr=44),
+             dict(rho_left=2.5, rho_l1=1.25, rho_thr=2.5, mode_thr="avg", topk_left=48, topk_thr=40)]:
+    g = report(str(args), build(**args))
+    print("    differs from C in honoured:", (ok & (g != gC)).sum(), " in net eps:", (ok & (g != gC) & (ctrl == 0)).sum())
